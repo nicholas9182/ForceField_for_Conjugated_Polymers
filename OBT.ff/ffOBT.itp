@@ -1,0 +1,665 @@
+
+[ atomtypes ]
+; name       mass      charge    ptype      sigma      eps
+; thiophene
+ CAA	 12.01100	0.000	A	0.355	0.293	; opls_145 , CA 
+ CE	 12.01100	0.000	A	0.355	0.293	; opls_145 , CA 
+ CBB	 12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+ HT	  1.00800	0.000	A	0.242	0.126	; opls_146 , HA
+ ST	 32.06000	0.000	A	0.355	1.046	; opls_633 , S
+ OT	 15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
+ BT	 79.90400	0.000	A	0.347	1.977 	; opls_730 bromobenzene , Br
+ SnT	 118.7100	0.000	A	0.367	2.420 	; opls_732 iodobenzene , I
+ CSn	 12.01100	0.000	A	0.350	0.276	; opls_139 alkane C , CT
+ HSn	  1.00800	0.000	A	0.250	0.126	; opls_140 alkane H , HC
+
+; glycolate sidechain
+ CG!	12.01100	0.000	A	0.350	0.276	; from Drew P , opls_139 alkane C , CT
+ CG	12.01100	0.000	A	0.350	0.276	; from Drew P , opls_139 alkane C , CT
+ HG 	 1.00800	0.000	A	0.250	0.126	; from Drew P , opls_140 alkane H , CT
+ OG	15.99940	0.000	A	0.290	0.586	; from Drew P , opls_180 dialkyl ether O , OS
+
+; Alkylated sidechain
+ CL!	12.01100	0.000	A	0.350	0.276	; opls_139 , alkane C , CT
+ CL	12.01100	0.000	A	0.350	0.276	; opls_139 , alkane C , CT
+ HL	1.00800		0.000	A	0.250	0.126	; opls_140 , alkane H , HC
+
+; Backbone spacer units
+ CR	12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+ CRR	12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+ SR	32.06000 	0.000	A	0.355	1.046	; opls_633 , S
+ SRR	32.06000	0.000	A	0.355	1.046	; opls_633 , S
+ HR 	 1.00800	0.000	A	0.242	0.126	; opls_146 , HA
+ HRR	 1.00800	0.000	A	0.242	0.126	; opls_146 , HA
+
+; NDI unit 
+ CN	12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+ ON	15.99940	0.000	A	0.296	0.879	; opls_253 , O	
+ NN	14.00670	0.000	A	0.325	0.711	; opls_251 , NC
+ HN	1.00800		0.000	A	0.242   0.126   ; opls_146 , HA
+
+; Modified thiophene ring with UA for NDI 
+ CBU	 13.01900	0.000	A	0.375	0.460	; opls_075 , CD
+ 
+; Chloroform
+ CH      13.01900   0.420       A        3.80000e-01  3.26944e-01
+ CLL     35.45300  -0.140       A        3.47000e-01  1.25604e+00
+
+; DPP unit special atoms
+ CN!	12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+
+; Atoms for DPP crystal monomers
+ ORR	 15.99940	0.000	A	0.307	0.711	; opls_167 for phenol , OH
+ NRR	 14.00670	0.000	A	0.325	0.711	; opls_251 , NC
+
+; Atoms for vinyl
+ CV	12.01100	0.000	A	0.355	0.318	; opls_141 CM
+ HV	1.00800		0.000	A	0.242	0.126	; opls_144 HC 
+
+; PF6
+ PF	30.97376	0.000	A	0.394	0.836	; Jurit Rajbangshi , 2020, Journal of Molecular Liquids 
+ FF	18.99840	0.000	A	0.312	0.255	; Jurit Rajbangshi , 2020, Journal of Molecular Liquids 
+
+; TBA 
+ NTA	14.00670	0.000	A	0.711	0.325	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020	
+ CTA	12.01100	0.000	A	0.276	0.350	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020
+ HTA	1.00800		0.000	A	0.125	0.250	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020
+
+; Substrate Calculations
+; Gold
+ Au     196.96657       0.000   A       0.262   22.13   ; Su, Liangliang phys chem letters 9.15 (2018): 4396-4400.
+ Su     196000          0.000   A       0.262   22.13   ; Su, Liangliang phys chem letters 9.15 (2018): 4396-4400.
+
+; pBTTT thienothiophene spacer 
+ CBT    12.01100        0.000   A       0.355   0.293   ; opls_145 , CA
+ SBT    32.06000        0.000   A       0.355   1.046   ; opls_633 , S
+ HBT	1.00800		0.000	A	0.125	0.250	; 
+
+[ bondtypes ]
+;  i    j func        b0          kb
+; thiophene
+ ST	CAA	1	0.17600	209200.0	; opls S to CA
+ ST	CE	1	0.17600	209200.0	; opls S to CA
+ CAA	CBB	1	0.14000	392459.2	; opls CA to CA
+ CE	CBB	1	0.14000	392459.2	; opls CA to CA
+ CBB	CBB	1	0.14000	392459.2	; opls CA to CA
+ CBB	HT	1	0.10800	307105.6	; opls CA to HA
+ CAA	HT	1	0.10800	307105.6	; opls CA to HA
+ CE	HT	1	0.10800	307105.6	; opls CA to HA
+ CAA	CAA	1	0.14000 392459.2	; opls CA to CA
+ CE	CE	1	0.14000 392459.2	; opls CA to CA
+ CBB	OT	1	0.13640	376560.0	; opls CA to OH 
+ CE	BT	1	0.18700	251040.0	; opls CA to Br 
+ CE	SnT	1	0.21300	230120.0	; opls CA to I, bond length from gaussian
+ CSn	SnT	1	0.21420	230120.0	; opls CA to I, bond length from gaussian
+ CSn	HSn	1	0.10900	284512.0	; opls CT to HC 
+ OT	ST	1	0.28600 0.000000	; non-bond put in to make scans work
+
+; glycol sidechain
+ CG!	CG	1	0.15290 224262.4	; from Drew P , CT to CT
+ CG!	HG	1	0.10900 284512.0	; from Drew P , CT to HC
+ CG	CG	1	0.15290 224262.4	; from Drew P , CT to CT
+ CG	HG	1	0.10900 284512.0	; from Drew P , CT to HC
+ CG	OG	1	0.14100 267776.0	; from Drew P , CT to OS
+
+; alkyl side chains
+ CL!	CL	1	0.15290	224262.4	; from Drew P , CT to CT
+ CL	CL	1	0.15290	224262.4	; from Drew P , CT to CT
+ CL!	HL	1	0.10900	284512.0	; from Drew P , CT to HC
+ CL	HL	1	0.10900	284512.0	; from Drew P , CT to HC
+
+; mixed side chain
+ CL!	CG	1	0.15290	224262.4	; from Drew P , CT to CT
+ CG!	CL	1	0.15290	224262.4	; from Drew P , CT to CT
+ CL	CG	1	0.15290	224262.4	; from Drew P , CT to CT
+ 
+; thiophene-sidechain
+ OT	CG!	1	0.14100 267776.0	; opls CT to OS 
+ OT	CL!	1	0.14100 267776.0	; opls CT to OS
+
+; Backbone thiophene spacer
+ CR	CR	1	0.14000 392459.2        ; opls CA to CA
+ SR	CR	1	0.17600 209200.0        ; opls S to CA
+ CR	HR	1	0.10800 307105.6        ; opls CA to HA
+ CE	CR	1	0.14000 392459.2        ; opls CA to CA
+ CR	CBU	1	0.14000 392459.2        ; opls CA to CD
+ CR	CL!	1	0.14000 392459.2        ; opls CA to CD
+
+; Backbone thienothiophene spacer
+ CRR	CRR	1	0.14000 392459.2        ; opls CA to CA
+ SRR	CRR	1	0.17600 209200.0        ; opls S to CA
+ CRR	HRR	1	0.10800 307105.6        ; opls CA to HA
+ CE	CRR	1	0.14000 392459.2        ; opls CA to CA
+
+; NDI unit 
+ CN	CN	1	0.14000 392459.2        ; opls CA to CA
+ CN	HN	1	0.10800 307105.6        ; opls CA to HA
+ CN	NN	1	0.13350	410032.0	; opls C to N
+ CN	ON	1	0.12290	476976.0	; opls C to O   
+
+; Modified thiophene ring with UA for NDI 
+ CAA	CBU	1	0.14000	392459.2	; opls CA to CD
+ CE	CBU	1	0.14000	392459.2	; opls CA to CD
+ CBU	CBB	1	0.14000	392459.2	; opls CD to CA
+
+; NDI - Thiophene
+ CN	CE	1	0.14700 308360.2        ; opls CA to CA
+ CN	CR	1	0.14700 308360.2        ; opls CA to CA
+
+; NDI - Sidechain 
+ NN	CL!	1	0.14100	267776.0	; opls CT to OS
+ NN	CG!	1	0.14100	267776.0	; opls CT to OS
+
+; DPP 
+ CN	CN!	1	0.14000 392459.2        ; opls CA to CA
+ CN!	CN!	1	0.14000 392459.2        ; opls CA to CA
+
+; Modified thiophene ring with UA for NDI 
+ CAA	CBU	1	0.14000	392459.2	; opls CA to CD
+ CE	CBU	1	0.14000	392459.2	; opls CA to CD
+ CBU	CBB	1	0.14000	392459.2	; opls CD to CA
+
+; DPP monomer crystals
+ CRR	ORR	1	0.17600 209200.0        ; opls S to CA
+ CRR	CR	1	0.14800 392459.2        ; opls CA to CA
+ NRR	CRR	1	0.13350	410032.0	; opls C to N
+ NRR	CL!	1	0.14100	267776.0	; opls CT to OS
+
+; Vinyl
+ CR	CV	1	0.14330	357313.6	; opls CM to CA
+ CV	CV	1	0.13400	459403.2	; opls CM to CM
+ CV	HV	1	0.10800	284512.0	; opls CM to HC
+
+; TBA
+ NTA	CTA	1	0.14710	153552.0	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020
+ CTA	HTA	1	0.10900	142256.0	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020
+ CTA	CTA	1	0.15290	112131.0	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020
+
+; pBTTT
+ CR	CBT	1	0.15800 392459.2	; Same as pgT2
+ CAA	CBT	1	0.15800 392459.2	; Same as pgT2
+ CBT	CBT	1	0.14000	392459.2	; Same as pgT2
+ CBT	SBT	1	0.17600	209200.0	; same as pgT2
+ CBT	HBT	1	0.10800	307105.6	; same as pgT2
+
+[ angletypes ]
+;  i    j    k  func    theta0      ktheta
+; thiophene ring
+ CE	ST	CAA	1	 91.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
+ ST	CAA	CBB	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ST	CE	CBB	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CAA	CBB	CBB	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CE	CBB	CBB	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CBB	CBB	HT	1	124.00	292.88	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CBB	CE	HT	1	123.50	292.88	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ST	CE	HT	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CAA	CAA	CBB	1	129.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CE	CE	CBB	1	129.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ HT	CBB	CE	1	123.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ST	CAA	CAA	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ST	CE	CE	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
+ OT	CBB	CBB	1       127.5   870     ;   QCC optimised, see 0007
+ CAA	CBB	OT	1       119     850     ;   QCC optimised, see 0007
+ CBB	CE	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
+ ST	CE	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
+ CBB	CE	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC
+ ST	CE	SnT	1	125.73	627.600	;   OPLS - CA CA I , angle from QCC
+ CSn	SnT	CSn	1	 97.86	518.816	;   OPLS - CT S CT , angle from QCC (tentative)
+ CE	SnT	CSn	1	111.40	518.816	;   OPLS - CT S CT , angle from QCC (tentative)
+ HSn	CSn	HSn	1	109.49	276.144	;   opls HC CT HC , angle from QCC
+ SnT	CSn	HSn	1	109.43	292.880	;   opls HC CT S , angle from QCC (tentative)
+
+; Oxygen-Sulfur Angles
+ CBB	OT	ST	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+ CAA	ST	OT	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+ CE	ST	OT	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+ ST	OT	CL!	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+ ST	OT	CG!	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+ ST	OT	CBB	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+
+; glycol sidechain
+ OT	CG!	CG	1	109.500	418.400	; from Drew P 
+ CG	CG	OG	1	109.500	418.400 ; from Drew P
+ CG	OG	CG	1	109.500	502.080	; from Drew P
+ CG	CG	HG	1	110.700	313.800	; from Drew P
+ OG	CG	HG	1	109.500	292.880	; from Drew P
+ HG	CG	HG	1	107.800	276.144	; from Drew P
+ HG	CG!	HG	1	107.800 276.144 ; from Drew P
+ HG	CG!	CG	1	110.700 313.800 ; from Drew P 
+ CG!	CG	HG	1	110.700	313.800	; from Drew P
+ CG!	CG	OG	1	109.500	418.400 ; from Drew P
+
+; Alkyl sidechains
+ CL	CL	CL	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
+ CL	CL	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ CL	CL!	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ HL	CL	HL	1	107.800 276.144 ; form Drew opls_140 - opls_139 - opls_140	
+ CL!	CL	CL	1	112.700 488.273 ; from Drew opls_139 - opls_139 - opls_139
+ CL!	CL	HL	1	110.700 313.800 ; from Drew opls_139 - opls_139 - opls_140
+ HL	CL!	HL	1	107.800 276.144 ; form Drew opls_140 - opls_139 - opls_140
+ OT	CL!	CL	1	109.500	418.400	; from Drew P
+
+; mixed side chains
+ OT	CL!	CG	1	109.500	418.400	; from Drew P
+ OT	CG!	CL	1	109.500	418.400	; from Drew P
+ OG	CG	CL	1	109.500	418.400	; from Drew P
+ CG	CL!	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ CL	CG!	HG	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ CL!	CG	HG	1	110.700	313.800 ; from Drew opls_139 - opls_139 - opls_140
+ CG!	CL	HL	1	110.700	313.800 ; from Drew opls_139 - opls_139 - opls_140
+ CL!	CG	CG	1	112.700	488.273 ; from Drew opls_139 - opls_139 - opls_139
+ CG!	CL	CL	1	112.700	488.273 ; from Drew opls_139 - opls_139 - opls_139
+ CG!	CL	CG	1	112.700	488.273 ; from Drew opls_139 - opls_139 - opls_139
+ CL!	CL	CG	1	112.700	488.273 ; from Drew opls_139 - opls_139 - opls_139
+ CG	CL	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ CL	CG	HG	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
+ CL	CG	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
+ CL	CL	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
+ 
+; thiophene-glycol sidechain
+ CBB	OT	CG!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ OT	CG!	HG	1	109.500	292.880	; from Drew P
+
+; thiophene-alkyl sidechain
+ CBB	OT	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ OT	CL!	HL	1	109.500 292.880 ; from Drew P
+
+; backbone thiophene spacer
+ CR	CR	CR	1	112.50  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR	SR	CR	1	 91.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ HR	CR	CR	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ HR	CR	CL!	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR	CL!	HL	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SR	CR	CR	1       112.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
+ CR     CR      CE	1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SR     CR      CE      1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR     CE      CBB     1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ST     CE      CR      1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ HR	CR	CBU	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SR	CR	CBU	1       112.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
+ CR	CR	CBU	1	112.50  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR	CBU	CR	1	112.50  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR	CL!	CL	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ CR	CR	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+
+; backbone thienothiophene spacer
+ CRR 	CRR	CRR	1	112.50  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR	SRR	CRR	1	 91.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ HRR	CRR	CRR	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    CE      CBB     1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    CRR     CE      1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SRR    CRR     CE      1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    CRR     SRR     1       112.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    SRR     CRR     1        91.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SRR    CRR     HRR     1       124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ST     CE      CRR     1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+
+; Small molecules in crown ether crystals
+ HA	CW	HA	1	107.800 276.144
+ HA	CS	HA	1	107.800 276.144
+
+; NDI unit 
+ CN	CN	CN	1	120.000	527.184	; opls CA - CA - CA
+ CN	CN	ON	1	121.400	669.440	; opls C - C - O
+ CN	NN	CN	1	126.400	585.760 ; opls C - N - C
+ CN	CN	NN	1	116.600	585.760 ; opls C - C - N
+ CN	CN	HN	1	110.700 313.800 ; from Drew P
+ ON	CN	NN	1	122.900	669.440	; opls O - C - N
+
+; Modified thiophene ring with UA for NDI 
+ ST	CE	CBU	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CAA	CBB	CBU	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CE	CBU	CBB	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CBU	CE	HT	1	123.50	292.88	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CE	CE	CBU	1	129.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ OT	CBB	CBU	1       127.5   870     ;   QCC optimised, see 0007
+
+; NDI - Thiophene
+ CN	CE	CBU	1	120.000 527.184 ; opls CA - CA - CD
+ CN	CN	CE	1	120.000 527.184 ; opls CA - CA - CA
+ CN	CE	ST	1	120.000 527.184 ; opls CA - CA - CA
+
+; NDI-glycol sidechain
+ CN	NN	CG!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
+ NN	CG!	CG	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
+ NN	CG!	HG	1	109.500	292.880	; from Drew P
+
+; NDI-alkyl sidechain
+ CN	NN	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
+ NN	CL!	CL	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
+ NN	CL!	HL	1	109.500 292.880 ; from Drew P
+
+; DPP unit
+ CN	CN!	CN	1	120.000 527.184 ; opls CA - CA - CD
+ CN!	CN	CN	1	120.000 527.184 ; opls CA - CA - CD
+ CN!	CN!	CN	1	120.000 527.184 ; opls CA - CA - CD
+ CN!	CN	NN	1	120.000 527.184 ; opls CA - CA - CD
+ CN!	CN	CR	1	120.000 527.184 ; opls CA - CA - CD
+ CN!	CN	ON	1	120.000 527.184 ; opls CA - CA - CD
+ CN!	CN	HN	1	120.000 527.184 ; opls CA - CA - CD
+
+; DPP-thiophene 
+ CN	CN	CR	1	120.000	527.184	; opls CA - CA - CD
+ NN	CN	CR	1	120.000	527.184	; opls CA - CA - CD
+ NN	CN	HN	1	120.000	527.184 ; opls CA - CA - CD
+ CN	CR	CR	1	120.000	527.184 ; opls CA - CA - CD
+ CN	CR	CBU	1	120.000	527.184 ; opls CA - CA - CD
+ CN	CR	SR	1	120.000	527.184 ; opls CA - CA - CD
+ SR	CR	HR	1	120.000	527.184 ; opls CA - CA - CD
+ CR 	CR	CRR	1	112.50  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR 	CRR	CRR	1	112.50  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    CRR     ORR     1       112.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR     CRR     ORR     1       112.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR     CRR     NRR     1       112.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    CRR     NRR     1       112.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    CR      SR      1       112.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    ORR     CRR     1        91.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR    NRR     CRR     1        91.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ ORR    CRR     HRR     1       124.00  292.88  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ NRR    CRR     HRR     1       124.00  292.88  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SRR    CRR     CR      1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CRR	NRR	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
+ CR	NRR	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
+ NRR	CL!	HL	1	109.500 292.880 ; from Drew P
+
+; Modified thiophene ring with UA for NDI 
+ ST	CE	CBU	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CAA	CBB	CBU	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CE	CBU	CBB	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CBU	CE	HT	1	123.50	292.88	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CE	CE	CBU	1	129.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ OT	CBB	CBU	1       127.5   870     ;   QCC optimised, see 0007
+ CN	CE	CBU	1	120.000 527.184 ; opls CA - CA - CD
+
+; Vinyl
+ CR	CV	CV	1	117.000	711.280	; opls CA - CM - CM
+ CR	CR	CV	1	124.000	585.760	; opls CA - CA - CM
+ CV	CV	HV	1	120.000	292.880 ; opls CM - CM - HC
+ CR	CV	HV	1	123.300	292.880	; opls CA - CM - HC 
+ SR	CR	CV	1	112.00  502.08  ; Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+
+; TBA
+ HTA	CTA	HTA	1	107.8	138.072	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020			
+ CTA	CTA	HTA	1	110.7	156.900	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020			
+ CTA	CTA	CTA	1	112.7	244.136	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020			
+ CTA	CTA	NTA	1	111.2	334.720	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020			
+ HTA	CTA	NTA	1	109.5	146.440	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020			
+ CTA	NTA	CTA	1	113.0	209.200	; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020			
+
+; pBTTT Thienothiophene 
+ CBT 	CBT	CBT	1	112.50  502.08  ; Same as CRR parameters
+ CBT	SBT	CBT	1	 91.00  502.08  ; Same as CRR parameters
+ HBT	CBT	CBT	1	124.00  292.88  ; Same as CRR parameters
+ SBT    CBT     CBT     1       119.00  502.08  ; Same as CRR parameters
+ CR 	CR	CBT	1	112.50  502.08  ; Same as CRR parameters
+ CBB 	CAA	CBT	1	112.50  502.08  ; Same as CRR parameters
+ CR 	CBT	CBT	1	112.50  502.08  ; Same as CRR parameters
+ CAA 	CBT	CBT	1	112.50  502.08  ; Same as CRR parameters
+ CBT    CR      SR      1       112.00  502.08  ; Same as CRR parameters
+ CBT    CAA     ST      1       112.00  502.08  ; Same as CRR parameters
+ CR     CBT     SBT     1       112.00  502.08  ; Same as CRR parameters
+ CAA    CBT     SBT     1       112.00  502.08  ; Same as CRR parameters
+
+[ dihedraltypes ]
+; Improper dihedrals
+; thiophene
+ ST	CAA	CBB	CBB	2	0	391.47000	;   Taken from drews params for PFO 
+ CAA	CBB	CBB	CE	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBB	CE	ST	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CE	ST	CAA	2	0	391.47000	;   Taken from drews params for PFO
+ CE	ST	CAA	CBB	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBB	CE	HT	2	0	391.47000	;   Taken from drews params for PFO
+ CE	CBB	ST	HT	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBB	CAA	OT	2	0	391.47000	;   Taken from drews params for PFO
+ CAA	ST	CBB	CAA	2	0	391.47000	;   Taken from drews params for PFO
+ CE	ST	CBB	CE	2	0	391.47000	;   Taken from drews params for PFO
+ CE	ST	CBB	BT	2	0	391.47000	;   Taken from drews params for PFO
+ CE	ST	CBB	SnT	2	0	391.47000	;   Taken from drews params for PFO
+ CE	ST	CBB	HT	2	0	391.47000	;   Taken from drews params for PFO
+
+; Backbone thiophene spacer
+ CR	SR	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	CR	CR	CL!	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	CR	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO 
+ CR	CR	CR	HR	2	0	391.47000       ;   Taken from drews params for PFO
+ CR     CR      CR      SR      2       0       391.47000       ;   Taken from drews params for PFO
+ CR	SR	CR	CE	2       0       391.47000       ;   Taken from drews params for PFO
+ CR	ST	CBB	CE	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	SR	CBU	CR	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	CBU	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO 
+ CR	CBU	CR	HR	2	0	391.47000       ;   Taken from drews params for PFO
+ CBU	CR	SR	CR	2	0	391.47000       ;   Taken from drews params for PFO
+ CBU	CR	CR	SR	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	CBU	CR	SR	2	0	391.47000       ;   Taken from drews params for PFO
+ CE	SR	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO
+
+; Backbone thienothiophene
+ CRR    SRR     CRR     CRR     2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    CRR     CRR     CRR     2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    CRR     CRR     HRR     2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    CRR     CRR     SRR     2       0       782.94000       ;   Taken from drews params for PFO, doubled to keep group planar
+ CRR    SRR     CRR     CE      2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    SRR     CRR     CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    ST      CBB     CE      2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    ST      CBB     CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CE     SRR     CRR     CRR     2       0       391.47000       ;   Taken from drews params for PFO
+ CRR    SRR     CRR     HRR     2       0       391.47000       ;   Taken from drews params for PFO
+ SRR    CRR     CRR     SRR     2       0       391.47000       ;   Taken from drews params for PFO
+ CE	SRR	CRR	CRR	2	0	391.47000       ;   Taken from drews params for PFO
+
+; Small Molecules for crown ether crystals
+ CA	CA	CA	CA	2	0	391.47000	;   Taken from drews params for PFO
+ CA	CA	CA	HA	2	0	391.47000	;   Taken from drews params for PFO
+
+; NDI unit 
+ CN	CN	CN	CN	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	CN	CN	HN	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	CN	NN	ON	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	CN	CN	NN	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	CN	NN	CN	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	NN	CN	CN	2	0	391.47000       ;   Taken from drews params for PFO
+ NN	CN	CN	CN	2	0	391.47000       ;   Taken from drews params for PFO 
+ CN	NN	CN	ON	2	0	391.47000       ;   Taken from drews params for PFO 
+
+; Modified thiophene ring with UA for NDI 
+ ST	CAA	CBB	CBU	2	0	391.47000	;   Taken from drews params for PFO 
+ CAA	CBB	CBU	CE	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBU	CE	ST	2	0	391.47000	;   Taken from drews params for PFO
+ CBU	CE	ST	CAA	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBU	CE	HT	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBU	CAA	OT	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CBU	CAA	OT	2	0	391.47000	;   Taken from drews params for PFO
+ CE	CBU	ST	HT	2	0	391.47000	;   Taken from drews params for PFO
+
+; NDI - Thiophene
+ CN	ST	CBU	CE	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	CN	CN	CE	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	ST	CBB	CE	2	0	391.47000       ;   Taken from drews params for PFO
+ CE	ST	CBU	CN	2	0	391.47000       ;   Taken from drews params for PFO
+
+; DPP - Thiophene
+ CN	NN	CN	CR	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CR	SR	CR	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CN	NN	HN	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CBU	SR	CR	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CN!	NN	CR	2	0	391.47000	;   Taken from drews params for PFO 
+
+; DPP 
+ CN!	CN	NN	CN	2	0	391.47000	;   Taken from drews params for PFO  
+ CN!	CN	CN	CN	2	0	391.47000	;   Taken from drews params for PFO  
+ NN	CN	CN	CN!	2	0	391.47000	;   Taken from drews params for PFO
+ CN!	CN!	CN	NN	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CN!	CN!	CN	2	0	391.47000	;   Taken from drews params for PFO	
+ CN!	CN	CN	CN!	2	0	782.94000	;   Taken from drews params for PFO, doubled to keep group planar	
+ CN	NN	CN!	CR	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CN!	NN	ON	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	CN!	NN	HN	2	0	391.47000	;   Taken from drews params for PFO	
+ CN	NN	CN!	ON	2	0	391.47000	;   Taken from drews params for PFO	
+ NN	CN	CN	CL!	2	0	391.47000	;   Taken from drews params for PFO	
+ CR	CR	SR	CRR	2	0	391.47000	;   Taken from drews params for PFO
+ CRR	ORR	CRR	CRR	2	0	391.47000	;   Taken from drews params for PFO
+ CRR	NRR	CRR	CRR	2	0	391.47000	;   Taken from drews params for PFO
+ CRR	CRR	CRR	ORR	2	0	391.47000	;   Taken from drews params for PFO 
+ CRR	CRR	CRR	NRR	2	0	391.47000	;   Taken from drews params for PFO 
+ NRR	CRR	CRR	CL!	2	0	391.47000	;   Taken from drews params for PFO
+ CRR	CRR	ORR	CR	2	0	391.47000	;   Taken from drews params for PFO
+ CRR	CRR	SRR	CR	2	0	391.47000	;   Taken from drews params for PFO
+ CRR	NRR	CRR	CR	2	0	391.47000	;   Taken from drews params for PFO
+
+; Vinyl
+ CR	SR	CR	CV	2	0	391.47000	;   Taken from drews params for PFO	
+ CA	CV	HV	CV	2	0	391.47000	;   Taken from drews params for PFO	
+ CR	CV	HR	CV 	2	0	391.47000	;   Taken from drews params for PFO
+ CV	HV	CV	CR 	2	0	391.47000	;   Taken from drews params for PFO
+
+; pBTTT Thienothiophene
+ CBT    SBT     CBT     CBT     2       0       391.47000       ; same as CRR parameters
+ CBT    CBT     CBT     CBT     2       0       391.47000       ; same as CRR parameters   
+ CBT    CBT     CBT     HBT     2       0       391.47000       ; same as CRR parameters   
+ CBT    CBT     CBT     SBT     2       0       782.94000       ; same as CRR parameters  
+ CBT    SBT     CBT     CR      2       0       391.47000       ; same as CRR parameters   
+ CBT    ST      CBT     CR      2       0       391.47000       ; same as CRR parameters   
+ CBT    SBT     CBT     HBT     2       0       391.47000       ; same as CRR parameters   
+ SBT    CBT     CBT     SBT     2       0       391.47000       ; same as CRR parameters   
+ CR     CR      SR      CBT     2       0       391.47000       ; same as CRR parameters   
+ CAA    CBB     ST      CBT     2       0       391.47000       ; same as CRR parameters   
+ CR	SBT	CBT	CBT	2	0	391.47000 	; same as CRR parameters 
+ CAA	SBT	CBT	CBT	2	0	391.47000 	; same as CRR parameters 
+
+; Ryckaert-Bellemans Dihedrals
+; X    j    k    X func      C0       C1       C2       C3       C4       C5
+
+; thiophene
+ CBB	CAA	ST	CAA	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem
+ CAA	ST	CAA	CBB	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem
+ CAA	CBB	CBB	CAA	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
+ CBB	CBB	CAA	ST	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
+ OT 	CBB	CBB	CAA	3	492.2476	996.87984	861.7366	471.9970	114.9219	0.000   ; Bhatta J Phys Chem
+ CBB	CE	SnT	CSn	3	1.3284		4.7153		59.1743		-93.2906	28.1114		0.000   ; For monomer Crystals
+ CE	SnT	CSn	HSn	3	1.3284		4.7153		59.1743		-93.2906	28.1114		0.000   ; For monomer Crystals
+ CBB	CBB	CAA	CAA	3	316.2894	485.3440	178.5689	-6.3931		-15.9565	0.000   ; Bhatta J Phys Chem
+ CAA	ST	CAA	CAA	3	12.3566		-0.6573		-17.7091	-1.6648		7.8889		0.000   ; CHECK THIS - RANDOMLY ADDED 
+
+; thiophene - glycol sidechain
+ CBB	CBB	OT	CG!	3	 1.3284		4.7153		59.1743		-93.2906	28.1114		0.000   ; Bhatta J Phys Chem
+ CBB	OT	CG!	CG	3        1.715		2.845		1.046		-5.607		-0.000		0.000   ; from Drew   
+ CBB	OT	CG!	HG	3        1.715		2.845		1.046		-5.607		-0.000		0.000   ; from Drew   
+ CAA	CBB	OT	CG!	3	 1.3284		4.7153		59.1743		-93.2906	28.1114		0.000	; Bhatta J Phys Chem 
+ OT	CG!	CG	OG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000   ; from Drew 
+
+; thiophene - alkyl sidechain
+ CBB	CBB	OT	CL!	3	 1.3284		4.7153		59.1743		-93.290		28.111		0.000	; Bhatta J Phys Chem
+ CR	CR	CL!	HL	3        1.715		2.845		1.046		-5.607		-0.000		0.000   ; from Drew  
+ CR	CL!	CL	HL	3        1.715		2.845		1.046		-5.607		-0.000		0.000   ; from Drew  
+ CR	CR	CL!	CL	3	 1.3284		4.7153		59.1743		-93.2906	28.1114		0.000	; Bhatta J Phys Chem 
+ CR	CL!	CL	CL	3	 1.3284		4.7153		59.1743		-93.2906	28.1114		0.000	; Bhatta J Phys Chem 
+ CBB	OT	CL!	CL	3        1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew   
+ CBB	OT	CL!	HL	3        1.715		2.845		1.046		-5.607		-0.000		0.000 	; from Drew   
+ CAA	CBB	OT	CL!	3	 1.3284		4.7153		59.1743		-93.290		28.111		0.000	; Bhatta J Phys Chem
+ OT	CL!	CL	CL	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
+
+; thiophene - mixed sidechain
+ CBB	OT	CL!	CG	3        1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew   
+ CBB	OT	CG!	CL	3        1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew   
+ OT	CL!	CG	CG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
+ OT	CG!	CL	CG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
+ OT	CG!	CL	CL	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
+ OT	CL!	CL	CG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
+ OT	CL!	CG	HG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
+ 
+
+; thiophene - thiophene
+ CBB    CAA     CAA     ST	3        4.472		-8.089		-11.827		-3.357		1.898		6.234	; QCC optimised
+ CBB	CE	CE	ST	3	 18.3088	0.4149		-32.9781	0.3039		16.0851		0.60784	; QCC optimised
+
+; glycol sidechain 
+ CG	CG	OG	CG	3	 1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ CG!	CG	OG	CG	3	 1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ HG	CG	CG	HG	3	 0.628		1.883		0.000		-2.510		-0.000		0.000	; from Drew
+ HG	CG	CG	OG	3	 0.979		2.937		0.000		-3.916		-0.000 		0.000	; from Drew
+ HG	CG	OG	CG	3	 1.590		4.770		0.000		-6.360		-0.000		0.000	; from Drew
+ OG	CG	CG	OG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
+
+; alkyl sidechain 
+ CL	CL	CL	CL	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139 
+ CL	CL	CL	HL	3	0.6276		1.88280		0.000		-2.5104		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_140
+ HL	CL	CL	HL	3	0.6276		1.88280		0.000		-2.5104		0.000		0.000	; opls_140 - opls_139 - opls_139 - opls_140
+ CL!	CL	CL	CL	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139
+ HL	CL!	CL	HL	3       0.6276		1.88280		0.000		-2.5104		0.000		0.000	; opls_140 - opls_139 - opls_139 - opls_140
+ CL	CL!	CL	CL	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139
+ OG	CG	CG	CL	3	-1.151		1.151		0.000		-0.000		0.000		0.000	; from Drew
+
+; mixed sidechain 
+ CG	OG	CG	CL	3	 1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ OG	CG	CG	CL!	3	-1.151		1.151		0.000		-0.000		0.000		0.000	; from Drew
+ OG	CG	CL	CG!	3	-1.151		1.151		0.000		-0.000		0.000		0.000	; from Drew
+ CL!	CL	CG	CG	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139
+ CL!	CL	CL	CG	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139
+ CG!	CL	CL	CG	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139
+ CG!	CL	CL	CL	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139
+ CL	CL	CG	CG	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139 
+ CL	CL	CL	CG	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139 
+ HL	CL	CG	OG	3	 0.979		2.937		0.000		-3.916		-0.000 		0.000	; from Drew
+ OG	CG	CL	CL	3	-1.151		1.151		0.000		-0.000		0.000		0.000	; from Drew
+ CG	CL	CL	HL	3	0.6276		1.88280		0.000		-2.5104		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_140
+
+ ; Oxygen to sulfur
+ CBB    CBB     OT       ST      3       0.000		0.000		0.000		0.000		0.000		0.000
+ CBB    OT      ST       CAA     3       0.000		0.000		0.000		0.000		0.000		0.000
+ CAA    CBB     OT       ST      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CL!      HL      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CG!      HG      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CL!      CL      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CL!      CG      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CL!      CL      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CG!      CG      3       0.000		0.000		0.000		0.000		0.000		0.000
+ ST     OT      CG!      CL      3       0.000		0.000		0.000		0.000		0.000		0.000
+
+; backbone thiophene spacer
+ CBB    CE      CR      SR      3       18.435		3.967		-26.934		1.571		12.485		-1.616	; QCC optimised
+
+; backbone thienothiophene spacer 
+ CBB	CE	CRR	SRR	3	8.4001		5.5525		-24.063		0.0398		12.350		-0.2674	; QCC optimised
+
+; NDI unit 
+ CN	CN	CN	CN	3	1.3284		 4.715		 59.174		 -93.290	 28.111		 0.000   ; Bhatta J Phys Chem
+ CN	CN	CN	NN	3	1.3284		 4.715		 59.174		 -93.290	 28.111		 0.000   ; Bhatta J Phys Chem
+ CN	CN	NN	CN	3	1.3284		 4.715		 59.174		 -93.290	 28.111		 0.000   ; Bhatta J Phys Chem
+ CN	NN	CN	CN	3	1.3284		 4.715		 59.174		 -93.290	 28.111		 0.000   ; Bhatta J Phys Chem
+
+; NDI - Thiophene
+ CN	CN	CE	ST	3	 7.379 		-3.664 		-24.769   	2.383   	4.335  		-5.369	 ; QCC optimised
+
+; NDI - Sidechain
+ CN	NN	CG!	HG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ CN	NN	CG!	CG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ CN	NN	CL!	HL	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ CN	NN	CL!	CL	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+ NN	CL!	CL	CL	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
+ NN	CG!	CG	OG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
+
+; DPP
+ CN!	CN	CR	CBU	3	23.5782		7.8727		-32.1603	-5.2763		0.1821		7.2819 ; QCC optimised
+ CR	CR	CR	SR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
+ CR	CR	CRR	SRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
+ SR	CR	CV	CV	3	23.436		-4.841		-33.840		10.659		4.353		-6.152 ; QCC optimised 
+ SR	CR	CRR	CRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
+ CRR	NRR	CL!	HL	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
+
+; Vinyl
+ CR	CV	CV	CR	3	58.57600	0.00000		-58.57600	0.00000		0.00000		0.00000 ; opls X - CM - CM - X
+
+; Fourier Parameters
+; TBA
+ HTA	CTA	CTA	HTA	5	0.0000		0.0000		1.2552		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020		
+ HTA	CTA	CTA	CTA	5	0.0000		0.0000		1.2552		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020
+ CTA	CTA	CTA	CTA	5	5.4392		-0.2092		0.8368		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020		
+ CTA	CTA	CTA	NTA	5	11.430		0.95813		0.4850		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020		
+ CTA	CTA	NTA	CTA	5	6.0161		-0.5179		1.1041		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020	
+ CTA	NTA	CTA	CTA	5	6.0161		-0.5179		1.1041		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020	
+ HTA	CTA	CTA	NTA	5	0.0000		0.0000		1.6066	        0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020		
+ HTA	CTA	NTA	CTA	5	0.0000		0.0000		1.2623		0.00000		; Shivanand Kumar Veesam, J. Phys. Chem. B. 2020		
+
+; pBTTT thienothiophene
+ CR	CR	CBT	SBT	3	2.3100		3.0633	 	-12.259	 	-1.494	 	5.160	 	-1.547   ; QCC optimised
+ SBT	CBT	CAA	CBB	3	2.7074		9.1375		-10.982		-1.216		-0.91		-1.580   ; QCC optimised

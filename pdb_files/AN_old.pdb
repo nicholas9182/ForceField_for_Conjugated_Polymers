@@ -1,0 +1,12 @@
+TITLE     CSD ENTRY IM1509
+REMARK    THIS IS A SIMULATION BOX
+CRYST1  100.000  100.000  100.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  Nn   AN     1      50.022  51.993  50.548  1.00  0.00           N
+ATOM      2  Cb   AN     1      50.002  50.923  50.248  1.00  0.00           C
+ATOM      3  Caa  AN     1      49.992  49.503  49.868  1.00  0.00           C
+ATOM      4  Ha1  AN     1      49.862  49.433  48.898  1.00  0.00           H
+ATOM      5  Ha2  AN     1      49.272  49.043  50.338  1.00  0.00           H
+ATOM      6  Ha3  AN     1      50.852  49.103  50.098  1.00  0.00           H
+TER
+ENDMDL

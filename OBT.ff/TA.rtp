@@ -1,0 +1,127 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          5          2        0         3      0     1
+
+[ TA ]
+
+[ atoms ]
+ Naa	NTA	+0.00	1
+ Caa	CTA	+0.05	1	
+ Haa 	HTA	+0.10	1	
+ Hab	HTA	+0.10	1	
+ Cab	CTA	-0.12	2	
+ Hac	HTA	+0.06	2	
+ Had	HTA	+0.06	2	
+ Cac	CTA	-0.12	1	
+ Hae	HTA	+0.06	1	
+ Haf	HTA	+0.06	1	
+ Cad	CTA	-0.18	1	
+ Hag	HTA	+0.06	1	
+ Hah	HTA	+0.06	1	
+ Hai	HTA	+0.06	1	
+ Cba	CTA	+0.05	1	
+ Hba 	HTA	+0.10	1	
+ Hbb	HTA	+0.10	1	
+ Cbb	CTA	-0.12	1	
+ Hbc	HTA	+0.06	1	
+ Hbd	HTA	+0.06	1	
+ Cbc	CTA	-0.12	1	
+ Hbe	HTA	+0.06	1	
+ Hbf	HTA	+0.06	1	
+ Cbd	CTA	-0.18	1	
+ Hbg	HTA	+0.06	1	
+ Hbh	HTA	+0.06	1	
+ Hbi	HTA	+0.06	1	
+ Cca	CTA	+0.05	1	
+ Hca 	HTA	+0.10	1	
+ Hcb	HTA	+0.10	1	
+ Ccb	CTA	-0.12	1	
+ Hcc	HTA	+0.06	1	
+ Hcd	HTA	+0.06	1	
+ Ccc	CTA	-0.12	1	
+ Hce	HTA	+0.06	1	
+ Hcf	HTA	+0.06	1	
+ Ccd	CTA	-0.18	1	
+ Hcg	HTA	+0.06	1	
+ Hch	HTA	+0.06	1	
+ Hci	HTA	+0.06	1	
+ Cda	CTA	+0.05	1	
+ Hda 	HTA	+0.10	1	
+ Hdb	HTA	+0.10	1	
+ Cdb	CTA	-0.12	1	
+ Hdc	HTA	+0.06	1	
+ Hdd	HTA	+0.06	1	
+ Cdc	CTA	-0.12	1	
+ Hde	HTA	+0.06	1	
+ Hdf	HTA	+0.06	1	
+ Cdd	CTA	-0.18	1	
+ Hdg	HTA	+0.06	1	
+ Hdh	HTA	+0.06	1	
+ Hdi	HTA	+0.06	1	
+
+[ bonds ]
+ Naa	Caa
+ Naa	Cba
+ Naa	Cca
+ Naa	Cda
+ 
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Had
+ Cab	Cac
+ Cac	Hae
+ Cac	Haf
+ Cac	Cad
+ Cad	Hag
+ Cad	Hah
+ Cad	Hai
+
+ Cba	Hba
+ Cba	Hbb
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbd
+ Cbb	Cbc
+ Cbc	Hbe
+ Cbc	Hbf
+ Cbc	Cbd
+ Cbd	Hbg
+ Cbd	Hbh
+ Cbd	Hbi
+
+ Cca	Hca
+ Cca	Hcb
+ Cca	Ccb
+ Ccb	Hcc
+ Ccb	Hcd
+ Ccb	Ccc
+ Ccc	Hce
+ Ccc	Hcf
+ Ccc	Ccd
+ Ccd	Hcg
+ Ccd	Hch
+ Ccd	Hci
+
+ Cda	Hda
+ Cda	Hdb
+ Cda	Cdb
+ Cdb	Hdc
+ Cdb	Hdd
+ Cdb	Cdc
+ Cdc	Hde
+ Cdc	Hdf
+ Cdc	Cdd
+ Cdd	Hdg
+ Cdd	Hdh
+ Cdd	Hdi
+

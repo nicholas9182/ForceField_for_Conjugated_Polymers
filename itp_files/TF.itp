@@ -1,0 +1,91 @@
+[ moleculetype ]
+; Name            nrexcl
+TF               3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
+; residue   1 TF  rtp TF   q  0.0
+     1   opls_566      1     TF     O1      1     -0.456    15.9994   ; qtot -0.456
+     2   opls_567      1     TF     C2      2      0.266     12.011   ; qtot -0.19
+     3   opls_569      1     TF    H21      2     -0.027      1.008   ; qtot -0.217
+     4   opls_569      1     TF    H22      2     -0.027      1.008   ; qtot -0.244
+     5   opls_568      1     TF     C3      3      0.078     12.011   ; qtot -0.166
+     6   opls_570      1     TF    H31      3     -0.031      1.008   ; qtot -0.197
+     7   opls_570      1     TF    H32      3     -0.031      1.008   ; qtot -0.228
+     8   opls_568      1     TF     C4      4      0.078     12.011   ; qtot -0.15
+     9   opls_570      1     TF    H41      4     -0.031      1.008   ; qtot -0.181
+    10   opls_570      1     TF    H42      4     -0.031      1.008   ; qtot -0.212
+    11   opls_567      1     TF     C5      5      0.266     12.011   ; qtot 0.054
+    12   opls_569      1     TF    H51      5     -0.027      1.008   ; qtot 0.027
+    13   opls_569      1     TF    H52      5     -0.027      1.008   ; qtot 0
+
+[ bonds ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     2     1 
+    1    11     1 
+    2     3     1 
+    2     4     1 
+    2     5     1 
+    5     6     1 
+    5     7     1 
+    5     8     1 
+    8     9     1 
+    8    10     1 
+    8    11     1 
+   11    12     1 
+   11    13     1 
+
+[ pairs ]
+;  ai    aj funct            c0            c1            c2            c3
+    1     6     1 
+    1     7     1 
+    1     9     1 
+    1    10     1 
+    2     9     1 
+    2    10     1 
+    2    12     1 
+    2    13     1 
+    3     8     1 
+    3    11     1 
+    4     8     1 
+    4    11     1 
+    5    12     1 
+    5    13     1 
+    6    11     1 
+    7    11     1 
+
+[ angles ]
+;  ai    aj    ak funct            c0            c1            c2            c3
+    2     1    11     1 
+    1     2     3     1 
+    1     2     4     1 
+    1     2     5     1 
+    3     2     4     1 
+    3     2     5     1 
+    4     2     5     1 
+    2     5     6     1 
+    2     5     7     1 
+    2     5     8     1 
+    6     5     7     1 
+    6     5     8     1 
+    7     5     8     1 
+    5     8     9     1 
+    5     8    10     1 
+    5     8    11     1 
+    9     8    10     1 
+    9     8    11     1 
+   10     8    11     1 
+    1    11     8     1 
+    1    11    12     1 
+    1    11    13     1 
+    8    11    12     1 
+    8    11    13     1 
+   12    11    13     1 
+
+[ dihedrals ]
+;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
+   11     1     2     5     3 
+    2     1    11     8     3 
+    1     2     5     8     3 
+    2     5     8    11     3 
+    5     8    11     1     3 

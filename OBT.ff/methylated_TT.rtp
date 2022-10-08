@@ -1,0 +1,616 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+
+[ TI ]
+; Initial unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.099	1
+ CS2 	CBB	+0.305	2
+ CS3	CBB	-0.271	3
+ CS4	CE	-0.149	4
+ SS	ST	-0.051	5
+ OS	OT	-0.233	6
+ HS	HT	+0.136	3 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.014	7
+ CD2	CBB	+0.262	8
+ CD3	CBB	-0.325	9
+ CD4	CE	+0.094	10
+ SD	ST      -0.203	11
+ OD	OT	-0.284 	12
+ HD	HT	+0.222	9
+
+; Left sidechain
+ C0	CG!	+0.030	13
+ H01	HG	+0.031	13
+ H02	HG	+0.031	13
+ C1 	CL	+0.107	14
+ H11	HL	-0.015	14
+ H12	HL	-0.015	14
+ C2 	CG	+0.017	14
+ H21	HG	+0.090	14
+ H22	HG	+0.090	14
+ O3 	OG	-0.389	15
+ C4 	CG	+0.009	16
+ H41	HG	+0.090	16
+ H42	HG	+0.090	16
+ C5 	CG	+0.013	17
+ H51	HG	+0.089	17
+ H52	HG	+0.089	17
+ O6 	OG	-0.390	18
+ C7 	CG	+0.012	19
+ H71	HG	+0.089	19
+ H72	HG	+0.089	19
+ C8 	CG	+0.005	20
+ H81	HG	+0.089	20
+ H82	HG	+0.089	20
+ O9 	OG	-0.390	21
+ Cv 	CG	+0.012	21
+ Hv1 	HG	+0.089	21
+ Hv2	HG	+0.089	21
+ Cp	CG      +0.005	22
+ Hp1	HG      +0.088	22
+ Hp2	HG      +0.088	22
+ Oq	OG      -0.390	23
+ Cs	CG      +0.012	24
+ Hs1	HG      +0.088	24
+ Hs2	HG      +0.088	24
+ Hs3	HG      +0.088	24
+ 
+
+; Right sidechain 
+ Caa	CG!	+0.211	24
+ Ha1	HG	-0.042	24
+ Ha2	HG	-0.042	24
+ Cb 	CL	+0.074	25
+ Hb1	HL	-0.023	25
+ Hb2	HL	-0.023	25
+ Cc 	CG	+0.017	32
+ Hc1	HG	+0.090	32
+ Hc2	HG	+0.090	32
+ Odd 	OG	-0.389	33
+ Ce 	CG	+0.009	34
+ He1	HG	+0.090	34
+ He2	HG	+0.090	34
+ Cf 	CG	+0.013	35
+ Hf1	HG	+0.089	35
+ Hf2	HG	+0.089	35
+ Og 	OG	-0.390	36
+ Ch 	CG	+0.012	37
+ Hh1	HG	+0.089	37
+ Hh2	HG	+0.089	37
+ Ci 	CG	+0.005	38
+ Hi1	HG	+0.089	38
+ Hi2	HG	+0.089	38
+ Oj 	OG	-0.390	39
+ Ck 	CG	+0.012	40
+ Hk1 	HG	+0.089	40
+ Hk2	HG	+0.089	40
+ Cl	CG      +0.005	41
+ Hl1	HG      +0.088	41
+ Hl2	HG      +0.088	41
+ Om	OG      -0.390	42
+ Cn	CG      +0.012	43
+ Hn1	HG      +0.088	43
+ Hn2	HG      +0.088	43
+ Hn3	HG      +0.088	43
+
+
+
+; bithiophene backbone spacer
+ CT1	CRR	-0.014	33
+ CT2	CRR	-0.241	34
+ CT3 	CRR	+0.076	35
+ CT4	CRR	+0.076	36
+ CT5	CRR	-0.230	37
+ CT6	CRR	-0.025	38
+ ST1	SRR	-0.108	40
+ ST2	SRR	-0.108	41
+ HT2	HRR	+0.257	34
+ HT5	HRR	+0.257	37
+ 
+; Terminal
+ HTe	HT	+0.242	4
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+CS4	HTe
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	H01
+ C0	H02
+ C0	C1
+ C1	H11
+ C1	H12
+ C1	C2
+ C2	H21
+ C2	H22
+ C2	O3
+ O3	C4
+ C4	H41
+ C4	H42
+ C4	C5
+ C5	H51
+ C5	H52
+ C5	O6
+ O6	C7
+ C7	H71
+ C7	H72
+ C7	C8
+ C8	H81
+ C8	H82
+ C8	O9
+ O9	Cv
+ Cv	Hv1
+ Cv	Hv2
+ Cv	Cp
+ Cp	Hp1
+ Cp	Hp2
+ Cp	Oq
+ Oq	Cs
+ Cs	Hs1
+ Cs	Hs2
+ Cs	Hs3
+
+   
+; Right Sidechain
+ Caa	Ha1
+ Caa	Ha2
+ Caa	Cb
+ Cb	Hb1
+ Cb	Hb2
+ Cb	Cc
+ Cc	Hc1
+ Cc	Hc2
+ Cc	Odd
+ Odd	Ce
+ Ce	He1
+ Ce	He2
+ Ce	Cf
+ Cf	Hf1
+ Cf	Hf2
+ Cf	Og
+ Og	Ch
+ Ch	Hh1
+ Ch	Hh2
+ Ch	Ci
+ Ci	Hi1
+ Ci	Hi2
+ Ci	Oj
+ Oj	Ck
+ Ck	Hk1
+ Ck	Hk2
+ Ck	Cl
+ Cl	Hl1
+ Cl	Hl2
+ Cl	Om
+ Om	Cn
+ Cn	Hn1
+ Cn	Hn2
+ Cn	Hn3
+
+
+
+
+; bithiophene backbone spacer
+ CT1	CT2
+ CT2	CT3
+ CT3	CT4
+ CT4	CT5
+ CT5	CT6
+ CT1	ST1
+ ST1	CT4
+ CT3	ST2
+ ST2	CT6
+ CT2	HT2
+ CT5	HT5
+
+; oxybithiophene - bithiophene spacer
+ CD4	CT1
+
+; between monomers
+  CT6	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	CT1	ST1
+ ST2    CT6     +CS4    +CS3
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; Bithiophene backbone spacer
+ CD4    CD3     SD      CT1
+
+ CT3    CT4     ST1     CT1
+ CT4    ST1     CT1     CT2
+ ST1    CT1     CT2     CT3
+ CT1    CT2     CT3     CT4
+ CT2    CT3     CT4     ST1
+
+ CT3    ST2     CT6     CT5
+ ST2    CT6     CT5     CT4
+ CT6    CT5     CT4     CT3
+ CT5    CT4     CT3     ST2
+ CT4    CT3     ST2     CT6
+
+ CT3    CT4     CT2     ST2
+ CT4    ST1     CT3     CT5
+
+ CT2    CT3     CT1     HT2
+ CT5    CT4     CT6     HT5
+ CT1	CT2	ST1	CD4
+
+; between monomers
+ CT6	ST2	CT5	+CS4	
+
+
+
+
+
+
+[ TM ]
+; Middle unit, without any terminal atoms
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.004	1
+ CS2 	CBB	+0.233	2
+ CS3	CBB	-0.347	3
+ CS4	CE	+0.119	4
+ SS	ST	-0.198	5
+ OS	OT	-0.208	6
+ HS	HT	+0.211	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.004	7
+ CD2	CBB	+0.233	8
+ CD3	CBB	-0.347	9
+ CD4	CE	+0.119	10
+ SD	ST      -0.198	11
+ OD	OT	-0.208 	12
+ HD	HT	+0.211	9
+
+
+; Left sidechain 
+ C0	CG!	+0.062	13
+ H01	HG	+0.005	13
+ H02	HG	+0.005	13
+ C1 	CL	+0.114	14
+ H11	HL	-0.018	14
+ H12	HL	-0.017	14
+ C2 	CG	+0.017	32
+ H21	HG	+0.090	32
+ H22	HG	+0.090	32
+ O3 	OG	-0.389	33
+ C4 	CG	+0.009	34
+ H41	HG	+0.090	34
+ H42	HG	+0.090	34
+ C5 	CG	+0.013	35
+ H51	HG	+0.089	35
+ H52	HG	+0.089	35
+ O6 	OG	-0.390	36
+ C7 	CG	+0.012	37
+ H71	HG	+0.089	37
+ H72	HG	+0.089	37
+ C8 	CG	+0.005	38
+ H81	HG	+0.089	38
+ H82	HG	+0.089	38
+ O9 	OG	-0.390	39
+ Cv 	CG	+0.012	40
+ Hv1 	HG	+0.089	40
+ Hv2	HG	+0.089	40
+ Cp	CG      +0.005	41
+ Hp1	HG      +0.088	41
+ Hp2	HG      +0.088	41
+ Oq	OG      -0.390	42
+ Cs	CG      +0.012	43
+ Hs1	HG      +0.088	43
+ Hs2	HG      +0.089	43
+ Hs3	HG      +0.089	43
+ 
+
+; Right sidechain 
+ Caa	CG!	+0.062	24
+ Ha1	HG	+0.005	24
+ Ha2	HG	+0.005	24
+ Cb 	CL	+0.114	25
+ Hb1	HL	-0.018	25
+ Hb2	HL	-0.017	25
+ Cc 	CG	+0.017	32
+ Hc1	HG	+0.090	32
+ Hc2	HG	+0.090	32
+ Odd 	OG	-0.389	33
+ Ce 	CG	+0.009	34
+ He1	HG	+0.090	34
+ He2	HG	+0.090	34
+ Cf 	CG	+0.013	35
+ Hf1	HG	+0.089	35
+ Hf2	HG	+0.089	35
+ Og 	OG	-0.390	36
+ Ch 	CG	+0.012	37
+ Hh1	HG	+0.089	37
+ Hh2	HG	+0.089	37
+ Ci 	CG	+0.005	38
+ Hi1	HG	+0.089	38
+ Hi2	HG	+0.089	38
+ Oj 	OG	-0.390	39
+ Ck 	CG	+0.012	40
+ Hk1 	HG	+0.089	40
+ Hk2	HG	+0.089	40
+ Cl	CG      +0.005	41
+ Hl1	HG      +0.088	41
+ Hl2	HG      +0.088	41
+ Om	OG      -0.390	42
+ Cn	CG      +0.012	43
+ Hn1	HG      +0.088	43
+ Hn2	HG      +0.089	43
+ Hn3	HG      +0.089	43
+
+
+; bithiophene backbone spacer
+ CT1	CRR	-0.007	33
+ CT2	CRR	-0.234	34
+ CT3 	CRR	+0.083	35
+ CT4	CRR	+0.083	36
+ CT5	CRR	-0.223	37
+ CT6	CRR	-0.022	38
+ ST1	SRR	-0.101	40
+ ST2	SRR	-0.101	41
+ HT2	HRR	+0.264	34
+ HT5	HRR	+0.264	37
+
+
+
+
+
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+; Left Sidechain
+ C0	H01
+ C0	H02
+ C0	C1
+ C1	H11
+ C1	H12
+ C1	C2
+ C2	H21
+ C2	H22
+ C2	O3
+ O3	C4
+ C4	H41
+ C4	H42
+ C4	C5
+ C5	H51
+ C5	H52
+ C5	O6
+ O6	C7
+ C7	H71
+ C7	H72
+ C7	C8
+ C8	H81
+ C8	H82
+ C8	O9
+ O9	Cv
+ Cv	Hv1
+ Cv	Hv2
+ Cv	Cp
+ Cp	Hp1
+ Cp	Hp2
+ Cp	Oq
+ Oq	Cs
+ Cs	Hs1
+ Cs	Hs2
+ Cs	Hs3
+
+   
+; Right Sidechain
+ Caa	Ha1
+ Caa	Ha2
+ Caa	Cb
+ Cb	Hb1
+ Cb	Hb2
+ Cb	Cc
+ Cc	Hc1
+ Cc	Hc2
+ Cc	Odd
+ Odd	Ce
+ Ce	He1
+ Ce	He2
+ Ce	Cf
+ Cf	Hf1
+ Cf	Hf2
+ Cf	Og
+ Og	Ch
+ Ch	Hh1
+ Ch	Hh2
+ Ch	Ci
+ Ci	Hi1
+ Ci	Hi2
+ Ci	Oj
+ Oj	Ck
+ Ck	Hk1
+ Ck	Hk2
+ Ck	Cl
+ Cl	Hl1
+ Cl	Hl2
+ Cl	Om
+ Om	Cn
+ Cn	Hn1
+ Cn	Hn2
+ Cn	Hn3
+
+
+
+
+
+
+; bithiophene backbone spacer
+ CT1	CT2
+ CT2	CT3
+ CT3	CT4
+ CT4	CT5
+ CT5	CT6
+ CT1	ST1
+ ST1	CT4
+ CT3	ST2
+ ST2	CT6
+ CT2	HT2
+ CT5	HT5
+
+
+; oxybithiophene - bithiophene spacer
+ CD4	CT1
+
+; between monomers
+  CT6	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	CT1	ST1
+ ST2    CT6     +CS4    +CS3
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+
+; Bithiophene backbone spacer
+ CD4    CD3     SD      CT1
+
+ CT3    CT4     ST1     CT1
+ CT4    ST1     CT1     CT2
+ ST1    CT1     CT2     CT3
+ CT1    CT2     CT3     CT4
+ CT2    CT3     CT4     ST1
+
+ CT3    ST2     CT6     CT5
+ ST2    CT6     CT5     CT4
+ CT6    CT5     CT4     CT3
+ CT5    CT4     CT3     ST2
+ CT4    CT3     ST2     CT6
+
+ CT3    CT4     CT2     ST2
+ CT4    ST1     CT3     CT5
+
+ CT2    CT3     CT1     HT2
+ CT5    CT4     CT6     HT5
+ CT1	CT2	ST1	CD4
+
+
+; between monomers
+ CS4	CS3	SS	-CT6
+ CT6	ST2	CT5	+CS4	
+
+
+
+

@@ -1,0 +1,11 @@
+TITLE     CSD ENTRY IM1509
+REMARK    THIS IS A SIMULATION BOX
+CRYST1  100.000  100.000  100.000  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  Clc  PC     1      49.998  50.008  49.992  1.00  0.00           C
+ATOM      2  Oa   PC     1      48.938  49.748  49.072  1.00  0.00           O
+ATOM      3  Ob   PC     1      50.628  48.758  50.302  1.00  0.00           O
+ATOM      4  Oc   PC     1      50.938  50.908  49.422  1.00  0.00           O
+ATOM      5  Od   PC     1      49.498  50.578  51.212  1.00  0.00           O
+TER
+ENDMDL

@@ -1,0 +1,196 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+
+
+[ TB ]
+; Monomer with Bromine terminals and fully glycolates side chains
+
+[ atoms ]
+; central atom
+ Bc	opls_516	-0.020	1
+
+; Ring 1
+ Caa	opls_145	+0.070	2 	
+ Cb	opls_145	-0.068	2
+ Hb	opls_146	+0.013	2
+ Cc	opls_145	-0.124	2
+ Hc	opls_146	+0.065	2
+ Cd	opls_145	-0.150	2
+ Hd	opls_146	+0.063	2
+ Ce	opls_145	-0.124	2
+ He	opls_146	+0.065	2
+ Cf	opls_145	-0.068	2
+ Hf	opls_146	+0.013	2
+
+; Ring 2
+ Cg	opls_145	+0.070	3
+ Ch	opls_145	-0.068	3
+ Hh	opls_146	+0.013	3
+ Ci	opls_145	-0.124	3
+ Hi	opls_146	+0.065	3
+ Cj	opls_145	-0.150	3
+ Hj	opls_146	+0.063	3
+ Ck	opls_145	-0.124	3
+ Hk	opls_146	+0.065	3
+ Cl	opls_145	-0.068	3
+ Hl	opls_146	+0.013	3
+
+; Ring 3
+ Cm	opls_145	+0.070	4
+ Cn	opls_145	-0.068	4
+ Hn	opls_146	+0.013	4
+ Co	opls_145	-0.124	4
+ Ho	opls_146	+0.065	4
+ Cp	opls_145	-0.150	4
+ Hp	opls_146	+0.063	4
+ Cq	opls_145	-0.124	4
+ Hq	opls_146	+0.065	4
+ Cr	opls_145	-0.068	4
+ Hr	opls_146	+0.013	4
+
+; Ring 4
+ Cs	opls_145	+0.070	5
+ Ct	opls_145	-0.068	5
+ Ht	opls_146	+0.013	5
+ Cu	opls_145	-0.124	5
+ Hu	opls_146	+0.065	5
+ Cvv	opls_145	-0.150	5
+ Hvv	opls_146	+0.063	5
+ Cw	opls_145	-0.124	5
+ Hw	opls_146	+0.065	5
+ Cx	opls_145	-0.068	5
+ Hx	opls_146	+0.013	5
+ 
+
+
+[ bonds ]
+; Central atom to rings
+ Bc	Caa
+ Bc	Cg
+ Bc	Cm
+ Bc	Cs
+
+; Ring 1
+ Caa	Cb
+ Cb	Cc
+ Cb	Hb
+ Cc	Cd
+ Cc	Hc
+ Cd	Ce
+ Cd	Hd
+ Ce	Cf
+ Ce	He
+ Cf	Caa
+ Cf	Hf
+
+; Ring 2
+ Cg	Ch
+ Ch	Ci
+ Ch	Hh
+ Ci	Cj
+ Ci	Hi
+ Cj	Ck
+ Cj	Hj
+ Ck	Cl
+ Ck	Hk
+ Cl	Cg
+ Cl	Hl	
+
+; Ring 3
+ Cm	Cn
+ Cn	Co
+ Cn	Hn
+ Co	Cp
+ Co	Ho
+ Cp	Cq
+ Cp	Hp
+ Cq	Cr
+ Cq	Hq
+ Cr	Cm
+ Cr	Hr
+ 
+; Ring 4
+ Cs	Ct
+ Ct	Cu
+ Ct	Ht
+ Cu	Cvv
+ Cu	Hu
+ Cvv	Cw
+ Cvv	Hvv
+ Cw	Cx
+ Cw	Hw
+ Cx	Cs
+ Cx	Hx
+ 
+ 
+[ Impropers ]
+ 
+; Ring 1
+ Caa	Cb	Cc	Cd
+ Cb	Cc	Cd	Ce
+ Cc	Cd	Ce	Cf
+ Cd	Ce	Cf	Caa
+ Ce	Cf	Caa	Cb
+ Cf	Caa	Cb	Cc
+ 
+ Cb	Cc	Caa	Hb
+ Cc	Cd	Cb	Hc
+ Cd	Ce	Cc	Hd
+ Ce	Cf	Cd	He
+ Cf	Caa	Ce	Hf
+  
+; Ring 2
+ Cg	Ch	Ci	Cj
+ Ch	Ci	Cj	Ck
+ Ci	Cj	Ck	Cl
+ Cj	Ck	Cl	Cg
+ Ck	Cl	Cg	Ch
+ Cl	Cg	Ch	Ci
+
+ Ch	Cg	Ci	Hh
+ Ci	Ch	Cj	Hi
+ Cj	Ci	Ck	Hj	
+ Ck	Cj	Cl	Hk
+ Cl	Ck	Cg	Hl
+ 
+; Ring 3
+ Cn	Co	Cp	Cq
+ Co	Cp	Cq	Cr
+ Cp	Cq	Cr	Cm
+ Cq	Cr	Cm	Cn
+ Cr	Cm	Cn	Co
+ Cm	Cn	Co	Cp
+
+ Cn	Cm	Co	Hn
+ Co	Cn	Cp	Ho
+ Cp	Co	Cq	Hp
+ Cq	Cp	Cr	Hq
+ Cr 	Cq	Cm	Hr
+ 
+; Ring 4
+ Cs	Ct	Cu	Cvv
+ Ct	Cu	Cvv	Cw
+ Cu	Cvv	Cw	Cx
+ Cvv	Cw	Cx	Cs
+ Cw	Cx	Cs	Ct
+ Cx	Cs	Ct	Cu
+ 
+ Ct	Cs	Cu	Ht
+ Cu	Ct	Cvv	Hu
+ Cvv	Cu	Cw	Hvv
+ Cw	Cvv	Cx	Hw
+ Cx	Cw	Cs	Hx
+ 
+ 
+ 
+

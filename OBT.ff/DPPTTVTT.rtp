@@ -1,0 +1,1770 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+[ D07 ]
+
+[ atoms ]
+
+; DPP
+Nx1           NN    -0.502	1	
+Cx2           CN    +0.243	1	
+Cx3           CN!   -0.192	1	
+Cx4           CN    +0.634	1	
+Ox4           ON    -0.543	1	
+Nx5           NN    -0.502	1	
+Cx6           CN    +0.243	1	
+Cx7           CN!   -0.192	1	
+Cx8           CN    +0.634	1	
+Ox8           ON    -0.543	1	
+
+; left thiophene
+CL1           CR    +0.086	1	
+CL2           CBU   +0.008	1	
+CL3           CR    -0.114	1	
+HL3           HR    +0.175	1	
+CL4           CR    +0.130	1	
+SL            SR    -0.118	1	
+
+; right thiophehene
+CR1           CR    +0.087	1	
+CR2           CBU   +0.009	1
+CR3           CR    -0.113	1
+HR3           HR    +0.175	1
+CR4           CR    +0.130	1
+SR            SR    -0.118	1
+
+; left left thiophene
+CS1           CR    +0.026	1
+CS2           CR    -0.049	1
+HS2           HR    +0.156	1
+CS3           CR    -0.202	1
+HS3           HR    +0.142	1
+CS4           CR    +0.146	1
+SS            SR    -0.097	1
+
+; Vinyl unit
+CV1	      CV   -0.129	1
+HV1	      HV   +0.184	1
+CV2	      CV   -0.129	1
+HV2	      HV   +0.184	1
+
+; right right thiophene
+CD1	      CR   +0.026	1
+CD2	      CR   -0.049	1
+HD2	      HR   +0.156	1
+CD3	      CR   -0.202	1
+HD3           HR   +0.142	1
+CD4	      CR   +0.146	1
+SD   	      SR   -0.097	1
+
+; top side chain stem
+Caa           CL!   +0.069	1	
+Haa           HL    +0.013	1	
+Hab           HL    +0.013	1	
+Cab           CL    +0.121	1	
+Hac           HL    -0.009	1	
+Had           HL    -0.009	1	
+Cac           CL    -0.040	1	
+Hae           HL    +0.003	1	
+Haf           HL    +0.003	1	
+Cad           CL    +0.025	1	
+Hag           HL    -0.016	1	
+Hah           HL    -0.016	1	
+Cae           CL    +0.066	1	
+Hai           HL    -0.025	1	
+Haj           HL    -0.025	1	
+Caf           CL    +0.023	1	
+Hak           HL    -0.018	1	
+Hal           HL    -0.018	1	
+Cag           CL    +0.115	1	
+Ham           HL    -0.016	1	
+
+; top side chain long branch
+Cba           CL   -0.117	1
+Hba           HL   +0.027	1
+Hbb           HL   -0.027	1
+Cbb           CL   +0.115	1
+Hbc           HL   -0.030	1
+Hbd           HL   -0.020	1
+Cbc           CL   +0.054	1
+Hbe           HL   -0.017	1
+Hbf           HL   -0.033	1
+Cbd           CL   -0.043	1
+Hbg           HL   -0.014	1
+Hbh           HL   +0.004	1
+Cbe           CL   +0.098	1
+Hbi           HL   -0.029	1
+Hbj           HL   -0.036	1
+Cbf           CL   -0.043	1
+Hbk           HL   -0.014	1
+Hbl           HL   +0.004	1
+Cbg           CL   +0.098	1
+Hbm           HL   -0.029	1
+Hbn           HL   -0.036	1
+Cbh           CL   +0.079	1
+Hbo           HL   -0.030	1
+Hbp           HL   -0.034	1
+Cbi           CL   -0.001	1
+Hbq           HL   -0.023	1
+Hbr           HL   -0.019	1
+Cbj           CL   +0.027	1
+Hbs           HL   -0.017	1
+Hbt           HL   -0.021	1
+Cbk           CL   +0.225	1
+Hbu           HL   -0.057	1
+Hbv           HL   -0.058	1
+Cbl           CL   -0.155	1
+Hbw           HL   +0.021	1
+Hbx           HL   +0.019	1
+Hby           HL   +0.023	1
+
+; top side chain short branch
+Cca           CL   -0.117	1	
+Hca           HL   +0.027	1	
+Hcb           HL   -0.027	1	
+Ccb           CL   +0.115	1	
+Hcc           HL   -0.030	1	
+Hcd           HL   -0.020	1	
+Ccc           CL   +0.054	1	
+Hce           HL   -0.017	1	
+Hcf           HL   -0.033	1	
+Ccd           CL   -0.043	1	
+Hcg           HL   -0.014	1	
+Hch           HL   +0.004	1	
+Cce           CL   +0.098	1	
+Hci           HL   -0.029	1	
+Hcj           HL   -0.036	1	
+Ccf           CL   +0.079	1	
+Hck           HL   -0.030	1	
+Hcl           HL   -0.034	1	
+Ccg           CL   -0.001	1	
+Hcm           HL   -0.023	1	
+Hcn           HL   -0.019	1	
+Cch           CL   +0.027	1	
+Hco           HL   -0.017	1	
+Hcp           HL   -0.021	1	
+Cci           CL   +0.225	1	
+Hcq           HL   -0.057	1	
+Hcr           HL   -0.059	1	
+Ccj           CL   -0.156	1	
+Hcs           HL   +0.020	1	
+Hct           HL   +0.018	1	
+Hcu           HL   +0.022	1	
+
+; bottom side chain stem
+Cda           CL!   +0.068	1
+Hda           HL    +0.012	1
+Hdb           HL    +0.012	1
+Cdb           CL    +0.120	1
+Hdc           HL    -0.010	1
+Hdd           HL    -0.010	1
+Cdc           CL    -0.041	1
+Hde           HL    +0.002	1
+Hdf           HL    +0.002	1
+Cdd           CL    +0.024	1
+Hdg           HL    -0.017	1
+Hdh           HL    -0.017	1
+Cde           CL    +0.065	1
+Hdi           HL    -0.026	1
+Hdj           HL    -0.026	1
+Cdf           CL    +0.022	1
+Hdk           HL    -0.019	1
+Hdl           HL    -0.019	1
+Cdg           CL    +0.114	1
+Hdm           HL    -0.017	1
+
+; bottom side chain long branch
+Cea           CL   -0.118	1
+Hea           HL   +0.026	1
+Heb           HL   -0.028	1
+Ceb           CL   +0.114	1
+Hec           HL   -0.031	1
+Hed           HL   -0.021	1
+Cec           CL   +0.053	1
+Hee           HL   -0.018	1
+Hef           HL   -0.034	1
+Ced           CL   -0.044	1
+Heg           HL   -0.015	1
+Heh           HL   +0.003	1
+Cee           CL   +0.097	1
+Hei           HL   -0.030	1
+Hej           HL   -0.037	1
+Cef           CL   -0.044	1
+Hek           HL   -0.015	1
+Hel           HL   +0.003	1
+Ceg           CL   +0.097	1
+Hem           HL   -0.030	1
+Hen           HL   -0.037	1
+Ceh           CL   +0.078	1
+Heo           HL   -0.031	1
+Hep           HL   -0.035	1
+Cei           CL   -0.002	1
+Heq           HL   -0.024	1
+Her           HL   -0.020	1
+Cej           CL   +0.026	1
+Hes           HL   -0.018	1
+Het           HL   -0.022	1
+Cek           CL   +0.224	1
+Heu           HL   -0.058	1
+Hev           HL   -0.059	1
+Cel           CL   -0.156	1
+Hew           HL   +0.020	1
+Hex           HL   +0.018	1
+Hey           HL   +0.022	1
+
+; bottom side chain short branch
+Cfa           CL   -0.118	1
+Hfa           HL   +0.026	1
+Hfb           HL   -0.028	1
+Cfb           CL   +0.114	1
+Hfc           HL   -0.031	1
+Hfd           HL   -0.021	1
+Cfc           CL   +0.053	1
+Hfe           HL   -0.018	1
+Hff           HL   -0.034	1
+Cfd           CL   -0.044	1
+Hfg           HL   -0.015	1
+Hfh           HL   +0.003	1
+Cfe           CL   +0.097	1
+Hfi           HL   -0.030	1
+Hfj           HL   -0.037	1
+Cff           CL   +0.078	1
+Hfk           HL   -0.031	1
+Hfl           HL   -0.035	1
+Cfg           CL   -0.002	1
+Hfm           HL   -0.024	1
+Hfn           HL   -0.020	1
+Cfh           CL   +0.026	1
+Hfo           HL   -0.018	1
+Hfp           HL   -0.022	1
+Cfi           CL   +0.224	1
+Hfq           HL   -0.058	1
+Hfr           HL   -0.059	1
+Cfj           CL   -0.156	1
+Hfs           HL   +0.020	1
+Hft           HL   +0.018	1
+Hfu           HL   +0.022	1
+
+[ bonds ]
+
+; DPP
+    Nx1    Cx2   
+    Nx1    Cx8   
+    Nx1    Cda   
+    Cx2    Cx3   
+    Cx2    CL1   
+    Cx3    Cx4   
+    Cx3    Cx7   
+    Cx4    Ox4   
+    Cx4    Nx5   
+    Nx5    Cx6   
+    Nx5    Caa   
+    Cx6    Cx7   
+    Cx6    CR1   
+    Cx7    Cx8   
+    Cx8    Ox8   
+
+; left thiophene
+    CL1    CL2   
+    CL1     SL   
+    CL2    CL3   
+    CL3    HL3   
+    CL3    CL4   
+    CL4     SL   
+    CL4    CS1   
+
+; right thiophene
+    CR1    CR2   
+    CR1     SR   
+    CR2    CR3   
+    CR3    HR3   
+    CR3    CR4   
+    CR4     SR   
+    CR4   +CD1   
+
+; left left thiophene
+    CS1    CS2   
+    CS1     SS   
+    CS2    HS2   
+    CS2    CS3   
+    CS3    HS3   
+    CS3    CS4   
+    CS4     SS
+    CS4	   CV1
+
+; Vinyl
+    CV1    CV2
+    CV1    HV1
+    CV2    HV2
+    CV2    CD4
+
+; right right thiophene
+    CD1    CD2   
+    CD1     SD   
+    CD2    HD2   
+    CD2    CD3   
+    CD3    HD3   
+    CD3    CD4   
+    CD4     SD
+       
+; top side chain stem
+    Caa    Haa   
+    Caa    Hab   
+    Caa    Cab   
+    Cab    Hac   
+    Cab    Had   
+    Cab    Cac   
+    Cac    Hae   
+    Cac    Haf   
+    Cac    Cad   
+    Cad    Hag   
+    Cad    Hah   
+    Cad    Cae   
+    Cae    Hai   
+    Cae    Haj   
+    Cae    Caf   
+    Caf    Hak   
+    Caf    Hal   
+    Caf    Cag   
+    Cag    Ham   
+    Cag    Cba   
+    Cag    Cca   
+
+; top side chain long branch
+    Cba    Hba   
+    Cba    Hbb   
+    Cba    Cbb   
+    Cbb    Hbc   
+    Cbb    Hbd   
+    Cbb    Cbc   
+    Cbc    Hbe   
+    Cbc    Hbf   
+    Cbc    Cbd   
+    Cbd    Hbg   
+    Cbd    Hbh   
+    Cbd    Cbe   
+    Cbe    Hbi   
+    Cbe    Hbj   
+    Cbe    Cbf   
+    Cbf    Hbk   
+    Cbf    Hbl   
+    Cbf    Cbg   
+    Cbg    Hbm   
+    Cbg    Hbn   
+    Cbg    Cbh   
+    Cbh    Hbo   
+    Cbh    Hbp   
+    Cbh    Cbi   
+    Cbi    Hbq   
+    Cbi    Hbr   
+    Cbi    Cbj   
+    Cbj    Hbs   
+    Cbj    Hbt   
+    Cbj    Cbk   
+    Cbk    Hbu   
+    Cbk    Hbv   
+    Cbk    Cbl   
+    Cbl    Hbw   
+    Cbl    Hbx   
+    Cbl    Hby   
+
+; top side chain short branch
+    Cca    Hca   
+    Cca    Hcb   
+    Cca    Ccb   
+    Ccb    Hcc   
+    Ccb    Hcd   
+    Ccb    Ccc   
+    Ccc    Hce   
+    Ccc    Hcf   
+    Ccc    Ccd   
+    Ccd    Hcg   
+    Ccd    Hch   
+    Ccd    Cce   
+    Cce    Hci   
+    Cce    Hcj   
+    Cce    Ccf   
+    Ccf    Hck   
+    Ccf    Hcl   
+    Ccf    Ccg   
+    Ccg    Hcm   
+    Ccg    Hcn   
+    Ccg    Cch   
+    Cch    Hco   
+    Cch    Hcp   
+    Cch    Cci   
+    Cci    Hcq   
+    Cci    Hcr   
+    Cci    Ccj   
+    Ccj    Hcs   
+    Ccj    Hct   
+    Ccj    Hcu   
+
+; bottom side chain stem
+    Cda    Hda   
+    Cda    Hdb   
+    Cda    Cdb   
+    Cdb    Hdc   
+    Cdb    Hdd   
+    Cdb    Cdc   
+    Cdc    Hde   
+    Cdc    Hdf   
+    Cdc    Cdd   
+    Cdd    Hdg   
+    Cdd    Hdh   
+    Cdd    Cde   
+    Cde    Hdi   
+    Cde    Hdj   
+    Cde    Cdf   
+    Cdf    Hdk   
+    Cdf    Hdl   
+    Cdf    Cdg   
+    Cdg    Hdm   
+    Cdg    Cea   
+    Cdg    Cfa   
+
+; bottom side chain long branch
+    Cea    Hea   
+    Cea    Heb   
+    Cea    Ceb   
+    Ceb    Hec   
+    Ceb    Hed   
+    Ceb    Cec   
+    Cec    Hee   
+    Cec    Hef   
+    Cec    Ced   
+    Ced    Heg   
+    Ced    Heh   
+    Ced    Cee   
+    Cee    Hei   
+    Cee    Hej   
+    Cee    Cef   
+    Cef    Hek   
+    Cef    Hel   
+    Cef    Ceg   
+    Ceg    Hem   
+    Ceg    Hen   
+    Ceg    Ceh   
+    Ceh    Heo   
+    Ceh    Hep   
+    Ceh    Cei   
+    Cei    Heq   
+    Cei    Her   
+    Cei    Cej   
+    Cej    Hes   
+    Cej    Het   
+    Cej    Cek   
+    Cek    Heu   
+    Cek    Hev   
+    Cek    Cel   
+    Cel    Hew   
+    Cel    Hex   
+    Cel    Hey   
+
+; bottom side chain long branch
+    Cfa    Hfa   
+    Cfa    Hfb   
+    Cfa    Cfb   
+    Cfb    Hfc   
+    Cfb    Hfd   
+    Cfb    Cfc   
+    Cfc    Hfe   
+    Cfc    Hff   
+    Cfc    Cfd   
+    Cfd    Hfg   
+    Cfd    Hfh   
+    Cfd    Cfe   
+    Cfe    Hfi   
+    Cfe    Hfj   
+    Cfe    Cff   
+    Cff    Hfk   
+    Cff    Hfl   
+    Cff    Cfg   
+    Cfg    Hfm   
+    Cfg    Hfn   
+    Cfg    Cfh   
+    Cfh    Hfo   
+    Cfh    Hfp   
+    Cfh    Cfi   
+    Cfi    Hfq   
+    Cfi    Hfr   
+    Cfi    Cfj   
+    Cfj    Hfs   
+    Cfj    Hft   
+    Cfj    Hfu   
+
+[ exclusions ]
+ Ox4	CL2
+ Ox4	SL
+ Ox8	CR2
+ Ox8	SR
+
+[ dihedrals ]
+ SL	CL4	CS1	CS2
+ CL2	CL1	Cx2	Cx3
+ Cx7	Cx6	CR1	CR2
+ SS	CS4	CV1	CV2
+ SD	CD4	CV2	CV1
+ SR	CR4	+CD1	+CD2
+
+[ Impropers ]
+; DPP unit
+ Nx1	Cx2	Cx3	Cx7
+ Cx2	Cx3	Cx7	Cx8
+ Cx3	Cx7	Cx8	Nx1
+ Cx7	Cx8	Nx1	Cx2
+ Cx8	Nx1	Cx2	Cx3
+ Cx2	Nx1	Cx3	CL1
+ Nx1	Cx8	Cx2	Cda
+ Cx8	Cx7	Nx1	Ox8
+
+ Cx3	Cx7	Cx6	Nx5
+ Cx7	Cx6	Nx5	Cx4
+ Cx6	Nx5	Cx4	Cx3
+ Nx5	Cx4	Cx3	Cx7
+ Cx4	Cx3	Cx7	Cx6
+ Cx6	Cx7	Nx5	CR1
+ Nx5	Cx6	Cx4	Caa
+ Cx4	Nx5	Cx3	Ox4
+
+ Cx3	Cx4	Cx2	Cx7
+ Cx7	Cx8	Cx6	Cx3
+ 
+; left thiophene
+ CL1	CL2	CL3	CL4
+ CL2	CL3	CL4	SL
+ CL3	CL4	SL	CL1
+ CL4	SL	CL1	CL2
+ SL	CL1	CL2	CL3
+
+ CL1	SL	CL2	Cx2
+ CL3	CL2	CL4	HL3
+ CL4	CL3	SL	CS1
+
+; right thiophene
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	SR
+ CR3	CR4	SR	CR1
+ CR4	SR	CR1	CR2
+ SR	CR1	CR2	CR3
+
+ CR1	SR	CR2	Cx6
+ CR3	CR2	CR4	HR3
+ CR4	CR3	SR	+CD1
+
+; left left thiophene
+ CS1	CS2	CS3	CS4
+ CS2	CS3	CS4	SS
+ CS3	CS4	SS	CS1
+ CS4	SS	CS1	CS2
+ SS	CS1	CS2	CS3
+
+ CS1	SS	CS2	CL4
+ CS2	CS1	CS3	HS2
+ CS3	CS2	CS4	HS3
+ CS4	SS	CS3	CV1
+
+; Vinyl
+ CV1	HV1	CV2	CS4
+ CV2	HV2	CV1	CD4
+ 
+; right right thiophene
+ CD1	CD2	CD3	CD4
+ CD2	CD3	CD4	SD
+ CD3	CD4	SD	CD1
+ CD4	SD	CD1	CD2
+ SD	CD1	CD2	CD3
+
+ CD2	CD1	CD3	HD2
+ CD3	CD2	CD4	HD3
+ CD4	SD	CD3	CV2
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ D08 ]
+
+[ atoms ]
+
+; DPP
+Nx1           NN    -0.502	1	
+Cx2           CN    +0.243	1	
+Cx3           CN!   -0.192	1	
+Cx4           CN    +0.634	1	
+Ox4           ON    -0.543	1	
+Nx5           NN    -0.502	1	
+Cx6           CN    +0.243	1	
+Cx7           CN!   -0.192	1	
+Cx8           CN    +0.634	1	
+Ox8           ON    -0.543	1	
+
+; left thiophene
+CL1           CR    +0.086	1	
+CL2           CBU   +0.008	1	
+CL3           CR    -0.114	1	
+HL3           HR    +0.175	1	
+CL4           CR    +0.130	1	
+SL            SR    -0.118	1	
+
+; right thiophehene
+CR1           CR    +0.087	1	
+CR2           CBU   +0.009	1
+CR3           CR    -0.113	1
+HR3           HR    +0.175	1
+CR4           CR    +0.130	1
+SR            SR    -0.118	1
+
+; left left thiophene
+CS1           CR    +0.026	1
+CS2           CR    -0.049	1
+HS2           HR    +0.156	1
+CS3           CR    -0.202	1
+HS3           HR    +0.142	1
+CS4           CR    +0.146	1
+SS            SR    -0.097	1
+
+; Vinyl unit
+CV1	      CV   -0.129	1
+HV1	      HV   +0.184	1
+CV2	      CV   -0.129	1
+HV2	      HV   +0.184	1
+
+; right right thiophene
+CD1	      CR   +0.026	1
+CD2	      CR   -0.049	1
+HD2	      HR   +0.156	1
+CD3	      CR   -0.202	1
+HD3           HR   +0.142	1
+CD4	      CR   +0.146	1
+SD   	      SR   -0.097	1
+
+; top side chain stem
+Caa           CL!   +0.069	1	
+Haa           HL    +0.013	1	
+Hab           HL    +0.013	1	
+Cab           CL    +0.121	1	
+Hac           HL    -0.009	1	
+Had           HL    -0.009	1	
+Cac           CL    -0.040	1	
+Hae           HL    +0.003	1	
+Haf           HL    +0.003	1	
+Cad           CL    +0.025	1	
+Hag           HL    -0.016	1	
+Hah           HL    -0.016	1	
+Cae           CL    +0.066	1	
+Hai           HL    -0.025	1	
+Haj           HL    -0.025	1	
+Caf           CL    +0.023	1	
+Hak           HL    -0.018	1	
+Hal           HL    -0.018	1	
+Cag           CL    +0.115	1	
+Ham           HL    -0.016	1	
+
+; top side chain long branch
+Cba           CL   -0.117	1
+Hba           HL   +0.027	1
+Hbb           HL   -0.027	1
+Cbb           CL   +0.115	1
+Hbc           HL   -0.030	1
+Hbd           HL   -0.020	1
+Cbc           CL   +0.054	1
+Hbe           HL   -0.017	1
+Hbf           HL   -0.033	1
+Cbd           CL   -0.043	1
+Hbg           HL   -0.014	1
+Hbh           HL   +0.004	1
+Cbe           CL   +0.098	1
+Hbi           HL   -0.029	1
+Hbj           HL   -0.036	1
+Cbf           CL   -0.043	1
+Hbk           HL   -0.014	1
+Hbl           HL   +0.004	1
+Cbg           CL   +0.098	1
+Hbm           HL   -0.029	1
+Hbn           HL   -0.036	1
+Cbh           CL   +0.079	1
+Hbo           HL   -0.030	1
+Hbp           HL   -0.034	1
+Cbi           CL   -0.001	1
+Hbq           HL   -0.023	1
+Hbr           HL   -0.019	1
+Cbj           CL   +0.027	1
+Hbs           HL   -0.017	1
+Hbt           HL   -0.021	1
+Cbk           CL   +0.225	1
+Hbu           HL   -0.057	1
+Hbv           HL   -0.058	1
+Cbl           CL   -0.155	1
+Hbw           HL   +0.021	1
+Hbx           HL   +0.019	1
+Hby           HL   +0.023	1
+
+; top side chain short branch
+Cca           CL   -0.117	1	
+Hca           HL   +0.027	1	
+Hcb           HL   -0.027	1	
+Ccb           CL   +0.115	1	
+Hcc           HL   -0.030	1	
+Hcd           HL   -0.020	1	
+Ccc           CL   +0.054	1	
+Hce           HL   -0.017	1	
+Hcf           HL   -0.033	1	
+Ccd           CL   -0.043	1	
+Hcg           HL   -0.014	1	
+Hch           HL   +0.004	1	
+Cce           CL   +0.098	1	
+Hci           HL   -0.029	1	
+Hcj           HL   -0.036	1	
+Ccf           CL   +0.079	1	
+Hck           HL   -0.030	1	
+Hcl           HL   -0.034	1	
+Ccg           CL   -0.001	1	
+Hcm           HL   -0.023	1	
+Hcn           HL   -0.019	1	
+Cch           CL   +0.027	1	
+Hco           HL   -0.017	1	
+Hcp           HL   -0.021	1	
+Cci           CL   +0.225	1	
+Hcq           HL   -0.057	1	
+Hcr           HL   -0.059	1	
+Ccj           CL   -0.156	1	
+Hcs           HL   +0.020	1	
+Hct           HL   +0.018	1	
+Hcu           HL   +0.022	1	
+
+; bottom side chain stem
+Cda           CL!   +0.068	1
+Hda           HL    +0.012	1
+Hdb           HL    +0.012	1
+Cdb           CL    +0.120	1
+Hdc           HL    -0.010	1
+Hdd           HL    -0.010	1
+Cdc           CL    -0.041	1
+Hde           HL    +0.002	1
+Hdf           HL    +0.002	1
+Cdd           CL    +0.024	1
+Hdg           HL    -0.017	1
+Hdh           HL    -0.017	1
+Cde           CL    +0.065	1
+Hdi           HL    -0.026	1
+Hdj           HL    -0.026	1
+Cdf           CL    +0.022	1
+Hdk           HL    -0.019	1
+Hdl           HL    -0.019	1
+Cdg           CL    +0.114	1
+Hdm           HL    -0.017	1
+
+; bottom side chain long branch
+Cea           CL   -0.118	1
+Hea           HL   +0.026	1
+Heb           HL   -0.028	1
+Ceb           CL   +0.114	1
+Hec           HL   -0.031	1
+Hed           HL   -0.021	1
+Cec           CL   +0.053	1
+Hee           HL   -0.018	1
+Hef           HL   -0.034	1
+Ced           CL   -0.044	1
+Heg           HL   -0.015	1
+Heh           HL   +0.003	1
+Cee           CL   +0.097	1
+Hei           HL   -0.030	1
+Hej           HL   -0.037	1
+Cef           CL   -0.044	1
+Hek           HL   -0.015	1
+Hel           HL   +0.003	1
+Ceg           CL   +0.097	1
+Hem           HL   -0.030	1
+Hen           HL   -0.037	1
+Ceh           CL   +0.078	1
+Heo           HL   -0.031	1
+Hep           HL   -0.035	1
+Cei           CL   -0.002	1
+Heq           HL   -0.024	1
+Her           HL   -0.020	1
+Cej           CL   +0.026	1
+Hes           HL   -0.018	1
+Het           HL   -0.022	1
+Cek           CL   +0.224	1
+Heu           HL   -0.058	1
+Hev           HL   -0.059	1
+Cel           CL   -0.156	1
+Hew           HL   +0.020	1
+Hex           HL   +0.018	1
+Hey           HL   +0.022	1
+
+; bottom side chain short branch
+Cfa           CL   -0.118	1
+Hfa           HL   +0.026	1
+Hfb           HL   -0.028	1
+Cfb           CL   +0.114	1
+Hfc           HL   -0.031	1
+Hfd           HL   -0.021	1
+Cfc           CL   +0.053	1
+Hfe           HL   -0.018	1
+Hff           HL   -0.034	1
+Cfd           CL   -0.044	1
+Hfg           HL   -0.015	1
+Hfh           HL   +0.003	1
+Cfe           CL   +0.097	1
+Hfi           HL   -0.030	1
+Hfj           HL   -0.037	1
+Cff           CL   +0.078	1
+Hfk           HL   -0.031	1
+Hfl           HL   -0.035	1
+Cfg           CL   -0.002	1
+Hfm           HL   -0.024	1
+Hfn           HL   -0.020	1
+Cfh           CL   +0.026	1
+Hfo           HL   -0.018	1
+Hfp           HL   -0.022	1
+Cfi           CL   +0.224	1
+Hfq           HL   -0.058	1
+Hfr           HL   -0.059	1
+Cfj           CL   -0.156	1
+Hfs           HL   +0.020	1
+Hft           HL   +0.018	1
+Hfu           HL   +0.022	1
+
+[ bonds ]
+
+; DPP
+    Nx1    Cx2   
+    Nx1    Cx8   
+    Nx1    Cda   
+    Cx2    Cx3   
+    Cx2    CL1   
+    Cx3    Cx4   
+    Cx3    Cx7   
+    Cx4    Ox4   
+    Cx4    Nx5   
+    Nx5    Cx6   
+    Nx5    Caa   
+    Cx6    Cx7   
+    Cx6    CR1   
+    Cx7    Cx8   
+    Cx8    Ox8   
+
+; left thiophene
+    CL1    CL2   
+    CL1     SL   
+    CL2    CL3   
+    CL3    HL3   
+    CL3    CL4   
+    CL4     SL   
+    CL4    CS1   
+
+; right thiophene
+    CR1    CR2   
+    CR1     SR   
+    CR2    CR3   
+    CR3    HR3   
+    CR3    CR4   
+    CR4     SR   
+    CR4   +CD1   
+
+; left left thiophene
+    CS1    CS2   
+    CS1     SS   
+    CS2    HS2   
+    CS2    CS3   
+    CS3    HS3   
+    CS3    CS4   
+    CS4     SS
+    CS4	   CV1
+
+; Vinyl
+    CV1    CV2
+    CV1    HV1
+    CV2    HV2
+    CV2    CD4
+
+; right right thiophene
+    CD1    CD2   
+    CD1     SD   
+    CD2    HD2   
+    CD2    CD3   
+    CD3    HD3   
+    CD3    CD4   
+    CD4     SD
+       
+; top side chain stem
+    Caa    Haa   
+    Caa    Hab   
+    Caa    Cab   
+    Cab    Hac   
+    Cab    Had   
+    Cab    Cac   
+    Cac    Hae   
+    Cac    Haf   
+    Cac    Cad   
+    Cad    Hag   
+    Cad    Hah   
+    Cad    Cae   
+    Cae    Hai   
+    Cae    Haj   
+    Cae    Caf   
+    Caf    Hak   
+    Caf    Hal   
+    Caf    Cag   
+    Cag    Ham   
+    Cag    Cba   
+    Cag    Cca   
+
+; top side chain long branch
+    Cba    Hba   
+    Cba    Hbb   
+    Cba    Cbb   
+    Cbb    Hbc   
+    Cbb    Hbd   
+    Cbb    Cbc   
+    Cbc    Hbe   
+    Cbc    Hbf   
+    Cbc    Cbd   
+    Cbd    Hbg   
+    Cbd    Hbh   
+    Cbd    Cbe   
+    Cbe    Hbi   
+    Cbe    Hbj   
+    Cbe    Cbf   
+    Cbf    Hbk   
+    Cbf    Hbl   
+    Cbf    Cbg   
+    Cbg    Hbm   
+    Cbg    Hbn   
+    Cbg    Cbh   
+    Cbh    Hbo   
+    Cbh    Hbp   
+    Cbh    Cbi   
+    Cbi    Hbq   
+    Cbi    Hbr   
+    Cbi    Cbj   
+    Cbj    Hbs   
+    Cbj    Hbt   
+    Cbj    Cbk   
+    Cbk    Hbu   
+    Cbk    Hbv   
+    Cbk    Cbl   
+    Cbl    Hbw   
+    Cbl    Hbx   
+    Cbl    Hby   
+
+; top side chain short branch
+    Cca    Hca   
+    Cca    Hcb   
+    Cca    Ccb   
+    Ccb    Hcc   
+    Ccb    Hcd   
+    Ccb    Ccc   
+    Ccc    Hce   
+    Ccc    Hcf   
+    Ccc    Ccd   
+    Ccd    Hcg   
+    Ccd    Hch   
+    Ccd    Cce   
+    Cce    Hci   
+    Cce    Hcj   
+    Cce    Ccf   
+    Ccf    Hck   
+    Ccf    Hcl   
+    Ccf    Ccg   
+    Ccg    Hcm   
+    Ccg    Hcn   
+    Ccg    Cch   
+    Cch    Hco   
+    Cch    Hcp   
+    Cch    Cci   
+    Cci    Hcq   
+    Cci    Hcr   
+    Cci    Ccj   
+    Ccj    Hcs   
+    Ccj    Hct   
+    Ccj    Hcu   
+
+; bottom side chain stem
+    Cda    Hda   
+    Cda    Hdb   
+    Cda    Cdb   
+    Cdb    Hdc   
+    Cdb    Hdd   
+    Cdb    Cdc   
+    Cdc    Hde   
+    Cdc    Hdf   
+    Cdc    Cdd   
+    Cdd    Hdg   
+    Cdd    Hdh   
+    Cdd    Cde   
+    Cde    Hdi   
+    Cde    Hdj   
+    Cde    Cdf   
+    Cdf    Hdk   
+    Cdf    Hdl   
+    Cdf    Cdg   
+    Cdg    Hdm   
+    Cdg    Cea   
+    Cdg    Cfa   
+
+; bottom side chain long branch
+    Cea    Hea   
+    Cea    Heb   
+    Cea    Ceb   
+    Ceb    Hec   
+    Ceb    Hed   
+    Ceb    Cec   
+    Cec    Hee   
+    Cec    Hef   
+    Cec    Ced   
+    Ced    Heg   
+    Ced    Heh   
+    Ced    Cee   
+    Cee    Hei   
+    Cee    Hej   
+    Cee    Cef   
+    Cef    Hek   
+    Cef    Hel   
+    Cef    Ceg   
+    Ceg    Hem   
+    Ceg    Hen   
+    Ceg    Ceh   
+    Ceh    Heo   
+    Ceh    Hep   
+    Ceh    Cei   
+    Cei    Heq   
+    Cei    Her   
+    Cei    Cej   
+    Cej    Hes   
+    Cej    Het   
+    Cej    Cek   
+    Cek    Heu   
+    Cek    Hev   
+    Cek    Cel   
+    Cel    Hew   
+    Cel    Hex   
+    Cel    Hey   
+
+; bottom side chain long branch
+    Cfa    Hfa   
+    Cfa    Hfb   
+    Cfa    Cfb   
+    Cfb    Hfc   
+    Cfb    Hfd   
+    Cfb    Cfc   
+    Cfc    Hfe   
+    Cfc    Hff   
+    Cfc    Cfd   
+    Cfd    Hfg   
+    Cfd    Hfh   
+    Cfd    Cfe   
+    Cfe    Hfi   
+    Cfe    Hfj   
+    Cfe    Cff   
+    Cff    Hfk   
+    Cff    Hfl   
+    Cff    Cfg   
+    Cfg    Hfm   
+    Cfg    Hfn   
+    Cfg    Cfh   
+    Cfh    Hfo   
+    Cfh    Hfp   
+    Cfh    Cfi   
+    Cfi    Hfq   
+    Cfi    Hfr   
+    Cfi    Cfj   
+    Cfj    Hfs   
+    Cfj    Hft   
+    Cfj    Hfu   
+
+[ exclusions ]
+ Ox4	CL2
+ Ox4	SL
+ Ox8	CR2
+ Ox8	SR
+
+[ dihedrals ]
+ SL	CL4	CS1	CS2
+ CL2	CL1	Cx2	Cx3
+ Cx7	Cx6	CR1	CR2
+ SS	CS4	CV1	CV2
+ SD	CD4	CV2	CV1
+ SR	CR4	+CD1	+CD2
+
+[ Impropers ]
+; DPP unit
+ Nx1	Cx2	Cx3	Cx7
+ Cx2	Cx3	Cx7	Cx8
+ Cx3	Cx7	Cx8	Nx1
+ Cx7	Cx8	Nx1	Cx2
+ Cx8	Nx1	Cx2	Cx3
+ Cx2	Nx1	Cx3	CL1
+ Nx1	Cx8	Cx2	Cda
+ Cx8	Cx7	Nx1	Ox8
+
+ Cx3	Cx7	Cx6	Nx5
+ Cx7	Cx6	Nx5	Cx4
+ Cx6	Nx5	Cx4	Cx3
+ Nx5	Cx4	Cx3	Cx7
+ Cx4	Cx3	Cx7	Cx6
+ Cx6	Cx7	Nx5	CR1
+ Nx5	Cx6	Cx4	Caa
+ Cx4	Nx5	Cx3	Ox4
+
+ Cx3	Cx4	Cx2	Cx7
+ Cx7	Cx8	Cx6	Cx3
+ 
+; left thiophene
+ CL1	CL2	CL3	CL4
+ CL2	CL3	CL4	SL
+ CL3	CL4	SL	CL1
+ CL4	SL	CL1	CL2
+ SL	CL1	CL2	CL3
+
+ CL1	SL	CL2	Cx2
+ CL3	CL2	CL4	HL3
+ CL4	CL3	SL	CS1
+
+; right thiophene
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	SR
+ CR3	CR4	SR	CR1
+ CR4	SR	CR1	CR2
+ SR	CR1	CR2	CR3
+
+ CR1	SR	CR2	Cx6
+ CR3	CR2	CR4	HR3
+ CR4	CR3	SR	+CD1
+
+; left left thiophene
+ CS1	CS2	CS3	CS4
+ CS2	CS3	CS4	SS
+ CS3	CS4	SS	CS1
+ CS4	SS	CS1	CS2
+ SS	CS1	CS2	CS3
+
+ CS1	SS	CS2	CL4
+ CS2	CS1	CS3	HS2
+ CS3	CS2	CS4	HS3
+ CS4	SS	CS3	CV1
+
+; Vinyl
+ CV1	HV1	CV2	CS4
+ CV2	HV2	CV1	CD4
+ 
+; right right thiophene
+ CD1	CD2	CD3	CD4
+ CD2	CD3	CD4	SD
+ CD3	CD4	SD	CD1
+ CD4	SD	CD1	CD2
+ SD	CD1	CD2	CD3
+
+ CD2	CD1	CD3	HD2
+ CD3	CD2	CD4	HD3
+ CD4	SD	CD3	CV2
+ CD1	CD2	SD	-CR4
+
+
+
+
+
+
+
+[ D09 ]
+
+[ atoms ]
+
+; DPP
+Nx1           NN    -0.502	1	
+Cx2           CN    +0.243	1	
+Cx3           CN!   -0.192	1	
+Cx4           CN    +0.634	1	
+Ox4           ON    -0.543	1	
+Nx5           NN    -0.502	1	
+Cx6           CN    +0.243	1	
+Cx7           CN!   -0.192	1	
+Cx8           CN    +0.634	1	
+Ox8           ON    -0.543	1	
+
+; left thiophene
+CL1           CR    +0.086	1	
+CL2           CBU   +0.008	1	
+CL3           CR    -0.114	1	
+HL3           HR    +0.175	1	
+CL4           CR    +0.130	1	
+SL            SR    -0.118	1	
+
+; right thiophehene
+CR1           CR    +0.087	1	
+CR2           CBU   +0.009	1
+CR3           CR    -0.113	1
+HR3           HR    +0.175	1
+CR4           CR    +0.130	1
+SR            SR    -0.118	1
+
+; left left thiophene
+CS1           CR    +0.026	1
+CS2           CR    -0.049	1
+HS2           HR    +0.156	1
+CS3           CR    -0.202	1
+HS3           HR    +0.142	1
+CS4           CR    +0.146	1
+SS            SR    -0.097	1
+
+; Vinyl unit
+CV1	      CV   -0.129	1
+HV1	      HV   +0.184	1
+CV2	      CV   -0.129	1
+HV2	      HV   +0.184	1
+
+; right right thiophene
+CD1	      CR   +0.026	1
+CD2	      CR   -0.049	1
+HD2	      HR   +0.156	1
+CD3	      CR   -0.202	1
+HD3           HR   +0.142	1
+CD4	      CR   +0.146	1
+SD   	      SR   -0.097	1
+
+; top side chain stem
+Caa           CL!   +0.069	1	
+Haa           HL    +0.013	1	
+Hab           HL    +0.013	1	
+Cab           CL    +0.121	1	
+Hac           HL    -0.009	1	
+Had           HL    -0.009	1	
+Cac           CL    -0.040	1	
+Hae           HL    +0.003	1	
+Haf           HL    +0.003	1	
+Cad           CL    +0.025	1	
+Hag           HL    -0.016	1	
+Hah           HL    -0.016	1	
+Cae           CL    +0.066	1	
+Hai           HL    -0.025	1	
+Haj           HL    -0.025	1	
+Caf           CL    +0.023	1	
+Hak           HL    -0.018	1	
+Hal           HL    -0.018	1	
+Cag           CL    +0.115	1	
+Ham           HL    -0.016	1	
+
+; top side chain long branch
+Cba           CL   -0.117	1
+Hba           HL   +0.027	1
+Hbb           HL   -0.027	1
+Cbb           CL   +0.115	1
+Hbc           HL   -0.030	1
+Hbd           HL   -0.020	1
+Cbc           CL   +0.054	1
+Hbe           HL   -0.017	1
+Hbf           HL   -0.033	1
+Cbd           CL   -0.043	1
+Hbg           HL   -0.014	1
+Hbh           HL   +0.004	1
+Cbe           CL   +0.098	1
+Hbi           HL   -0.029	1
+Hbj           HL   -0.036	1
+Cbf           CL   -0.043	1
+Hbk           HL   -0.014	1
+Hbl           HL   +0.004	1
+Cbg           CL   +0.098	1
+Hbm           HL   -0.029	1
+Hbn           HL   -0.036	1
+Cbh           CL   +0.079	1
+Hbo           HL   -0.030	1
+Hbp           HL   -0.034	1
+Cbi           CL   -0.001	1
+Hbq           HL   -0.023	1
+Hbr           HL   -0.019	1
+Cbj           CL   +0.027	1
+Hbs           HL   -0.017	1
+Hbt           HL   -0.021	1
+Cbk           CL   +0.225	1
+Hbu           HL   -0.057	1
+Hbv           HL   -0.058	1
+Cbl           CL   -0.155	1
+Hbw           HL   +0.021	1
+Hbx           HL   +0.019	1
+Hby           HL   +0.023	1
+
+; top side chain short branch
+Cca           CL   -0.117	1	
+Hca           HL   +0.027	1	
+Hcb           HL   -0.027	1	
+Ccb           CL   +0.115	1	
+Hcc           HL   -0.030	1	
+Hcd           HL   -0.020	1	
+Ccc           CL   +0.054	1	
+Hce           HL   -0.017	1	
+Hcf           HL   -0.033	1	
+Ccd           CL   -0.043	1	
+Hcg           HL   -0.014	1	
+Hch           HL   +0.004	1	
+Cce           CL   +0.098	1	
+Hci           HL   -0.029	1	
+Hcj           HL   -0.036	1	
+Ccf           CL   +0.079	1	
+Hck           HL   -0.030	1	
+Hcl           HL   -0.034	1	
+Ccg           CL   -0.001	1	
+Hcm           HL   -0.023	1	
+Hcn           HL   -0.019	1	
+Cch           CL   +0.027	1	
+Hco           HL   -0.017	1	
+Hcp           HL   -0.021	1	
+Cci           CL   +0.225	1	
+Hcq           HL   -0.057	1	
+Hcr           HL   -0.059	1	
+Ccj           CL   -0.156	1	
+Hcs           HL   +0.020	1	
+Hct           HL   +0.018	1	
+Hcu           HL   +0.022	1	
+
+; bottom side chain stem
+Cda           CL!   +0.068	1
+Hda           HL    +0.012	1
+Hdb           HL    +0.012	1
+Cdb           CL    +0.120	1
+Hdc           HL    -0.010	1
+Hdd           HL    -0.010	1
+Cdc           CL    -0.041	1
+Hde           HL    +0.002	1
+Hdf           HL    +0.002	1
+Cdd           CL    +0.024	1
+Hdg           HL    -0.017	1
+Hdh           HL    -0.017	1
+Cde           CL    +0.065	1
+Hdi           HL    -0.026	1
+Hdj           HL    -0.026	1
+Cdf           CL    +0.022	1
+Hdk           HL    -0.019	1
+Hdl           HL    -0.019	1
+Cdg           CL    +0.114	1
+Hdm           HL    -0.017	1
+
+; bottom side chain long branch
+Cea           CL   -0.118	1
+Hea           HL   +0.026	1
+Heb           HL   -0.028	1
+Ceb           CL   +0.114	1
+Hec           HL   -0.031	1
+Hed           HL   -0.021	1
+Cec           CL   +0.053	1
+Hee           HL   -0.018	1
+Hef           HL   -0.034	1
+Ced           CL   -0.044	1
+Heg           HL   -0.015	1
+Heh           HL   +0.003	1
+Cee           CL   +0.097	1
+Hei           HL   -0.030	1
+Hej           HL   -0.037	1
+Cef           CL   -0.044	1
+Hek           HL   -0.015	1
+Hel           HL   +0.003	1
+Ceg           CL   +0.097	1
+Hem           HL   -0.030	1
+Hen           HL   -0.037	1
+Ceh           CL   +0.078	1
+Heo           HL   -0.031	1
+Hep           HL   -0.035	1
+Cei           CL   -0.002	1
+Heq           HL   -0.024	1
+Her           HL   -0.020	1
+Cej           CL   +0.026	1
+Hes           HL   -0.018	1
+Het           HL   -0.022	1
+Cek           CL   +0.224	1
+Heu           HL   -0.058	1
+Hev           HL   -0.059	1
+Cel           CL   -0.156	1
+Hew           HL   +0.020	1
+Hex           HL   +0.018	1
+Hey           HL   +0.022	1
+
+; bottom side chain short branch
+Cfa           CL   -0.118	1
+Hfa           HL   +0.026	1
+Hfb           HL   -0.028	1
+Cfb           CL   +0.114	1
+Hfc           HL   -0.031	1
+Hfd           HL   -0.021	1
+Cfc           CL   +0.053	1
+Hfe           HL   -0.018	1
+Hff           HL   -0.034	1
+Cfd           CL   -0.044	1
+Hfg           HL   -0.015	1
+Hfh           HL   +0.003	1
+Cfe           CL   +0.097	1
+Hfi           HL   -0.030	1
+Hfj           HL   -0.037	1
+Cff           CL   +0.078	1
+Hfk           HL   -0.031	1
+Hfl           HL   -0.035	1
+Cfg           CL   -0.002	1
+Hfm           HL   -0.024	1
+Hfn           HL   -0.020	1
+Cfh           CL   +0.026	1
+Hfo           HL   -0.018	1
+Hfp           HL   -0.022	1
+Cfi           CL   +0.224	1
+Hfq           HL   -0.058	1
+Hfr           HL   -0.059	1
+Cfj           CL   -0.156	1
+Hfs           HL   +0.020	1
+Hft           HL   +0.018	1
+Hfu           HL   +0.022	1
+
+[ bonds ]
+
+; DPP
+    Nx1    Cx2   
+    Nx1    Cx8   
+    Nx1    Cda   
+    Cx2    Cx3   
+    Cx2    CL1   
+    Cx3    Cx4   
+    Cx3    Cx7   
+    Cx4    Ox4   
+    Cx4    Nx5   
+    Nx5    Cx6   
+    Nx5    Caa   
+    Cx6    Cx7   
+    Cx6    CR1   
+    Cx7    Cx8   
+    Cx8    Ox8   
+
+; left thiophene
+    CL1    CL2   
+    CL1     SL   
+    CL2    CL3   
+    CL3    HL3   
+    CL3    CL4   
+    CL4     SL   
+    CL4    CS1   
+
+; right thiophene
+    CR1    CR2   
+    CR1     SR   
+    CR2    CR3   
+    CR3    HR3   
+    CR3    CR4   
+    CR4     SR   
+
+; left left thiophene
+    CS1    CS2   
+    CS1     SS   
+    CS2    HS2   
+    CS2    CS3   
+    CS3    HS3   
+    CS3    CS4   
+    CS4     SS
+    CS4	   CV1
+
+; Vinyl
+    CV1    CV2
+    CV1    HV1
+    CV2    HV2
+    CV2    CD4
+
+; right right thiophene
+    CD1    CD2   
+    CD1     SD   
+    CD2    HD2   
+    CD2    CD3   
+    CD3    HD3   
+    CD3    CD4   
+    CD4     SD
+       
+; top side chain stem
+    Caa    Haa   
+    Caa    Hab   
+    Caa    Cab   
+    Cab    Hac   
+    Cab    Had   
+    Cab    Cac   
+    Cac    Hae   
+    Cac    Haf   
+    Cac    Cad   
+    Cad    Hag   
+    Cad    Hah   
+    Cad    Cae   
+    Cae    Hai   
+    Cae    Haj   
+    Cae    Caf   
+    Caf    Hak   
+    Caf    Hal   
+    Caf    Cag   
+    Cag    Ham   
+    Cag    Cba   
+    Cag    Cca   
+
+; top side chain long branch
+    Cba    Hba   
+    Cba    Hbb   
+    Cba    Cbb   
+    Cbb    Hbc   
+    Cbb    Hbd   
+    Cbb    Cbc   
+    Cbc    Hbe   
+    Cbc    Hbf   
+    Cbc    Cbd   
+    Cbd    Hbg   
+    Cbd    Hbh   
+    Cbd    Cbe   
+    Cbe    Hbi   
+    Cbe    Hbj   
+    Cbe    Cbf   
+    Cbf    Hbk   
+    Cbf    Hbl   
+    Cbf    Cbg   
+    Cbg    Hbm   
+    Cbg    Hbn   
+    Cbg    Cbh   
+    Cbh    Hbo   
+    Cbh    Hbp   
+    Cbh    Cbi   
+    Cbi    Hbq   
+    Cbi    Hbr   
+    Cbi    Cbj   
+    Cbj    Hbs   
+    Cbj    Hbt   
+    Cbj    Cbk   
+    Cbk    Hbu   
+    Cbk    Hbv   
+    Cbk    Cbl   
+    Cbl    Hbw   
+    Cbl    Hbx   
+    Cbl    Hby   
+
+; top side chain short branch
+    Cca    Hca   
+    Cca    Hcb   
+    Cca    Ccb   
+    Ccb    Hcc   
+    Ccb    Hcd   
+    Ccb    Ccc   
+    Ccc    Hce   
+    Ccc    Hcf   
+    Ccc    Ccd   
+    Ccd    Hcg   
+    Ccd    Hch   
+    Ccd    Cce   
+    Cce    Hci   
+    Cce    Hcj   
+    Cce    Ccf   
+    Ccf    Hck   
+    Ccf    Hcl   
+    Ccf    Ccg   
+    Ccg    Hcm   
+    Ccg    Hcn   
+    Ccg    Cch   
+    Cch    Hco   
+    Cch    Hcp   
+    Cch    Cci   
+    Cci    Hcq   
+    Cci    Hcr   
+    Cci    Ccj   
+    Ccj    Hcs   
+    Ccj    Hct   
+    Ccj    Hcu   
+
+; bottom side chain stem
+    Cda    Hda   
+    Cda    Hdb   
+    Cda    Cdb   
+    Cdb    Hdc   
+    Cdb    Hdd   
+    Cdb    Cdc   
+    Cdc    Hde   
+    Cdc    Hdf   
+    Cdc    Cdd   
+    Cdd    Hdg   
+    Cdd    Hdh   
+    Cdd    Cde   
+    Cde    Hdi   
+    Cde    Hdj   
+    Cde    Cdf   
+    Cdf    Hdk   
+    Cdf    Hdl   
+    Cdf    Cdg   
+    Cdg    Hdm   
+    Cdg    Cea   
+    Cdg    Cfa   
+
+; bottom side chain long branch
+    Cea    Hea   
+    Cea    Heb   
+    Cea    Ceb   
+    Ceb    Hec   
+    Ceb    Hed   
+    Ceb    Cec   
+    Cec    Hee   
+    Cec    Hef   
+    Cec    Ced   
+    Ced    Heg   
+    Ced    Heh   
+    Ced    Cee   
+    Cee    Hei   
+    Cee    Hej   
+    Cee    Cef   
+    Cef    Hek   
+    Cef    Hel   
+    Cef    Ceg   
+    Ceg    Hem   
+    Ceg    Hen   
+    Ceg    Ceh   
+    Ceh    Heo   
+    Ceh    Hep   
+    Ceh    Cei   
+    Cei    Heq   
+    Cei    Her   
+    Cei    Cej   
+    Cej    Hes   
+    Cej    Het   
+    Cej    Cek   
+    Cek    Heu   
+    Cek    Hev   
+    Cek    Cel   
+    Cel    Hew   
+    Cel    Hex   
+    Cel    Hey   
+
+; bottom side chain long branch
+    Cfa    Hfa   
+    Cfa    Hfb   
+    Cfa    Cfb   
+    Cfb    Hfc   
+    Cfb    Hfd   
+    Cfb    Cfc   
+    Cfc    Hfe   
+    Cfc    Hff   
+    Cfc    Cfd   
+    Cfd    Hfg   
+    Cfd    Hfh   
+    Cfd    Cfe   
+    Cfe    Hfi   
+    Cfe    Hfj   
+    Cfe    Cff   
+    Cff    Hfk   
+    Cff    Hfl   
+    Cff    Cfg   
+    Cfg    Hfm   
+    Cfg    Hfn   
+    Cfg    Cfh   
+    Cfh    Hfo   
+    Cfh    Hfp   
+    Cfh    Cfi   
+    Cfi    Hfq   
+    Cfi    Hfr   
+    Cfi    Cfj   
+    Cfj    Hfs   
+    Cfj    Hft   
+    Cfj    Hfu   
+
+[ exclusions ]
+ Ox4	CL2
+ Ox4	SL
+ Ox8	CR2
+ Ox8	SR
+
+[ dihedrals ]
+ SL	CL4	CS1	CS2
+ CL2	CL1	Cx2	Cx3
+ Cx7	Cx6	CR1	CR2
+ SS	CS4	CV1	CV2
+ SD	CD4	CV2	CV1
+
+[ Impropers ]
+; DPP unit
+ Nx1	Cx2	Cx3	Cx7
+ Cx2	Cx3	Cx7	Cx8
+ Cx3	Cx7	Cx8	Nx1
+ Cx7	Cx8	Nx1	Cx2
+ Cx8	Nx1	Cx2	Cx3
+ Cx2	Nx1	Cx3	CL1
+ Nx1	Cx8	Cx2	Cda
+ Cx8	Cx7	Nx1	Ox8
+
+ Cx3	Cx7	Cx6	Nx5
+ Cx7	Cx6	Nx5	Cx4
+ Cx6	Nx5	Cx4	Cx3
+ Nx5	Cx4	Cx3	Cx7
+ Cx4	Cx3	Cx7	Cx6
+ Cx6	Cx7	Nx5	CR1
+ Nx5	Cx6	Cx4	Caa
+ Cx4	Nx5	Cx3	Ox4
+
+ Cx3	Cx4	Cx2	Cx7
+ Cx7	Cx8	Cx6	Cx3
+ 
+; left thiophene
+ CL1	CL2	CL3	CL4
+ CL2	CL3	CL4	SL
+ CL3	CL4	SL	CL1
+ CL4	SL	CL1	CL2
+ SL	CL1	CL2	CL3
+
+ CL1	SL	CL2	Cx2
+ CL3	CL2	CL4	HL3
+ CL4	CL3	SL	CS1
+
+; right thiophene
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	SR
+ CR3	CR4	SR	CR1
+ CR4	SR	CR1	CR2
+ SR	CR1	CR2	CR3
+
+ CR1	SR	CR2	Cx6
+ CR3	CR2	CR4	HR3
+
+; left left thiophene
+ CS1	CS2	CS3	CS4
+ CS2	CS3	CS4	SS
+ CS3	CS4	SS	CS1
+ CS4	SS	CS1	CS2
+ SS	CS1	CS2	CS3
+
+ CS1	SS	CS2	CL4
+ CS2	CS1	CS3	HS2
+ CS3	CS2	CS4	HS3
+ CS4	SS	CS3	CV1
+
+; Vinyl
+ CV1	HV1	CV2	CS4
+ CV2	HV2	CV1	CD4
+ 
+; right right thiophene
+ CD1	CD2	CD3	CD4
+ CD2	CD3	CD4	SD
+ CD3	CD4	SD	CD1
+ CD4	SD	CD1	CD2
+ SD	CD1	CD2	CD3
+
+ CD2	CD1	CD3	HD2
+ CD3	CD2	CD4	HD3
+ CD4	SD	CD3	CV2
+ CD1	CD2	SD	-CR4
+
+
+
+
+
+
+

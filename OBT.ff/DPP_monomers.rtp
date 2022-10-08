@@ -1,0 +1,1088 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+
+; all residues with fully glycolates sidechains
+
+[ D13 ]
+
+[ atoms ]
+; DPP ring
+ Nx1	NN 	-0.265	1  
+ Cx2	CN	+0.094	1  
+ Cx3	CN!	-0.186	1  
+ Cx4	CN	+0.616	1  
+ Ox4	ON	-0.558	1  
+ Nx5	NN	-0.265	1  
+ Cx6	CN	+0.094	1  
+ Cx7	CN!	-0.186	1  
+ Cx8	CN	+0.616	1 	
+ Ox8	ON	-0.558	1 	
+
+; left thiophene
+ CL1	CR	+0.072	1 		
+ CL2	CBU	+0.056	1 		
+ CL3	CR	-0.299	1 	
+ HL3	HR	+0.152	1 		
+ CL4	CR	+0.143	1 		
+ SL 	SR	-0.146	1 	
+
+; right thiophene
+ CR1	CR	+0.072	1 		
+ CR2	CBU	+0.056	1 			
+ CR3	CR	-0.299	1 			
+ HR3	HR	+0.152	1 	
+ CR4	CR	+0.143	1 	
+ SR 	SR	-0.146	1 	       
+
+; left benzothiophene
+ CLa	CRR	+0.267	1 	       	
+ CLb	CRR	-0.391	1 	       
+ HLb	HRR	+0.186	1 	       
+ CLc	CRR	+0.149	1 	
+ CLd	CRR	-0.180	1 	
+ HLd	HRR	+0.095	1 				
+ CLe	CRR	-0.094	1 			
+ HLe	HRR	+0.084	1 				
+ CLf	CRR	-0.106	1 		
+ HLf	HRR	+0.095	1 	
+ CLg	CRR	-0.204	1 		
+ HLg	HRR	+0.109	1 	
+ CLh	CRR	+0.297	1 	
+ OLi	ORR	-0.277	1 		
+
+; right benzothiophene
+ CRa	CRR	+0.267	1 			
+ CRb	CRR	-0.391	1 		
+ HRb	HRR	+0.186	1 	
+ CRc	CRR	+0.149	1 		
+ CRd	CRR	-0.180	1 	
+ HRd	HRR	+0.095	1 	
+ CRe	CRR	-0.094	1 	
+ HRe	HRR	+0.084	1 	
+ CRf	CRR	-0.106	1 	
+ HRf	HRR	+0.095	1 	
+ CRg	CRR	-0.204	1 
+ HRg	HRR	+0.109	1 
+ CRh	CRR	+0.297	1 	
+ ORi	ORR	-0.277	1 	
+
+; top side chain
+ Cca	CL!	+0.198	1 	
+ Hca	HL	+0.038	1 	
+ Hcb	HL	+0.045	1 	
+ Ccb	CL	-0.015	1 	
+ Hcc	HL	+0.063	1 	
+ Ccc	CL	-0.265	1 	
+ Hcd	HL	+0.058	1 	
+ Hce	CL	+0.084	1 	
+ Ccd	CL	+0.043	1 	
+ Hcf	HL	+0.002	1 	
+ Hcg	HL	-0.016	1 	
+ Cce	CL	+0.244	1 	
+ Hch	HL	-0.054	1 	
+ Hci	HL	-0.050	1 	
+ Ccf	CL	-0.219	1 	
+ Hcj	HL	+0.026	1 	
+ Hck	HL	+0.040	1 	
+ Hcl	HL	+0.043	1 	
+ Cda	CL	+0.226	1 	
+ Hda	HL	-0.090	1 	
+ Hdb	HL	-0.047	1 	
+ Cdb	CL	-0.074	1 	
+ Hdc	HL	+0.003	1 	
+ Hdd	HL	+0.014	1 	
+ Hde	HL	-0.006	1 	
+
+; bottom side chain
+ Caa	CL!	+0.198	1 		
+ Haa	HL	+0.038	1 	
+ Hab	HL	+0.045	1 	
+ Cab	CL	-0.015	1 	
+ Hac	HL	+0.063	1 	
+ Cac	CL	-0.265	1 	
+ Had	HL	+0.058	1 	
+ Hae	HL	+0.084	1 	
+ Cad	CL	+0.043	1 	
+ Haf	HL	+0.002	1 	
+ Hag	HL	-0.016	1 	
+ Cae	CL	+0.244	1 	
+ Hah	HL	-0.054	1 	
+ Hai	HL	-0.050	1 	
+ Caf	CL	-0.219	1 	
+ Haj	HL	+0.026	1 	
+ Hak	HL	+0.040	1 	
+ Hal	HL	+0.043	1 	
+ Cba	CL	+0.226	1 	
+ Hba	HL	-0.090	1 	
+ Hbb	HL	-0.047	1 	
+ Cbb	CL	-0.074	1 	
+ Hbc	HL	+0.003	1 	
+ Hbd	HL	+0.014	1 	
+ Hbe	HL	-0.006	1 	
+
+
+[ bonds ]
+; DPP ring
+ Nx1	Cx2
+ Cx2	Cx3
+ Cx3	Cx4
+ Cx4	Ox4
+ Cx4	Nx5
+ Nx5	Cx6
+ Cx6	Cx7
+ Cx7	Cx3
+ Cx7	Cx8
+ Cx8	Ox8
+ Cx8	Nx1
+
+; left thiophene
+ Cx2	CL1
+ CL1	CL2
+ CL2	CL3
+ CL3	HL3
+ CL3	CL4
+ CL4	SL
+ SL	CL1
+
+; right thiophene
+ Cx6	CR1
+ CR1	CR2
+ CR2	CR3
+ CR3	HR3
+ CR3	CR4
+ CR4	SR
+ SR	CR1
+
+; left benzothiophene
+ CL4	CLa
+ CLa	CLb
+ CLb	HLb
+ CLb	CLc
+ CLc	CLh
+ CLc	CLd
+ CLd	HLd
+ CLd	CLe	
+ CLe	HLe
+ CLe	CLf
+ CLf	HLf
+ CLf	CLg
+ CLg	HLg
+ CLg	CLh
+ CLh	OLi
+ OLi	CLa	
+
+; right benzothiophene
+ CR4	CRa
+ CRa	CRb
+ CRb	HRb
+ CRb	CRc
+ CRc	CRh
+ CRc	CRd
+ CRd	HRd
+ CRd	CRe	
+ CRe	HRe
+ CRe	CRf
+ CRf	HRf
+ CRf	CRg
+ CRg	HRg
+ CRg	CRh
+ CRh	ORi
+ ORi	CRa	
+
+; top main side chain
+ Nx1	Cca
+ Cca	Hca
+ Cca	Hcb
+ Cca	Ccb
+ Ccb	Hcc
+ Ccb	Ccc
+ Ccc	Hce
+ Ccc	Hcd
+ Ccc	Ccd
+ Ccd	Hcg
+ Ccd	Hcf
+ Ccd	Cce
+ Cce	Hch
+ Cce	Hci
+ Cce	Ccf
+ Ccf	Hcj
+ Ccf	Hck
+ Ccf	Hcl
+ 
+; top second side chain
+ Ccb	Cda
+ Cda	Hdb
+ Cda	Hda
+ Cda	Cdb
+ Cdb	Hdc
+ Cdb	Hde
+ Cdb	Hdd
+
+; bottom main side chain
+ Nx5	Caa
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Cac
+ Cac	Hae
+ Cac	Had
+ Cac	Cad
+ Cad	Hag
+ Cad	Haf
+ Cad	Cae
+ Cae	Hah
+ Cae	Hai
+ Cae	Caf
+ Caf	Haj
+ Caf	Hak
+ Caf	Hal
+
+; bottom second side chain
+ Cab	Cba
+ Cba	Hbb
+ Cba	Hba
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbe
+ Cbb	Hbd
+
+[ exclusions ]
+ Ox4	CL2
+ Ox4	SL
+ Ox8	CR2
+ Ox8	SR
+
+[ dihedrals ]
+ SL	CL4	CLa	CLb
+ CL2	CL1	Cx2	Cx3
+ Cx7	Cx6	CR1	CR2
+ SR	CR4	CRa	CRb
+
+[ Impropers ]
+; DPP unit
+ Nx1	Cx2	Cx3	Cx7
+ Cx2	Cx3	Cx7	Cx8
+ Cx3	Cx7	Cx8	Nx1
+ Cx7	Cx8	Nx1	Cx2
+ Cx8	Nx1	Cx2	Cx3
+ Cx2	Nx1	Cx3	CL1
+ Nx1	Cx8	Cx2	Cca
+ Cx8	Cx7	Nx1	Ox8
+
+ Cx3	Cx7	Cx6	Nx5
+ Cx7	Cx6	Nx5	Cx4
+ Cx6	Nx5	Cx4	Cx3
+ Nx5	Cx4	Cx3	Cx7
+ Cx4	Cx3	Cx7	Cx6
+ Cx6	Cx7	Nx5	CR1
+ Nx5	Cx6	Cx4	Caa
+ Cx4	Nx5	Cx3	Ox4
+
+ Cx3	Cx4	Cx2	Cx7
+ Cx7	Cx8	Cx6	Cx3
+ 
+; left thiophene
+ CL1	CL2	CL3	CL4
+ CL2	CL3	CL4	SL
+ CL3	CL4	SL	CL1
+ CL4	SL	CL1	CL2
+ SL	CL1	CL2	CL3
+
+ CL1	SL	CL2	Cx2
+ CL3	CL2	CL4	HL3
+ CL4	CL3	SL	CLa
+
+; right thiophene
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	SR
+ CR3	CR4	SR	CR1
+ CR4	SR	CR1	CR2
+ SR	CR1	CR2	CR3
+
+ CR1	SR	CR2	Cx6
+ CR3	CR2	CR4	HR3
+ CR4	CR3	SR	CRa
+
+; left benzothiophene
+ CLa	CLb	CLc	CLh
+ CLb	CLc	CLh	OLi
+ CLc	CLh	OLi	CLa
+ CLh	OLi	CLa	CLb
+ OLi	CLa	CLb	CLc
+
+ CLc	CLd	CLe	CLf
+ CLd	CLe	CLf	CLg
+ CLe	CLf	CLg	CLh
+ CLf	CLg	CLh	CLc
+ CLg	CLh	CLc	CLd
+ CLh	CLc	CLd	CLe
+
+ CLb	CLa	CLc	HLb
+ CLc	CLb	CLh	CLd
+ CLh	OLi	CLc	CLg
+ CLd	CLc	CLe	HLd
+ CLe	CLd	CLf	HLe	
+ CLf	CLe	CLg	HLf
+ CLg	CLh	CLf	HLg
+ CLa	CLb	OLi	CL4
+
+; right benzothiophene
+ CRa	CRb	CRh	ORi
+ CRb	CRh	ORi	CRa
+ CRh	ORi	CRa	CRb
+ ORi	CRa	CRb	CRc
+ CRa	CRb	CRc	CRh
+
+ CRc	CRd	CRe	CRf
+ CRd	CRe	CRf	CRg
+ CRe	CRf	CRg	CRh
+ CRf	CRg	CRh	CRc
+ CRg	CRh	CRc	CRd
+ CRh	CRc	CRd	CRe
+
+ CRb	CRa	CRc	HRb
+ CRc	CRb	CRh	CRd
+ CRh	ORi	CRc	CRg
+ CRd	CRc	CRe	HRd
+ CRe	CRd	CRf	HRe	
+ CRf	CRe	CRg	HRf
+ CRg	CRh	CRf	HRg
+ CRa	CRb	ORi	CR4
+
+
+
+[ D14 ]
+
+[ atoms ]
+; DPP ring
+ Nx1	NN 	-0.331	1  
+ Cx2	CN	+0.128	1  
+ Cx3	CN!	-0.188	1  
+ Cx4	CN	+0.638	1  
+ Ox4	ON	-0.565	1  
+ Nx5	NN	-0.331	1  
+ Cx6	CN	+0.128	1  
+ Cx7	CN!	-0.188	1  
+ Cx8	CN	+0.638	1 	
+ Ox8	ON	-0.565	1 	
+
+; left thiophene
+ CL1	CR	+0.061	1 		
+ CL2	CBU	+0.074	1 		
+ CL3	CR	-0.356	1 	
+ HL3	HR	+0.168	1 		
+ CL4	CR	+0.296	1 		
+ SL 	SR	-0.169	1 	
+
+; right thiophene
+ CR1	CR	+0.061	1 		
+ CR2	CBU	+0.074	1 			
+ CR3	CR	-0.356	1 			
+ HR3	HR	+0.168	1 	
+ CR4	CR	+0.296	1 	
+ SR 	SR	-0.169	1 	       
+
+; left benzothiophene
+ CLa	CRR	-0.010	1 	       	
+ CLb	CRR	-0.269	1 	       
+ HLb	HRR	+0.162	1 	       
+ CLc	CRR	+0.146	1 	
+ CLd	CRR	-0.168	1 	
+ HLd	HRR	+0.084	1 				
+ CLe	CRR	-0.075	1 			
+ HLe	HRR	+0.082	1 				
+ CLf	CRR	-0.101	1 		
+ HLf	HRR	+0.079	1 	
+ CLg	CRR	-0.151	1 		
+ HLg	HRR	+0.110	1 	
+ CLh	CRR	+0.145	1 	
+ SLi	SRR	-0.094	1 		
+
+; right benzothiophene
+ CRa	CRR	-0.010	1 			
+ CRb	CRR	-0.269	1 		
+ HRb	HRR	+0.162	1 	
+ CRc	CRR	+0.146	1 		
+ CRd	CRR	-0.168	1 	
+ HRd	HRR	+0.084	1 	
+ CRe	CRR	-0.075	1 	
+ HRe	HRR	+0.082	1 	
+ CRf	CRR	-0.101	1 	
+ HRf	HRR	+0.079	1 	
+ CRg	CRR	-0.151	1 
+ HRg	HRR	+0.110	1 
+ CRh	CRR	+0.145	1 	
+ SRi	SRR	-0.094	1 	
+
+; top side chain
+ Cca	CL!	+0.238	1 	
+ Hca	HL	+0.028	1 	
+ Hcb	HL	+0.040	1 	
+ Ccb	CL	-0.043	1 	
+ Hcc	HL	+0.072	1 	
+ Ccc	CL	-0.245	1 	
+ Hcd	HL	+0.053	1 	
+ Hce	CL	+0.075	1 	
+ Ccd	CL	+0.045	1 	
+ Hcf	HL	-0.001	1 	
+ Hcg	HL	-0.019	1 	
+ Cce	CL	+0.246	1 	
+ Hch	HL	-0.055	1 	
+ Hci	HL	-0.053	1 	
+ Ccf	CL	-0.199	1 	
+ Hcj	HL	+0.022	1 	
+ Hck	HL	+0.033	1 	
+ Hcl	HL	+0.037	1 	
+ Cda	CL	+0.249	1 	
+ Hda	HL	-0.097	1 	
+ Hdb	HL	-0.050	1 	
+ Cdb	CL	-0.100	1 	
+ Hdc	HL	+0.006	1 	
+ Hdd	HL	+0.015	1 	
+ Hde	HL	+0.007	1 	
+
+; bottom side chain
+ Caa	CL!	+0.238	1 		
+ Haa	HL	+0.028	1 	
+ Hab	HL	+0.040	1 	
+ Cab	CL	-0.043	1 	
+ Hac	HL	+0.072	1 	
+ Cac	CL	-0.245	1 	
+ Had	HL	+0.053	1 	
+ Hae	HL	+0.075	1 	
+ Cad	CL	+0.045	1 	
+ Haf	HL	-0.001	1 	
+ Hag	HL	-0.019	1 	
+ Cae	CL	+0.246	1 	
+ Hah	HL	-0.055	1 	
+ Hai	HL	-0.053	1 	
+ Caf	CL	-0.199	1 	
+ Haj	HL	+0.022	1 	
+ Hak	HL	+0.033	1 	
+ Hal	HL	+0.037	1 	
+ Cba	CL	+0.249	1 	
+ Hba	HL	-0.097	1 	
+ Hbb	HL	-0.050	1 	
+ Cbb	CL	-0.100	1 	
+ Hbc	HL	+0.006	1 	
+ Hbd	HL	+0.015	1 	
+ Hbe	HL	+0.007	1 	
+
+
+[ bonds ]
+; DPP ring
+ Nx1	Cx2
+ Cx2	Cx3
+ Cx3	Cx4
+ Cx4	Ox4
+ Cx4	Nx5
+ Nx5	Cx6
+ Cx6	Cx7
+ Cx7	Cx3
+ Cx7	Cx8
+ Cx8	Ox8
+ Cx8	Nx1
+
+; left thiophene
+ Cx2	CL1
+ CL1	CL2
+ CL2	CL3
+ CL3	HL3
+ CL3	CL4
+ CL4	SL
+ SL	CL1
+
+; right thiophene
+ Cx6	CR1
+ CR1	CR2
+ CR2	CR3
+ CR3	HR3
+ CR3	CR4
+ CR4	SR
+ SR	CR1
+
+; left benzothiophene
+ CL4	CLa
+ CLa	CLb
+ CLb	HLb
+ CLb	CLc
+ CLc	CLh
+ CLc	CLd
+ CLd	HLd
+ CLd	CLe	
+ CLe	HLe
+ CLe	CLf
+ CLf	HLf
+ CLf	CLg
+ CLg	HLg
+ CLg	CLh
+ CLh	SLi
+ SLi	CLa	
+
+; right benzothiophene
+ CR4	CRa
+ CRa	CRb
+ CRb	HRb
+ CRb	CRc
+ CRc	CRh
+ CRc	CRd
+ CRd	HRd
+ CRd	CRe	
+ CRe	HRe
+ CRe	CRf
+ CRf	HRf
+ CRf	CRg
+ CRg	HRg
+ CRg	CRh
+ CRh	SRi
+ SRi	CRa	
+
+; top main side chain
+ Nx1	Cca
+ Cca	Hca
+ Cca	Hcb
+ Cca	Ccb
+ Ccb	Hcc
+ Ccb	Ccc
+ Ccc	Hce
+ Ccc	Hcd
+ Ccc	Ccd
+ Ccd	Hcg
+ Ccd	Hcf
+ Ccd	Cce
+ Cce	Hch
+ Cce	Hci
+ Cce	Ccf
+ Ccf	Hcj
+ Ccf	Hck
+ Ccf	Hcl
+ 
+; top second side chain
+ Ccb	Cda
+ Cda	Hdb
+ Cda	Hda
+ Cda	Cdb
+ Cdb	Hdc
+ Cdb	Hde
+ Cdb	Hdd
+
+; bottom main side chain
+ Nx5	Caa
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Cac
+ Cac	Hae
+ Cac	Had
+ Cac	Cad
+ Cad	Hag
+ Cad	Haf
+ Cad	Cae
+ Cae	Hah
+ Cae	Hai
+ Cae	Caf
+ Caf	Haj
+ Caf	Hak
+ Caf	Hal
+
+; bottom second side chain
+ Cab	Cba
+ Cba	Hbb
+ Cba	Hba
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbe
+ Cbb	Hbd
+
+[ exclusions ]
+ Ox4	CL2
+ Ox4	SL
+ Ox8	CR2
+ Ox8	SR
+
+[ dihedrals ]
+ SL	CL4	CLa	CLb
+ CL2	CL1	Cx2	Cx3
+ Cx7	Cx6	CR1	CR2
+ SR	CR4	CRa	CRb
+
+[ Impropers ]
+; DPP unit
+ Nx1	Cx2	Cx3	Cx7
+ Cx2	Cx3	Cx7	Cx8
+ Cx3	Cx7	Cx8	Nx1
+ Cx7	Cx8	Nx1	Cx2
+ Cx8	Nx1	Cx2	Cx3
+ Cx2	Nx1	Cx3	CL1
+ Nx1	Cx8	Cx2	Cca
+ Cx8	Cx7	Nx1	Ox8
+
+ Cx3	Cx7	Cx6	Nx5
+ Cx7	Cx6	Nx5	Cx4
+ Cx6	Nx5	Cx4	Cx3
+ Nx5	Cx4	Cx3	Cx7
+ Cx4	Cx3	Cx7	Cx6
+ Cx6	Cx7	Nx5	CR1
+ Nx5	Cx6	Cx4	Caa
+ Cx4	Nx5	Cx3	Ox4
+
+ Cx3	Cx4	Cx2	Cx7
+ Cx7	Cx8	Cx6	Cx3
+ 
+; left thiophene
+ CL1	CL2	CL3	CL4
+ CL2	CL3	CL4	SL
+ CL3	CL4	SL	CL1
+ CL4	SL	CL1	CL2
+ SL	CL1	CL2	CL3
+
+ CL1	SL	CL2	Cx2
+ CL3	CL2	CL4	HL3
+ CL4	CL3	SL	CLa
+
+; right thiophene
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	SR
+ CR3	CR4	SR	CR1
+ CR4	SR	CR1	CR2
+ SR	CR1	CR2	CR3
+
+ CR1	SR	CR2	Cx6
+ CR3	CR2	CR4	HR3
+ CR4	CR3	SR	CRa
+
+; left benzothiophene
+ CLa	CLb	CLc	CLh
+ CLb	CLc	CLh	SLi
+ CLc	CLh	SLi	CLa
+ CLh	SLi	CLa	CLb
+ SLi	CLa	CLb	CLc
+
+ CLc	CLd	CLe	CLf
+ CLd	CLe	CLf	CLg
+ CLe	CLf	CLg	CLh
+ CLf	CLg	CLh	CLc
+ CLg	CLh	CLc	CLd
+ CLh	CLc	CLd	CLe
+
+ CLb	CLa	CLc	HLb
+ CLc	CLb	CLh	CLd
+ CLh	SLi	CLc	CLg
+ CLd	CLc	CLe	HLd
+ CLe	CLd	CLf	HLe	
+ CLf	CLe	CLg	HLf
+ CLg	CLh	CLf	HLg
+
+ CLa	CLb	SLi	CL4
+
+; right benzothiophene
+ CRa	CRb	CRh	SRi
+ CRb	CRh	SRi	CRa
+ CRh	SRi	CRa	CRb
+ SRi	CRa	CRb	CRc
+ CRa	CRb	CRc	CRh
+
+ CRc	CRd	CRe	CRf
+ CRd	CRe	CRf	CRg
+ CRe	CRf	CRg	CRh
+ CRf	CRg	CRh	CRc
+ CRg	CRh	CRc	CRd
+ CRh	CRc	CRd	CRe
+
+ CRb	CRa	CRc	HRb
+ CRc	CRb	CRh	CRd
+ CRh	SRi	CRc	CRg
+ CRd	CRc	CRe	HRd
+ CRe	CRd	CRf	HRe	
+ CRf	CRe	CRg	HRf
+ CRg	CRh	CRf	HRg
+
+ CRa	CRb	SRi	CR4
+
+[ D15 ]
+
+[ atoms ]
+; DPP ring
+ Nx1	NN 	-0.304	1  
+ Cx2	CN	+0.079	1  
+ Cx3	CN!	-0.167	1  
+ Cx4	CN	+0.617	1  
+ Ox4	ON	-0.555	1  
+ Nx5	NN	-0.304	1  
+ Cx6	CN	+0.079	1  
+ Cx7	CN!	-0.167	1  
+ Cx8	CN	+0.617	1 	
+ Ox8	ON	-0.555	1 	
+
+; left thiophene
+ CL1	CR	+0.118	1 		
+ CL2	CBU	+0.011	1 		
+ CL3	CR	-0.316	1 	
+ HL3	HR	+0.155	1 		
+ CL4	CR	+0.168	1 		
+ SL 	SR	-0.159	1 	
+
+; right thiophene
+ CR1	CR	+0.118	1 		
+ CR2	CBU	+0.011	1 			
+ CR3	CR	-0.316	1 			
+ HR3	HR	+0.155	1 	
+ CR4	CR	+0.168	1 	
+ SR 	SR	-0.159	1 	       
+
+; left benzothiophene
+ CLa	CRR	+0.125	1 	       	
+ CLb	CRR	-0.427	1 	       
+ HLb	HRR	+0.194	1 	       
+ CLc	CRR	+0.193	1 	
+ CLd	CRR	-0.178	1 	
+ HLd	HRR	+0.090	1 				
+ CLe	CRR	-0.080	1 			
+ HLe	HRR	+0.073	1 				
+ CLf	CRR	-0.085	1 		
+ HLf	HRR	+0.084	1 	
+ CLg	CRR	-0.225	1 		
+ HLg	HRR	+0.098	1 	
+ CLh	CRR	+0.146	1 	
+ NLi	NRR	-0.103	1 		
+
+; right benzothiophene
+ CRa	CRR	+0.125	1 			
+ CRb	CRR	-0.427	1 		
+ HRb	HRR	+0.194	1 	
+ CRc	CRR	+0.193	1 		
+ CRd	CRR	-0.178	1 	
+ HRd	HRR	+0.090	1 	
+ CRe	CRR	-0.080	1 	
+ HRe	HRR	+0.073	1 	
+ CRf	CRR	-0.085	1 	
+ HRf	HRR	+0.084	1 	
+ CRg	CRR	-0.225	1 
+ HRg	HRR	+0.098	1 
+ CRh	CRR	+0.146	1 	
+ NRi	NRR	-0.103	1 	
+
+; top side chain
+ Cca	CL!	+0.189	1 	
+ Hca	HL	+0.035	1 	
+ Hcb	HL	+0.040	1 	
+ Ccb	CL	+0.032	1 	
+ Hcc	HL	+0.046	1 	
+ Ccc	CL	-0.286	1 	
+ Hcd	HL	+0.064	1 	
+ Hce	CL	+0.086	1 	
+ Ccd	CL	+0.027	1 	
+ Hcf	HL	+0.007	1 	
+ Hcg	HL	-0.010	1 	
+ Cce	CL	+0.237	1 	
+ Hch	HL	-0.050	1 	
+ Hci	HL	-0.048	1 	
+ Ccf	CL	-0.220	1 	
+ Hcj	HL	+0.027	1 	
+ Hck	HL	+0.043	1 	
+ Hcl	HL	+0.042	1 	
+ Cda	CL	+0.247	1 	
+ Hda	HL	-0.101	1 	
+ Hdb	HL	-0.053	1 	
+ Cdb	CL	-0.087	1 	
+ Hdc	HL	+0.003	1 	
+ Hdd	HL	+0.013	1 	
+ Hde	HL	+0.000	1 	
+
+; bottom side chain
+ Caa	CL!	+0.189	1 		
+ Haa	HL	+0.035	1 	
+ Hab	HL	+0.040	1 	
+ Cab	CL	+0.032	1 	
+ Hac	HL	+0.046	1 	
+ Cac	CL	-0.286	1 	
+ Had	HL	+0.064	1 	
+ Hae	HL	+0.086	1 	
+ Cad	CL	+0.027	1 	
+ Haf	HL	+0.007	1 	
+ Hag	HL	-0.010	1 	
+ Cae	CL	+0.237	1 	
+ Hah	HL	-0.050	1 	
+ Hai	HL	-0.048	1 	
+ Caf	CL	-0.220	1 	
+ Haj	HL	+0.027	1 	
+ Hak	HL	+0.043	1 	
+ Hal	HL	+0.042	1 	
+ Cba	CL	+0.247	1 	
+ Hba	HL	-0.101	1 	
+ Hbb	HL	-0.053	1 	
+ Cbb	CL	-0.087	1 	
+ Hbc	HL	+0.003	1 	
+ Hbd	HL	+0.013	1 	
+ Hbe	HL	+0.000	1 	
+
+; Left tail 
+ Ct	CL!	+0.089	1
+ Ht1	HL	+0.045	1
+ Ht2	HL	+0.024	1
+ Ht3	HL	+0.007	1
+
+; Right tail 
+ Cu	CL!	+0.089	1
+ Hu1	HL	+0.045	1
+ Hu2	HL	+0.024	1
+ Hu3	HL	+0.007	1
+
+[ bonds ]
+; DPP ring
+ Nx1	Cx2
+ Cx2	Cx3
+ Cx3	Cx4
+ Cx4	Ox4
+ Cx4	Nx5
+ Nx5	Cx6
+ Cx6	Cx7
+ Cx7	Cx3
+ Cx7	Cx8
+ Cx8	Ox8
+ Cx8	Nx1
+
+; left thiophene
+ Cx2	CL1
+ CL1	CL2
+ CL2	CL3
+ CL3	HL3
+ CL3	CL4
+ CL4	SL
+ SL	CL1
+
+; right thiophene
+ Cx6	CR1
+ CR1	CR2
+ CR2	CR3
+ CR3	HR3
+ CR3	CR4
+ CR4	SR
+ SR	CR1
+
+; left benzothiophene
+ CL4	CLa
+ CLa	CLb
+ CLb	HLb
+ CLb	CLc
+ CLc	CLh
+ CLc	CLd
+ CLd	HLd
+ CLd	CLe	
+ CLe	HLe
+ CLe	CLf
+ CLf	HLf
+ CLf	CLg
+ CLg	HLg
+ CLg	CLh
+ CLh	NLi
+ NLi	CLa	
+
+; right benzothiophene
+ CR4	CRa
+ CRa	CRb
+ CRb	HRb
+ CRb	CRc
+ CRc	CRh
+ CRc	CRd
+ CRd	HRd
+ CRd	CRe	
+ CRe	HRe
+ CRe	CRf
+ CRf	HRf
+ CRf	CRg
+ CRg	HRg
+ CRg	CRh
+ CRh	NRi
+ NRi	CRa	
+
+; top main side chain
+ Nx1	Cca
+ Cca	Hca
+ Cca	Hcb
+ Cca	Ccb
+ Ccb	Hcc
+ Ccb	Ccc
+ Ccc	Hce
+ Ccc	Hcd
+ Ccc	Ccd
+ Ccd	Hcg
+ Ccd	Hcf
+ Ccd	Cce
+ Cce	Hch
+ Cce	Hci
+ Cce	Ccf
+ Ccf	Hcj
+ Ccf	Hck
+ Ccf	Hcl
+ 
+; top second side chain
+ Ccb	Cda
+ Cda	Hdb
+ Cda	Hda
+ Cda	Cdb
+ Cdb	Hdc
+ Cdb	Hde
+ Cdb	Hdd
+
+; bottom main side chain
+ Nx5	Caa
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Cac
+ Cac	Hae
+ Cac	Had
+ Cac	Cad
+ Cad	Hag
+ Cad	Haf
+ Cad	Cae
+ Cae	Hah
+ Cae	Hai
+ Cae	Caf
+ Caf	Haj
+ Caf	Hak
+ Caf	Hal
+
+; bottom second side chain
+ Cab	Cba
+ Cba	Hbb
+ Cba	Hba
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbe
+ Cbb	Hbd
+
+; Left tail
+ NLi	Cu
+ Cu	Hu1
+ Cu	Hu2
+ Cu	Hu3
+
+; Right tail
+ NRi	Ct
+ Ct	Ht1
+ Ct	Ht2
+ Ct	Ht3
+
+[ exclusions ]
+ Ox4	CL2
+ Ox4	SL
+ Ox8	CR2
+ Ox8	SR
+
+[ dihedrals ]
+ SL	CL4	CLa	CLb
+ CL2	CL1	Cx2	Cx3
+ Cx7	Cx6	CR1	CR2
+ SR	CR4	CRa	CRb
+
+[ Impropers ]
+; DPP unit
+ Nx1	Cx2	Cx3	Cx7
+ Cx2	Cx3	Cx7	Cx8
+ Cx3	Cx7	Cx8	Nx1
+ Cx7	Cx8	Nx1	Cx2
+ Cx8	Nx1	Cx2	Cx3
+ Cx2	Nx1	Cx3	CL1
+ Nx1	Cx8	Cx2	Cca
+ Cx8	Cx7	Nx1	Ox8
+
+ Cx3	Cx7	Cx6	Nx5
+ Cx7	Cx6	Nx5	Cx4
+ Cx6	Nx5	Cx4	Cx3
+ Nx5	Cx4	Cx3	Cx7
+ Cx4	Cx3	Cx7	Cx6
+ Cx6	Cx7	Nx5	CR1
+ Nx5	Cx6	Cx4	Caa
+ Cx4	Nx5	Cx3	Ox4
+
+ Cx3	Cx4	Cx2	Cx7
+ Cx7	Cx8	Cx6	Cx3
+ 
+; left thiophene
+ CL1	CL2	CL3	CL4
+ CL2	CL3	CL4	SL
+ CL3	CL4	SL	CL1
+ CL4	SL	CL1	CL2
+ SL	CL1	CL2	CL3
+
+ CL1	SL	CL2	Cx2
+ CL3	CL2	CL4	HL3
+ CL4	CL3	SL	CLa
+
+; right thiophene
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	SR
+ CR3	CR4	SR	CR1
+ CR4	SR	CR1	CR2
+ SR	CR1	CR2	CR3
+
+ CR1	SR	CR2	Cx6
+ CR3	CR2	CR4	HR3
+ CR4	CR3	SR	CRa
+
+; left benzothiophene
+ CLa	CLb	CLc	CLh
+ CLb	CLc	CLh	NLi
+ CLc	CLh	NLi	CLa
+ CLh	NLi	CLa	CLb
+ NLi	CLa	CLb	CLc
+
+ CLc	CLd	CLe	CLf
+ CLd	CLe	CLf	CLg
+ CLe	CLf	CLg	CLh
+ CLf	CLg	CLh	CLc
+ CLg	CLh	CLc	CLd
+ CLh	CLc	CLd	CLe
+
+ CLb	CLa	CLc	HLb
+ CLc	CLb	CLh	CLd
+ CLh	NLi	CLc	CLg
+ CLd	CLc	CLe	HLd
+ CLe	CLd	CLf	HLe	
+ CLf	CLe	CLg	HLf
+ CLg	CLh	CLf	HLg
+
+ NLi	CLa	CLh	Cu
+ CLa	NLi	CLb	CL4
+
+; right benzothiophene
+ CRa	CRb	CRh	NRi
+ CRb	CRh	NRi	CRa
+ CRh	NRi	CRa	CRb
+ NRi	CRa	CRb	CRc
+ CRa	CRb	CRc	CRh
+
+ CRc	CRd	CRe	CRf
+ CRd	CRe	CRf	CRg
+ CRe	CRf	CRg	CRh
+ CRf	CRg	CRh	CRc
+ CRg	CRh	CRc	CRd
+ CRh	CRc	CRd	CRe
+
+ CRb	CRa	CRc	HRb
+ CRc	CRb	CRh	CRd
+ CRh	NRi	CRc	CRg
+ CRd	CRc	CRe	HRd
+ CRe	CRd	CRf	HRe	
+ CRf	CRe	CRg	HRf
+ CRg	CRh	CRf	HRg
+
+ NRi	CRh	CRa	Ct
+ CRa	NRi	CRb	CR4
+
+

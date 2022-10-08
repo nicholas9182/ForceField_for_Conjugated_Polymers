@@ -1,0 +1,3725 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+
+; all residues with fully glycolated sidechains of different lengths
+
+[ A0 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.087	1
+ CS2 	CBB	+0.317	2
+ CS3	CBB	-0.259	3
+ CS4	CE	-0.137	4
+ SS	ST 	-0.039	5
+ OS	OT 	-0.221	6
+ HS	HT 	+0.148	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.026 	7
+ CD2	CBB	+0.274 	8
+ CD3	CBB	-0.313	9
+ CD4	CE	+0.106	10
+ SD	ST 	-0.192	11
+ OD	OT 	-0.273 	12
+ HD	HT 	+0.233	9
+
+
+; Left sidechain 
+ C0	CG!	-0.225	13
+ H01	HG 	+0.111	13
+ H02	HG 	+0.111	13
+ H03	HG 	+0.111	13
+ 
+
+; Right sidechain 
+ Caa	CG!	-0.225	23
+ Ha1	HG 	+0.111	23
+ Ha2	HG 	+0.111	23
+ Ha3	HG 	+0.111	23
+
+; Terminal
+ HTe	HT 	+0.201	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+ CS4	HTe
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	H01
+ C0	H02
+ C0	H03
+   
+; Right Sidechain
+ Caa	Ha1
+ Caa	Ha2
+ Caa	Ha3
+
+; between monomers
+  CD4	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CD4	CD3	SD	+CS4	
+
+
+
+
+[ B0 ]
+; Middle unit, without any terminal atoms, side chain length 0
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.009	1
+ CS2 	CBB	+0.246	2
+ CS3	CBB	-0.335	3
+ CS4	CE	+0.131	4
+ SS	ST	-0.186	5
+ OS	OT	-0.196	6
+ HS	HT	+0.223	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.009	7
+ CD2	CBB	+0.246	8
+ CD3	CBB	-0.335	9
+ CD4	CE	+0.131	10
+ SD	ST      -0.186	11
+ OD	OT	-0.196 	12
+ HD	HT	+0.223	9
+
+
+; Left sidechain 
+ C0	CG!	-0.228	13
+ H01	HG	+0.112	13
+ H02	HG	+0.112	13
+ H03	HG	+0.112	14 
+
+; Right sidechain 
+ Caa	CG!	-0.228	23
+ Ha1	HG	+0.112	23
+ Ha2	HG	+0.112	23
+ Ha3	CG	+0.112	24
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+; Left Sidechain
+ C0	H01
+ C0	H02
+ C0	H03
+  
+; Right Sidechain
+ Caa	Ha1
+ Caa	Ha2
+ Caa	Ha3
+
+; between monomers
+  CD4	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CS4	CS3	SS	-CD4
+ CD4	SD	CD3	+CS4	
+
+
+
+
+
+[ C0 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.026	1
+ CS2 	CBB	+0.274	2
+ CS3	CBB	-0.313	3
+ CS4	CE	+0.106	4
+ SS	ST 	-0.192	5
+ OS	OT 	-0.273	6
+ HS	HT 	+0.233	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.087 	7
+ CD2	CBB	+0.317 	8
+ CD3	CBB	-0.259	9
+ CD4	CE	-0.137	10
+ SD	ST 	-0.039	11
+ OD	OT 	-0.221 	12
+ HD	HT 	+0.148	9
+
+
+; Left sidechain 
+ C0	CG!	-0.225	13
+ H01	HG 	+0.111	13
+ H02	HG 	+0.111	13
+ H03	HG 	+0.111	14
+ 
+
+; Right sidechain 
+ Caa	CG!	-0.225	23
+ Ha1	HG 	+0.111	23
+ Ha2	HG 	+0.111	23
+ Ha3	HG 	+0.111	24
+
+; Terminal
+ HTe	HT 	+0.201	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ CD4	HTe
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	H01
+ C0	H02
+ C0	H03
+   
+; Right Sidechain
+ Caa	Ha1
+ Caa	Ha2
+ Caa	Ha3
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1	
+ CD4	CD3	SD	HTe
+
+; between monomers
+ CS4	CS3	SS	-CD4	
+
+
+
+
+
+
+
+
+
+
+[ A6 ]
+; Initial unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.101	1
+ CS2 	CBB	+0.303	2
+ CS3	CBB	-0.273	3
+ CS4	CE	-0.151	4
+ SS	ST	-0.053	5
+ OS	OT	-0.235	6
+ HS	HT	+0.134	3 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.012	7
+ CD2	CBB	+0.260	8
+ CD3	CBB	-0.327	9
+ CD4	CE	+0.092	10
+ SD	ST      -0.205	11
+ OD	OT	-0.286 	12
+ HD	HT	+0.220	9
+
+; Left sidechain 
+ C0	CG!	-0.238	13
+ H01	HG	+0.099	13
+ H02	HG	+0.099	13
+ C1	CG	+0.021	14
+ H11	HG	+0.099	14
+ H12	HG	+0.099	14
+ O2	OG	-0.385	15
+ C3	CG	+0.013	16
+ H31	HG	+0.099	16
+ H32	HG	+0.099	16
+ C4 	CG	+0.017	17
+ H41	HG	+0.099	17
+ H42	HG	+0.099	17
+ O5	OG	-0.385	18
+ C6	CG	+0.017	19
+ H61	HG	+0.099	19
+ H62	HG	+0.099	19
+ C7	CG	+0.010	20
+ H71	HG	+0.099	20
+ H72	HG	+0.099	20
+ O8 	OG	-0.385	21
+ C9	CG	+0.017	21				
+ H91 	HG	+0.099	21				
+ H92	HG	+0.099	21				
+ Cv	CG	+0.010	22				
+ Hv1	HG	+0.099	22				
+ Hv2	HG	+0.099	22				
+ Op	OG	-0.385	23	
+ Cq	CG	+0.017	24
+ Hq1	HG	+0.099	24
+ Hq2	HG	+0.099	24
+ Ct	CG	+0.010	25
+ Ht1	HG	+0.099	25
+ Ht2	HG	+0.099	25
+ Ou	OG	-0.375	26
+ Cw	CG	+0.017	27
+ Hw1	HG	+0.099	27
+ Hw2 	HG	+0.099	27
+ Cx	CG	+0.010	28
+ Hx1	HG	+0.098	28
+ Hx2	HG	+0.098	28
+ Oy	OG	-0.376	29
+ Cz	CG	-0.042	30
+ Hz1	HG	+0.098	30
+ Hz2	HG	+0.097	30
+ Hz3 	HG	+0.097	30	
+                
+                
+; Right sidechain 
+ Caa	CG!	-0.239	31
+ Ha1	HG	+0.098	31
+ Ha2	HG	+0.098	31
+ Cb	CG	+0.020	32
+ Hb1	HG	+0.098	32
+ Hb2	HG	+0.098	32
+ Oc	OG	-0.386	33
+ Cd	CG	+0.012	34
+ Hd1	HG	+0.098	34
+ Hd2	HG	+0.098	34
+ Ce 	CG	+0.016	35
+ He1	HG	+0.098	35
+ He2	HG	+0.098	35
+ Of	OG	-0.386	36
+ Cg	CG	+0.016	37
+ Hg1	HG	+0.098	37
+ Hg2	HG	+0.098	37
+ Ch	CG	+0.009	38
+ Hh1	HG	+0.098	38
+ Hh2	HG	+0.098	38
+ Oi 	OG	-0.386	39
+ Cj	CG	+0.016	40
+ Hj1 	HG	+0.098	40
+ Hj2	HG	+0.098	40
+ Ck	CG      +0.009	41
+ Hk1    HG      +0.098	41
+ Hk2    HG      +0.098	41
+ Ol     OG      -0.386	42
+ Cm     CG      +0.016	43
+ Hm1    HG      +0.098	43
+ Hm2    HG      +0.098	43
+ Cn     CG      +0.009	44
+ Hn1    HG      +0.098	44
+ Hn2    HG      +0.098	44
+ Oo     OG      -0.376	45
+ Cr     CG      +0.016	46
+ Hr1    HG      +0.098	46
+ Hr2    HG      +0.098	46
+ Cs     CG      +0.009	47
+ Hs1    HG      +0.098	47
+ Hs2    HG      +0.098	47
+ On     OG      -0.376	48
+ Co     CG      -0.042	49
+ Ho1    HG      +0.098	49
+ Ho2    HG      +0.097	49
+ Ho3    HG      +0.097	49
+
+
+; Terminal
+ HTe	HT	+0.191	4
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+CS4	HTe
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ou
+ Ct	Ht1
+ Ct	Ht2
+ Ou	Cw
+ Cw	Cx
+ Cw	Hw1
+ Cw	Hw2
+ Cx	Oy
+ Cx	Hx1
+ Cx	Hx2
+ Oy	Cz
+ Cz	Hz1
+ Cz	Hz2
+ Cz	Hz3
+
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Oo
+ Cn	Hn1
+ Cn	Hn2
+ Oo	Cr
+ Cr	Cs
+ Cr	Hr1
+ Cr	Hr2
+ Cs	On
+ Cs	Hs1
+ Cs	Hs2
+ On	Co
+ Co	Ho1
+ Co	Ho2
+ Co	Ho3
+
+
+; between monomers
+  CD4	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CD4	CD3	SD	+CS4	
+
+
+
+
+
+[ B6 ]
+; Middle unit, without any terminal atoms
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.006	1
+ CS2 	CBB	+0.231	2
+ CS3	CBB	-0.349	3
+ CS4	CE	+0.117	4
+ SS	ST	-0.200	5
+ OS	OT	-0.210	6
+ HS	HT	+0.209	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.006	7
+ CD2	CBB	+0.231	8
+ CD3	CBB	-0.349	9
+ CD4	CE	+0.117	10
+ SD	ST      -0.200	11
+ OD	OT	-0.210 	12
+ HD	HT	+0.209	9
+
+
+; Left sidechain 
+ C0	CG!	-0.238	13
+ H01	HG	+0.098	13
+ H02	HG	+0.098	13
+ C1	CG	+0.021	14
+ H11	HG	+0.098	14
+ H12	HG	+0.098	14
+ O2	OG	-0.385	15
+ C3	CG	+0.013	16
+ H31	HG	+0.098	16
+ H32	HG	+0.098	16
+ C4 	CG	+0.017	17
+ H41	HG	+0.098	17
+ H42	HG	+0.098	17
+ O5	OG	-0.385	18
+ C6	CG	+0.017	19
+ H61	HG	+0.098	19
+ H62	HG	+0.098	19
+ C7	CG	+0.010	20
+ H71	HG	+0.098	20
+ H72	HG	+0.098	20
+ O8 	OG	-0.385	21
+ C9	CG	+0.017	21
+ H91 	HG	+0.098	21
+ H92	HG	+0.098	21
+ Cv	CG	+0.010	22
+ Hv1	HG	+0.098	22
+ Hv2	HG	+0.098	22
+ Op	OG	-0.385	23
+ Cq	CG	+0.017	24
+ Hq1	HG	+0.098	24
+ Hq2	HG	+0.098	24
+ Ct	CG	+0.010	25
+ Ht1	HG	+0.098	25
+ Ht2	HG	+0.098	25
+ Ou	OG	-0.375	26
+ Cw	CG	+0.017	27
+ Hw1	HG	+0.097	27
+ Hw2 	HG	+0.097	27
+ Cx	CG	+0.009	28
+ Hx1	HG	+0.097	28
+ Hx2	HG	+0.097	28
+ Oy	OG	-0.376	29
+ Cz	CG	-0.042	30
+ Hz1	HG	+0.097	30
+ Hz2	HG	+0.097	30
+ Hz3 	HG	+0.097	30									
+ 
+
+; Right sidechain 
+ Caa	CG!	-0.239	31
+ Ha1	HG	+0.097	31
+ Ha2	HG	+0.097	31
+ Cb	CG	+0.020	32
+ Hb1	HG	+0.097	32
+ Hb2	HG	+0.097	32
+ Oc	OG	-0.386	33
+ Cd	CG	+0.012	34
+ Hd1	HG	+0.097	34
+ Hd2	HG	+0.097	34
+ Ce 	CG	+0.016	35
+ He1	HG	+0.097	35
+ He2	HG	+0.097	35
+ Of	OG	-0.386	36
+ Cg	CG	+0.016	37
+ Hg1	HG	+0.097	37
+ Hg2	HG	+0.097	37
+ Ch	CG	+0.009	38
+ Hh1	HG	+0.097	38
+ Hh2	HG	+0.097	38
+ Oi 	OG	-0.386	39
+ Cj	CG	+0.016	40
+ Hj1 	HG	+0.097	40
+ Hj2	HG	+0.097	40
+ Ck	CG      +0.009	41
+ Hk1    HG      +0.097	41
+ Hk2    HG      +0.097	41
+ Ol     OG      -0.386	42
+ Cm     CG      +0.016	43
+ Hm1    HG      +0.097	43
+ Hm2    HG      +0.097	43
+ Cn     CG      +0.009	44
+ Hn1    HG      +0.097	44
+ Hn2    HG      +0.097	44
+ Oo     OG      -0.376	45
+ Cr     CG      +0.016	46
+ Hr1    HG      +0.097	46
+ Hr2    HG      +0.097	46
+ Cs     CG      +0.009	47
+ Hs1    HG      +0.097	47
+ Hs2    HG      +0.097	47
+ On     OG      -0.376	48
+ Co     CG      -0.042	49
+ Ho1    HG      +0.097	49
+ Ho2    HG      +0.097	49
+ Ho3    HG      +0.097	49
+
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ou
+ Ct	Ht1
+ Ct	Ht2
+ Ou	Cw
+ Cw	Cx
+ Cw	Hw1
+ Cw	Hw2
+ Cx	Oy
+ Cx	Hx1
+ Cx	Hx2
+ Oy	Cz
+ Cz	Hz1
+ Cz	Hz2
+ Cz	Hz3
+
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Oo
+ Cn	Hn1
+ Cn	Hn2
+ Oo	Cr
+ Cr	Cs
+ Cr	Hr1
+ Cr	Hr2
+ Cs	On
+ Cs	Hs1
+ Cs	Hs2
+ On	Co
+ Co	Ho1
+ Co	Ho2
+ Co	Ho3
+
+
+
+
+
+; between monomers
+  CD4	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CS4	CS3	SS	-CD4
+ CD4	SD	CD3	+CS4	
+
+
+
+
+
+[ C6 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.012	1
+ CS2 	CBB	+0.260	2
+ CS3	CBB	-0.327	3
+ CS4	CE	+0.092	4
+ SS	ST 	-0.205	5
+ OS	OT 	-0.286	6
+ HS	HT 	+0.220	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.101 	7
+ CD2	CBB	+0.303 	8
+ CD3	CBB	-0.273	9
+ CD4	CE	-0.151	10
+ SD	ST 	-0.053	11
+ OD	OT 	-0.235 	12
+ HD	HT 	+0.134	9
+
+
+; Left sidechain 
+ C0	CG!	-0.238	13
+ H01	HG	+0.098	13
+ H02	HG	+0.098	13
+ C1	CG	+0.021	14
+ H11	HG	+0.098	14
+ H12	HG	+0.098	14
+ O2	OG	-0.385	15
+ C3	CG	+0.013	16
+ H31	HG	+0.098	16
+ H32	HG	+0.098	16
+ C4 	CG	+0.017	17
+ H41	HG	+0.098	17
+ H42	HG	+0.098	17
+ O5	OG	-0.385	18
+ C6	CG	+0.017	19
+ H61	HG	+0.098	19
+ H62	HG	+0.098	19
+ C7	CG	+0.010	20
+ H71	HG	+0.098	20
+ H72	HG	+0.098	20
+ O8 	OG	-0.385	21
+ C9	CG	+0.017	21				
+ H91 	HG	+0.098	21				
+ H92	HG	+0.098	21				
+ Cv	CG	+0.010	22				
+ Hv1	HG	+0.098	22				
+ Hv2	HG	+0.098	22				
+ Op	OG	-0.385	23
+ Cq	CG	+0.017	24
+ Hq1	HG	+0.098	24	
+ Hq2	HG	+0.098	24	
+ Ct	CG	+0.010	25	
+ Ht1	HG	+0.098	25	
+ Ht2	HG	+0.098	25	
+ Ou	OG	-0.375	26	
+ Cw	CG	+0.017	27	
+ Hw1	HG	+0.098	27	
+ Hw2 	HG	+0.098	27	
+ Cx	CG	+0.010	28	
+ Hx1	HG	+0.098	28	
+ Hx2	HG	+0.098	28	
+ Oy	OG	-0.375	29
+ Cz	CG	-0.041	30
+ Hz1	HG	+0.097	30
+ Hz2	HG	+0.097	30
+ Hz3 	HG	+0.097	30	
+
+ 
+
+; Right sidechain 
+ Caa	CG!	-0.239	31
+ Ha1	HG	+0.097	31
+ Ha2	HG	+0.097	31
+ Cb	CG	+0.020	32
+ Hb1	HG	+0.097	32
+ Hb2	HG	+0.097	32
+ Oc	OG	-0.386	33
+ Cd	CG	+0.012	34
+ Hd1	HG	+0.097	34
+ Hd2	HG	+0.097	34
+ Ce 	CG	+0.016	35
+ He1	HG	+0.097	35
+ He2	HG	+0.097	35
+ Of	OG	-0.386	36
+ Cg	CG	+0.016	37
+ Hg1	HG	+0.097	37
+ Hg2	HG	+0.097	37
+ Ch	CG	+0.009	38
+ Hh1	HG	+0.097	38
+ Hh2	HG	+0.097	38
+ Oi 	OG	-0.386	39
+ Cj	CG	+0.016	40
+ Hj1 	HG	+0.097	40
+ Hj2	HG	+0.097	40
+ Ck	CG      +0.009	41
+ Hk1    HG      +0.097	41
+ Hk2    HG      +0.097	41
+ Ol     OG      -0.386	42
+ Cm     CG      +0.016	43
+ Hm1    HG      +0.097	43
+ Hm2    HG      +0.097	43
+ Cn     CG      +0.009	44
+ Hn1    HG      +0.097	44
+ Hn2    HG      +0.097	44
+ Oo     OG      -0.376	45
+ Cr     CG      +0.016	46
+ Hr1    HG      +0.097	46
+ Hr2    HG      +0.097	46
+ Cs     CG      +0.009	47
+ Hs1    HG      +0.097	47
+ Hs2    HG      +0.097	47
+ On     OG      -0.376	48
+ Co     CG      -0.042	49
+ Ho1    HG      +0.097	49
+ Ho2    HG      +0.097	49
+ Ho3    HG      +0.097	49
+
+
+
+; Terminal
+ HTe	HT 	+0.187	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ CD4	HTe
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ou
+ Ct	Ht1
+ Ct	Ht2
+ Ou	Cw
+ Cw	Cx
+ Cw	Hw1
+ Cw	Hw2
+ Cx	Oy
+ Cx	Hx1
+ Cx	Hx2
+ Oy	Cz
+ Cz	Hz1
+ Cz	Hz2
+ Cz	Hz3
+  
+
+ 
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Oo
+ Cn	Hn1
+ Cn	Hn2
+ Oo	Cr
+ Cr	Cs
+ Cr	Hr1
+ Cr	Hr2
+ Cs	On
+ Cs	Hs1
+ Cs	Hs2
+ On	Co
+ Co	Ho1
+ Co	Ho2
+ Co	Ho3
+
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1	
+ CD4	CD3	SD	HTe
+
+; between monomers
+ CS4	CS3	SS	-CD4	
+
+
+
+
+
+
+
+
+
+
+
+[ A1 ]
+; Initial unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.095	1
+ CS2 	CBB	+0.309	2
+ CS3	CBB	-0.267	3
+ CS4	CE	-0.145	4
+ SS	ST	-0.047	5
+ OS	OT	-0.229	6
+ HS	HT	+0.140	3 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.018	7
+ CD2	CBB	+0.266	8
+ CD3	CBB	-0.321	9
+ CD4	CE	+0.098	10
+ SD	ST      -0.199	11
+ OD	OT	-0.280 	12
+ HD	HT	+0.226	9
+
+; Left sidechain 
+ C0	CG!	-0.232	13
+ H01	HG	+0.104	13
+ H02	HG	+0.104	13
+ C1	CG	+0.027	14
+ H11	HG	+0.104	14
+ H12	HG	+0.104	14
+ O2	OG	-0.379	15
+ C3	CG	+0.019	16
+ H31	HG	+0.104	16
+ H32	HG	+0.104	16
+ H33	HG	+0.104	16 
+
+; Right sidechain 
+ Caa	CG!	-0.232	23
+ Ha1	HG	+0.104	23
+ Ha2	HG	+0.104	23
+ Cb	CG	+0.027	24
+ Hb1	HG	+0.104	24
+ Hb2	HG	+0.104	24
+ Oc	OG	-0.379	25
+ Cd	CG	+0.019	26
+ Hd1	HG	+0.104	26
+ Hd2	HG	+0.104	26
+ Hd3	HG	+0.104	26
+
+; Terminal
+ HTe	HT	+0.220	4
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+CS4	HTe
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3 	H31
+ C3	H32
+ C3	H33
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Hd1
+ Cd	Hd2
+ Cd	Hd3
+
+; between monomers
+  CD4	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CD4	CD3	SD	+CS4	
+
+
+
+
+
+[ B1 ]
+; Middle unit, without any terminal atoms
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.003	1
+ CS2 	CBB	+0.240	2
+ CS3	CBB	-0.340	3
+ CS4	CE	+0.126	4
+ SS	ST	-0.191	5
+ OS	OT	-0.201	6
+ HS	HT	+0.219	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.004	7
+ CD2	CBB	+0.241	8
+ CD3	CBB	-0.339	9
+ CD4	CE	+0.127	10
+ SD	ST      -0.190	11
+ OD	OT	-0.200 	12
+ HD	HT	+0.219	9
+
+
+; Left sidechain 
+ C0	CG!	-0.228	13
+ H01	HG	+0.098	13
+ H02	HG	+0.098	13
+ C1	CG	+0.031	14
+ H11	HG	+0.099	14
+ H12	HG	+0.099	14
+ O2	OG	-0.376	15
+ C3	CG	+0.023	16
+ H31	HG	+0.099	16
+ H32	HG	+0.099	16
+ H33	HG	+0.099	16 
+
+; Right sidechain 
+ Caa	CG!	-0.228	23
+ Ha1	HG	+0.098	23
+ Ha2	HG	+0.098	23
+ Cb	CG	+0.031	24
+ Hb1	HG	+0.099	24
+ Hb2	HG	+0.099	24
+ Oc	OG	-0.376	25
+ Cd	CG	+0.023	26
+ Hd1	HG	+0.099	26
+ Hd2	HG	+0.099	26
+ Hd3	HG	+0.099	26
+
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3 	H31
+ C3	H32
+ C3	H33
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Hd1
+ Cd	Hd2
+ Cd	Hd3
+
+
+
+
+
+
+; between monomers
+  CD4	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CS4	CS3	SS	-CD4
+ CD4	SD	CD3	+CS4	
+
+
+
+
+
+[ C1 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.019	1
+ CS2 	CBB	+0.267	2
+ CS3	CBB	-0.321	3
+ CS4	CE	+0.098	4
+ SS	ST 	-0.199	5
+ OS	OT 	-0.280	6
+ HS	HT 	+0.226	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.095 	7
+ CD2	CBB	+0.309 	8
+ CD3	CBB	-0.267	9
+ CD4	CE	-0.145	10
+ SD	ST 	-0.047	11
+ OD	OT 	-0.229 	12
+ HD	HT 	+0.140	9
+
+
+
+; Left sidechain 
+ C0	CG!	-0.232	13
+ H01	HG	+0.104	13
+ H02	HG	+0.104	13
+ C1	CG	+0.027	14
+ H11	HG	+0.104	14
+ H12	HG	+0.104	14
+ O2	OG	-0.379	15
+ C3	CG	+0.019	16
+ H31	HG	+0.104	16
+ H32	HG	+0.104	16
+ H33	HG	+0.104	16 
+
+; Right sidechain 
+ Caa	CG!	-0.232	23
+ Ha1	HG	+0.104	23
+ Ha2	HG	+0.104	23
+ Cb	CG	+0.027	24
+ Hb1	HG	+0.104	24
+ Hb2	HG	+0.104	24
+ Oc	OG	-0.379	25
+ Cd	CG	+0.019	26
+ Hd1	HG	+0.104	26
+ Hd2	HG	+0.104	26
+ Hd3	HG	+0.104	26
+
+; Terminal
+ HTe	HT 	+0.218	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ CD4	HTe
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3 	H31
+ C3	H32
+ C3	H33
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Hd1
+ Cd	Hd2
+ Cd	Hd3
+
+
+
+
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1	
+ CD4	CD3	SD	HTe
+
+; between monomers
+ CS4	CS3	SS	-CD4	
+
+
+
+
+
+
+
+[ A5 ]
+; Initial unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.101	1
+ CS2 	CBB	+0.303	2
+ CS3	CBB	-0.273	3
+ CS4	CE	-0.151	4
+ SS	ST	-0.053	5
+ OS	OT	-0.235	6
+ HS	HT	+0.134	3 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.012	7
+ CD2	CBB	+0.260	8
+ CD3	CBB	-0.327	9
+ CD4	CE	+0.092	10
+ SD	ST      -0.206	11
+ OD	OT	-0.287 	12
+ HD	HT	+0.219	9
+
+; Left sidechain 
+ C0	CG!	-0.239	13
+ H01	HG	+0.097	13
+ H02	HG	+0.097	13
+ C1	CG	+0.020	14
+ H11	HG	+0.097	14
+ H12	HG	+0.097	14
+ O2	OG	-0.386	15
+ C3	CG	+0.012	16
+ H31	HG	+0.097	16
+ H32	HG	+0.097	16
+ C4 	CG	+0.016	17
+ H41	HG	+0.097	17
+ H42	HG	+0.097	17
+ O5	OG	-0.386	18
+ C6	CG	+0.016	19
+ H61	HG	+0.097	19
+ H62	HG	+0.097	19
+ C7	CG	+0.009	20
+ H71	HG	+0.097	20
+ H72	HG	+0.097	20
+ O8 	OG	-0.386	21
+ C9	CG	+0.016	21				
+ H91 	HG	+0.097	21				
+ H92	HG	+0.097	21				
+ Cv	CG	+0.009	22				
+ Hv1	HG	+0.097	22				
+ Hv2	HG	+0.097	22				
+ Op	OG	-0.386	23		
+ Cq	CG	+0.016	24
+ Hq1	HG	+0.097	24
+ Hq2	HG	+0.097	24
+ Ct	CG	+0.009	25
+ Ht1	HG	+0.097	25
+ Ht2	HG	+0.097	25
+ Ou	OG	-0.376	26
+ Cw	CG	+0.016	27
+ Hw1	HG	+0.097	27
+ Hw2 	HG	+0.097	27
+ Hw3	HG	+0.097	27                
+                
+; Right sidechain 
+ Caa	CG!	-0.239	31
+ Ha1	HG	+0.097	31
+ Ha2	HG	+0.097	31
+ Cb	CG	+0.020	32
+ Hb1	HG	+0.097	32
+ Hb2	HG	+0.097	32
+ Oc	OG	-0.386	33
+ Cd	CG	+0.012	34
+ Hd1	HG	+0.097	34
+ Hd2	HG	+0.097	34
+ Ce 	CG	+0.016	35
+ He1	HG	+0.097	35
+ He2	HG	+0.097	35
+ Of	OG	-0.386	36
+ Cg	CG	+0.016	37
+ Hg1	HG	+0.097	37
+ Hg2	HG	+0.097	37
+ Ch	CG	+0.009	38
+ Hh1	HG	+0.097	38
+ Hh2	HG	+0.097	38
+ Oi 	OG	-0.386	39
+ Cj	CG	+0.016	40
+ Hj1 	HG	+0.097	40
+ Hj2	HG	+0.097	40
+ Ck	CG      +0.009	41
+ Hk1    HG      +0.097	41
+ Hk2    HG      +0.097	41
+ Ol     OG      -0.386	42
+ Cm     CG      +0.016	43
+ Hm1    HG      +0.097	43
+ Hm2    HG      +0.097	43
+ Cn     CG      +0.009	44
+ Hn1    HG      +0.097	44
+ Hn2    HG      +0.097	44
+ Oo     OG      -0.376	45
+ Cr     CG      +0.016	46
+ Hr1    HG      +0.097	46
+ Hr2    HG      +0.097	46
+ Hr3	HG	+0.097	46
+
+; Terminal
+ HTe	HT	+0.191	4
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+CS4	HTe
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ou
+ Ct	Ht1
+ Ct	Ht2
+ Ou	Cw
+ Cw	Cx
+ Cw	Hw1
+ Cw	Hw2
+ Cw	Hw3
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Oo
+ Cn	Hn1
+ Cn	Hn2
+ Oo	Cr
+ Cr	Cs
+ Cr	Hr1
+ Cr	Hr2
+ Cr	Hr3
+
+; between monomers
+  CD4	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CD4	CD3	SD	+CS4	
+
+
+
+
+
+[ B5 ]
+; Middle unit, without any terminal atoms
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.006	1
+ CS2 	CBB	+0.231	2
+ CS3	CBB	-0.349	3
+ CS4	CE	+0.117	4
+ SS	ST	-0.200	5
+ OS	OT	-0.210	6
+ HS	HT	+0.209	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.006	7
+ CD2	CBB	+0.230	8
+ CD3	CBB	-0.350	9
+ CD4	CE	+0.116	10
+ SD	ST      -0.201	11
+ OD	OT	-0.211 	12
+ HD	HT	+0.208	9
+
+
+; Left sidechain 
+ C0	CG!	-0.239	13
+ H01	HG	+0.097	13
+ H02	HG	+0.097	13
+ C1	CG	+0.020	14
+ H11	HG	+0.097	14
+ H12	HG	+0.097	14
+ O2	OG	-0.386	15
+ C3	CG	+0.012	16
+ H31	HG	+0.097	16
+ H32	HG	+0.097	16
+ C4 	CG	+0.016	17
+ H41	HG	+0.097	17
+ H42	HG	+0.097	17
+ O5	OG	-0.386	18
+ C6	CG	+0.016	19
+ H61	HG	+0.097	19
+ H62	HG	+0.097	19
+ C7	CG	+0.009	20
+ H71	HG	+0.097	20
+ H72	HG	+0.097	20
+ O8 	OG	-0.386	21
+ C9	CG	+0.016	21				
+ H91 	HG	+0.097	21				
+ H92	HG	+0.097	21				
+ Cv	CG	+0.009	22				
+ Hv1	HG	+0.097	22				
+ Hv2	HG	+0.097	22				
+ Op	OG	-0.386	23
+ Cq	CG	+0.016	24
+ Hq1	HG	+0.097	24
+ Hq2	HG	+0.097	24
+ Ct	CG	+0.009	25
+ Ht1	HG	+0.097	25
+ Ht2	HG	+0.097	25
+ Ou	OG	-0.376	26
+ Cw	CG	+0.016	27
+ Hw1	HG	+0.097	27
+ Hw2 	HG	+0.097	27
+ Hw3	HG	+0.097	27        
+                
+; Right sidechain 
+ Caa	CG!	-0.239	31
+ Ha1	HG	+0.097	31
+ Ha2	HG	+0.097	31
+ Cb	CG	+0.020	32
+ Hb1	HG	+0.097	32
+ Hb2	HG	+0.097	32
+ Oc	OG	-0.386	33
+ Cd	CG	+0.012	34
+ Hd1	HG	+0.097	34
+ Hd2	HG	+0.097	34
+ Ce 	CG	+0.016	35
+ He1	HG	+0.097	35
+ He2	HG	+0.097	35
+ Of	OG	-0.386	36
+ Cg	CG	+0.016	37
+ Hg1	HG	+0.097	37
+ Hg2	HG	+0.097	37
+ Ch	CG	+0.009	38
+ Hh1	HG	+0.097	38
+ Hh2	HG	+0.097	38
+ Oi 	OG	-0.386	39
+ Cj	CG	+0.016	40
+ Hj1 	HG	+0.097	40
+ Hj2	HG	+0.097	40
+ Ck	CG      +0.009	41
+ Hk1    HG      +0.097	41
+ Hk2    HG      +0.097	41
+ Ol     OG      -0.386	42
+ Cm     CG      +0.016	43
+ Hm1    HG      +0.097	43
+ Hm2    HG      +0.097	43
+ Cn     CG      +0.009	44
+ Hn1    HG      +0.097	44
+ Hn2    HG      +0.097	44
+ Oo     OG      -0.376	45
+ Cr     CG      +0.016	46
+ Hr1    HG      +0.097	46
+ Hr2    HG      +0.097	46
+ Hr3	HG	+0.097	46
+
+
+
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ou
+ Ct	Ht1
+ Ct	Ht2
+ Ou	Cw
+ Cw	Cx
+ Cw	Hw1
+ Cw	Hw2
+ Cw	Hw3
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Oo
+ Cn	Hn1
+ Cn	Hn2
+ Oo	Cr
+ Cr	Cs
+ Cr	Hr1
+ Cr	Hr2
+ Cr	Hr3
+
+
+
+
+
+; between monomers
+  CD4	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CS4	CS3	SS	-CD4
+ CD4	SD	CD3	+CS4	
+
+
+
+
+
+[ C5 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.011	1
+ CS2 	CBB	+0.259	2
+ CS3	CBB	-0.328	3
+ CS4	CE	+0.091	4
+ SS	ST 	-0.206	5
+ OS	OT 	-0.287	6
+ HS	HT 	+0.219	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.102 	7
+ CD2	CBB	+0.302 	8
+ CD3	CBB	-0.274	9
+ CD4	CE	-0.152	10
+ SD	ST 	-0.054	11
+ OD	OT 	-0.236 	12
+ HD	HT 	+0.133	9
+
+
+; Left sidechain 
+ C0	CG!	-0.239	13
+ H01	HG	+0.097	13
+ H02	HG	+0.097	13
+ C1	CG	+0.020	14
+ H11	HG	+0.097	14
+ H12	HG	+0.097	14
+ O2	OG	-0.386	15
+ C3	CG	+0.012	16
+ H31	HG	+0.097	16
+ H32	HG	+0.097	16
+ C4 	CG	+0.016	17
+ H41	HG	+0.097	17
+ H42	HG	+0.097	17
+ O5	OG	-0.386	18
+ C6	CG	+0.016	19
+ H61	HG	+0.097	19
+ H62	HG	+0.097	19
+ C7	CG	+0.009	20
+ H71	HG	+0.097	20
+ H72	HG	+0.097	20
+ O8 	OG	-0.386	21
+ C9	CG	+0.016	21				
+ H91 	HG	+0.097	21				
+ H92	HG	+0.097	21				
+ Cv	CG	+0.009	22				
+ Hv1	HG	+0.097	22				
+ Hv2	HG	+0.097	22				
+ Op	OG	-0.386	23	
+ Cq	CG	+0.016	24	
+ Hq1	HG	+0.097	24
+ Hq2	HG	+0.097	24
+ Ct	CG	+0.009	25
+ Ht1	HG	+0.097	25
+ Ht2	HG	+0.097	25
+ Ou	OG	-0.376	26
+ Cw	CG	+0.016	27
+ Hw1	HG	+0.097	27
+ Hw2 	HG	+0.097	27
+ Hw3	HG	+0.097	27                
+                
+; Right sidechain 
+ Caa	CG!	-0.239	31
+ Ha1	HG	+0.097	31
+ Ha2	HG	+0.097	31
+ Cb	CG	+0.020	32
+ Hb1	HG	+0.097	32
+ Hb2	HG	+0.097	32
+ Oc	OG	-0.386	33
+ Cd	CG	+0.012	34
+ Hd1	HG	+0.097	34
+ Hd2	HG	+0.097	34
+ Ce 	CG	+0.016	35
+ He1	HG	+0.097	35
+ He2	HG	+0.097	35
+ Of	OG	-0.386	36
+ Cg	CG	+0.016	37
+ Hg1	HG	+0.097	37
+ Hg2	HG	+0.097	37
+ Ch	CG	+0.009	38
+ Hh1	HG	+0.097	38
+ Hh2	HG	+0.097	38
+ Oi 	OG	-0.386	39
+ Cj	CG	+0.016	40
+ Hj1 	HG	+0.097	40
+ Hj2	HG	+0.097	40
+ Ck	CG      +0.009	41
+ Hk1    HG      +0.097	41
+ Hk2    HG      +0.097	41
+ Ol     OG      -0.386	42
+ Cm     CG      +0.016	43
+ Hm1    HG      +0.097	43
+ Hm2    HG      +0.097	43
+ Cn     CG      +0.009	44
+ Hn1    HG      +0.097	44
+ Hn2    HG      +0.097	44
+ Oo     OG      -0.376	45
+ Cr     CG      +0.016	46
+ Hr1    HG      +0.097	46
+ Hr2    HG      +0.097	46
+ Hr3	HG	+0.097	46
+
+
+
+; Terminal
+ HTe	HT 	+0.202	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ CD4	HTe
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ou
+ Ct	Ht1
+ Ct	Ht2
+ Ou	Cw
+ Cw	Cx
+ Cw	Hw1
+ Cw	Hw2
+ Cw	Hw3
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Oo
+ Cn	Hn1
+ Cn	Hn2
+ Oo	Cr
+ Cr	Cs
+ Cr	Hr1
+ Cr	Hr2
+ Cr	Hr3
+
+
+
+
+
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1	
+ CD4	CD3	SD	HTe
+
+; between monomers
+ CS4	CS3	SS	-CD4	
+
+
+
+
+
+
+
+
+
+[ A2 ]
+; Initial unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.099	1
+ CS2 	CBB	+0.305	2
+ CS3	CBB	-0.271	3
+ CS4	CE	-0.149	4
+ SS	ST	-0.051	5
+ OS	OT	-0.233	6
+ HS	HT	+0.136	3 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.014	7
+ CD2	CBB	+0.262	8
+ CD3	CBB	-0.325	9
+ CD4	CE	+0.094	10
+ SD	ST      -0.203	11
+ OD	OT	-0.284 	12
+ HD	HT	+0.222	9
+
+; Left sidechain 
+ C0	CG!	-0.236	13
+ H01	HG	+0.100	13
+ H02	HG	+0.100	13
+ C1	CG	+0.023	14
+ H11	HG	+0.100	14
+ H12	HG	+0.100	14
+ O2	OG	-0.373	15
+ C3	CG	+0.015	16
+ H31	HG	+0.100	16
+ H32	HG	+0.100	16
+ C4 	CG	+0.019	17
+ H41	HG	+0.100	17
+ H42	HG	+0.100	17
+ O5	OG	-0.373	18
+ C6	CG	+0.019	19
+ H61	HG	+0.100	19
+ H62	HG	+0.100	19
+ H63	HG	+0.100	19 
+
+; Right sidechain 
+ Caa	CG!	-0.236	23
+ Ha1	HG	+0.100	23
+ Ha2	HG	+0.100	23
+ Cb	CG	+0.023	24
+ Hb1	HG	+0.100	24
+ Hb2	HG	+0.100	24
+ Oc	OG	-0.373	25
+ Cd	CG	+0.015	26
+ Hd1	HG	+0.100	26
+ Hd2	HG	+0.100	26
+ Ce 	CG	+0.019	27
+ He1	HG	+0.100	27
+ He2	HG	+0.100	27
+ Of	OG	-0.373	28
+ Cg	CG	+0.019	29
+ Hg1	HG	+0.100	29
+ Hg2	HG	+0.100	29
+ Hg3	HG	+0.100	29
+
+; Terminal
+ HTe	HT	+0.179	4
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+CS4	HTe
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C6	H63 
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Cg	Hg3
+
+; between monomers
+  CD4	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CD4	CD3	SD	+CS4	
+
+
+
+
+
+
+
+
+
+[ B2 ]
+; Middle unit, without any terminal atoms
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.004	1
+ CS2 	CBB	+0.233	2
+ CS3	CBB	-0.347	3
+ CS4	CE	+0.119	4
+ SS	ST	-0.198	5
+ OS	OT	-0.208	6
+ HS	HT	+0.211	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.004	7
+ CD2	CBB	+0.233	8
+ CD3	CBB	-0.347	9
+ CD4	CE	+0.119	10
+ SD	ST      -0.198	11
+ OD	OT	-0.208 	12
+ HD	HT	+0.211	9
+
+
+; Left sidechain 
+ C0	CG!	-0.236	13
+ H01	HG	+0.100	13
+ H02	HG	+0.100	13
+ C1	CG	+0.023	14
+ H11	HG	+0.100	14
+ H12	HG	+0.100	14
+ O2	OG	-0.373	15
+ C3	CG	+0.015	16
+ H31	HG	+0.100	16
+ H32	HG	+0.100	16
+ C4 	CG	+0.019	17
+ H41	HG	+0.100	17
+ H42	HG	+0.100	17
+ O5	OG	-0.373	18
+ C6	CG	+0.019	19
+ H61	HG	+0.100	19
+ H62	HG	+0.100	19
+ H63	HG	+0.100	19 
+
+; Right sidechain 
+ Caa	CG!	-0.236	23
+ Ha1	HG	+0.100	23
+ Ha2	HG	+0.100	23
+ Cb	CG	+0.023	24
+ Hb1	HG	+0.100	24
+ Hb2	HG	+0.100	24
+ Oc	OG	-0.373	25
+ Cd	CG	+0.015	26
+ Hd1	HG	+0.100	26
+ Hd2	HG	+0.100	26
+ Ce 	CG	+0.019	27
+ He1	HG	+0.100	27
+ He2	HG	+0.100	27
+ Of	OG	-0.373	28
+ Cg	CG	+0.019	29
+ Hg1	HG	+0.100	29
+ Hg2	HG	+0.100	29
+ Hg3	HG	+0.100	29
+
+ 
+
+
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C6	H63 
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Cg	Hg3
+
+
+
+; between monomers
+  CD4	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CS4	CS3	SS	-CD4
+ CD4	SD	CD3	+CS4	
+
+
+
+
+
+[ C2 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.014	1
+ CS2 	CBB	+0.262	2
+ CS3	CBB	-0.325	3
+ CS4	CE	+0.094	4
+ SS	ST 	-0.203	5
+ OS	OT 	-0.284	6
+ HS	HT 	+0.222	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.099 	7
+ CD2	CBB	+0.305 	8
+ CD3	CBB	-0.271	9
+ CD4	CE	-0.149	10
+ SD	ST 	-0.051	11
+ OD	OT 	-0.233 	12
+ HD	HT 	+0.136	9
+
+
+; Left sidechain 
+ C0	CG!	-0.236	13
+ H01	HG	+0.100	13
+ H02	HG	+0.100	13
+ C1	CG	+0.023	14
+ H11	HG	+0.100	14
+ H12	HG	+0.100	14
+ O2	OG	-0.373	15
+ C3	CG	+0.015	16
+ H31	HG	+0.100	16
+ H32	HG	+0.100	16
+ C4 	CG	+0.019	17
+ H41	HG	+0.100	17
+ H42	HG	+0.100	17
+ O5	OG	-0.373	18
+ C6	CG	+0.019	19
+ H61	HG	+0.100	19
+ H62	HG	+0.100	19
+ H63	HG	+0.100	19 
+
+; Right sidechain 
+ Caa	CG!	-0.236	23
+ Ha1	HG	+0.100	23
+ Ha2	HG	+0.100	23
+ Cb	CG	+0.023	24
+ Hb1	HG	+0.100	24
+ Hb2	HG	+0.100	24
+ Oc	OG	-0.373	25
+ Cd	CG	+0.015	26
+ Hd1	HG	+0.100	26
+ Hd2	HG	+0.100	26
+ Ce 	CG	+0.019	27
+ He1	HG	+0.100	27
+ He2	HG	+0.100	27
+ Of	OG	-0.373	28
+ Cg	CG	+0.019	29
+ Hg1	HG	+0.100	29
+ Hg2	HG	+0.100	29
+ Hg3	HG	+0.100	29
+
+
+
+
+
+
+; Terminal
+ HTe	HT 	+0.209	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ CD4	HTe
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C6	H63 
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Cg	Hg3
+
+
+
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1	
+ CD4	CD3	SD	HTe
+
+; between monomers
+ CS4	CS3	SS	-CD4	
+
+
+
+
+
+
+
+
+
+
+
+[ A4 ]
+; Initial unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.099	1
+ CS2 	CBB	+0.305	2
+ CS3	CBB	-0.271	3
+ CS4	CE	-0.149	4
+ SS	ST	-0.051	5
+ OS	OT	-0.233	6
+ HS	HT	+0.136	3 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	+0.014	7
+ CD2	CBB	+0.262	8
+ CD3	CBB	-0.325	9
+ CD4	CE	+0.094	10
+ SD	ST      -0.203	11
+ OD	OT	-0.284 	12
+ HD	HT	+0.222	9
+
+; Left sidechain 
+ C0	CG!	-0.236	13
+ H01	HG	+0.100	13
+ H02	HG	+0.100	13
+ C1	CG	+0.023	14
+ H11	HG	+0.100	14
+ H12	HG	+0.100	14
+ O2	OG	-0.383	15
+ C3	CG	+0.015	16
+ H31	HG	+0.100	16
+ H32	HG	+0.100	16
+ C4 	CG	+0.019	17
+ H41	HG	+0.100	17
+ H42	HG	+0.100	17
+ O5	OG	-0.383	18
+ C6	CG	+0.019	19
+ H61	HG	+0.100	19
+ H62	HG	+0.100	19
+ C7	CG	+0.012	20
+ H71	HG	+0.100	20
+ H72	HG	+0.100	20
+ O8 	OG	-0.383	21
+ C9	CG	+0.019	21				
+ H91 	HG	+0.100	21				
+ H92	HG	+0.100	21				
+ Cv	CG	+0.012	22				
+ Hv1	HG	+0.100	22				
+ Hv2	HG	+0.100	22				
+ Op	OG	-0.383	23								
+ Cq	CG	+0.019	24								
+ Hq1	HG	+0.100	24								
+ Hq2	HG	+0.100	24	
+ Hq3	HG	+0.100	24								
+                
+; Right sidechain 
+ Caa	CG!	-0.236	31
+ Ha1	HG	+0.100	31
+ Ha2	HG	+0.100	31
+ Cb	CG	+0.023	32
+ Hb1	HG	+0.100	32
+ Hb2	HG	+0.100	32
+ Oc	OG	-0.383	33
+ Cd	CG	+0.015	34
+ Hd1	HG	+0.100	34
+ Hd2	HG	+0.100	34
+ Ce 	CG	+0.019	35
+ He1	HG	+0.100	35
+ He2	HG	+0.100	35
+ Of	OG	-0.383	36
+ Cg	CG	+0.019	37
+ Hg1	HG	+0.100	37
+ Hg2	HG	+0.100	37
+ Ch	CG	+0.012	38
+ Hh1	HG	+0.100	38
+ Hh2	HG	+0.100	38
+ Oi 	OG	-0.383	39
+ Cj	CG	+0.019	40
+ Hj1 	HG	+0.100	40
+ Hj2	HG	+0.100	40
+ Ck	CG      +0.012	41
+ Hk1    HG      +0.100	41
+ Hk2    HG      +0.100	41
+ Ol     OG      -0.383	42
+ Cm     CG      +0.019	43
+ Hm1    HG      +0.100	43
+ Hm2    HG      +0.100	43
+ Hm3	HG	+0.100	43
+
+; Terminal
+ HTe	HT	+0.042	4
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+CS4	HTe
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Cq	Hq3 
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cm	Hm3
+
+; between monomers
+  CD4	+CS4	
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ CS4	CS3	SS	HTe
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CD4	CD3	SD	+CS4	
+
+
+
+
+
+[ B4 ]
+; Middle unit, without any terminal atoms
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.004	1
+ CS2 	CBB	+0.233	2
+ CS3	CBB	-0.347	3
+ CS4	CE	+0.119	4
+ SS	ST	-0.198	5
+ OS	OT	-0.208	6
+ HS	HT	+0.211	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.004	7
+ CD2	CBB	+0.233	8
+ CD3	CBB	-0.347	9
+ CD4	CE	+0.119	10
+ SD	ST      -0.198	11
+ OD	OT	-0.208 	12
+ HD	HT	+0.211	9
+
+
+; Left sidechain 
+ C0	CG!	-0.236	13
+ H01	HG	+0.096	13
+ H02	HG	+0.096	13
+ C1	CG	+0.023	14
+ H11	HG	+0.096	14
+ H12	HG	+0.096	14
+ O2	OG	-0.383	15
+ C3	CG	+0.015	16
+ H31	HG	+0.096	16
+ H32	HG	+0.096	16
+ C4 	CG	+0.019	17
+ H41	HG	+0.096	17
+ H42	HG	+0.096	17
+ O5	OG	-0.383	18
+ C6	CG	+0.019	19
+ H61	HG	+0.096	19
+ H62	HG	+0.096	19
+ C7	CG	+0.012	20
+ H71	HG	+0.096	20
+ H72	HG	+0.096	20
+ O8 	OG	-0.383	21
+ C9	CG	+0.019	21
+ H91 	HG	+0.096	21
+ H92	HG	+0.096	21
+ Cv	CG	+0.012	22
+ Hv1	HG	+0.096	22
+ Hv2	HG	+0.096	22
+ Op	OG	-0.383	23
+ Cq	CG	+0.019	24
+ Hq1	HG	+0.096	24
+ Hq2	HG	+0.096	24
+ Hq3	HG	+0.096	24
+                
+; Right sidechain 
+ Caa	CG!	-0.236	31
+ Ha1	HG	+0.096	31
+ Ha2	HG	+0.096	31
+ Cb	CG	+0.023	32
+ Hb1	HG	+0.096	32
+ Hb2	HG	+0.096	32
+ Oc	OG	-0.383	33
+ Cd	CG	+0.015	34
+ Hd1	HG	+0.096	34
+ Hd2	HG	+0.096	34
+ Ce 	CG	+0.019	35
+ He1	HG	+0.096	35
+ He2	HG	+0.096	35
+ Of	OG	-0.383	36
+ Cg	CG	+0.019	37
+ Hg1	HG	+0.096	37
+ Hg2	HG	+0.096	37
+ Ch	CG	+0.012	38
+ Hh1	HG	+0.096	38
+ Hh2	HG	+0.096	38
+ Oi 	OG	-0.383	39
+ Cj	CG	+0.019	40
+ Hj1 	HG	+0.096	40
+ Hj2	HG	+0.096	40
+ Ck	CG      +0.012	41
+ Hk1    HG      +0.096	41
+ Hk2    HG      +0.096	41
+ Ol     OG      -0.383	42
+ Cm     CG      +0.019	43
+ Hm1    HG      +0.096	43
+ Hm2    HG      +0.096	43
+ Hm3	HG	+0.096	43
+
+
+
+
+
+[ bonds ]
+; Left Thiophene
+CS1	CS2
+CS2	CS3
+CS3	CS4
+CS4	SS
+SS	CS1
+CS2	OS
+CS3	HS
+
+; Right Thiophene
+CD1	CD2
+CD2	CD3
+CD3	CD4
+CD4	SD
+SD	CD1
+CD2	OD
+CD3	HD
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OD	SS
+ SD	OS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Cq	Hq3 
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cm	Hm3
+
+
+
+
+
+; between monomers
+  CD4	+CS4
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+ CD3	CD4	+CS4	+SS
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+
+; between monomers
+ CS4	CS3	SS	-CD4
+ CD4	SD	CD3	+CS4	
+
+
+
+
+
+[ C4 ]
+; End unit, with H terminals
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	+0.014	1
+ CS2 	CBB	+0.262	2
+ CS3	CBB	-0.325	3
+ CS4	CE	+0.094	4
+ SS	ST 	-0.203	5
+ OS	OT 	-0.284	6
+ HS	HT 	+0.222	3 
+
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.099 	7
+ CD2	CBB	+0.305 	8
+ CD3	CBB	-0.271	9
+ CD4	CE	-0.149	10
+ SD	ST 	-0.051	11
+ OD	OT 	-0.233 	12
+ HD	HT 	+0.136	9
+
+
+; Left sidechain 
+ C0	CG!	-0.236	13
+ H01	HG	+0.103	13
+ H02	HG	+0.103	13
+ C1	CG	+0.023	14
+ H11	HG	+0.103	14
+ H12	HG	+0.103	14
+ O2	OG	-0.383	15
+ C3	CG	+0.015	16
+ H31	HG	+0.103	16
+ H32	HG	+0.103	16
+ C4 	CG	+0.019	17
+ H41	HG	+0.103	17
+ H42	HG	+0.103	17
+ O5	OG	-0.383	18
+ C6	CG	+0.019	19
+ H61	HG	+0.099	19
+ H62	HG	+0.099	19
+ C7	CG	+0.012	20
+ H71	HG	+0.099	20
+ H72	HG	+0.099	20
+ O8 	OG	-0.383	21
+ C9	CG	+0.019	21
+ H91 	HG	+0.098	21
+ H92	HG	+0.098	21
+ Cv	CG	+0.012	22
+ Hv1	HG	+0.098	22
+ Hv2	HG	+0.098	22
+ Op	OG	-0.383	23
+ Cq	CG	+0.019	24
+ Hq1	HG	+0.098	24
+ Hq2	HG	+0.099	24
+ Hq3	HG	+0.099	24	
+                
+; Right sidechain 
+ Caa	CG!	-0.236	31
+ Ha1	HG	+0.103	31
+ Ha2	HG	+0.103	31
+ Cb	CG	+0.023	32
+ Hb1	HG	+0.103	32
+ Hb2	HG	+0.103	32
+ Oc	OG	-0.383	33
+ Cd	CG	+0.015	34
+ Hd1	HG	+0.103	34
+ Hd2	HG	+0.103	34
+ Ce 	CG	+0.019	35
+ He1	HG	+0.103	35
+ He2	HG	+0.103	35
+ Of	OG	-0.383	36
+ Cg	CG	+0.019	37
+ Hg1	HG	+0.099	37
+ Hg2	HG	+0.099	37
+ Ch	CG	+0.012	38
+ Hh1	HG	+0.099	38
+ Hh2	HG	+0.099	38
+ Oi 	OG	-0.383	39
+ Cj	CG	+0.019	40
+ Hj1 	HG	+0.099	40
+ Hj2	HG	+0.099	40
+ Ck	CG      +0.012	41
+ Hk1    HG      +0.098	41
+ Hk2    HG      +0.098	41
+ Ol     OG      -0.383	42
+ Cm     CG      +0.019	43
+ Hm1    HG      +0.097	43
+ Hm2    HG      +0.097	43
+ Hm3	HG	+0.097	43
+
+
+
+; Terminal
+ HTe	HT 	+0.029	10
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ CD4	HTe
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Op
+ Cv	Hv1
+ Cv	Hv2
+ Op	Cq
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Cq	Hq3 
+  
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Ol
+ Ck	Hk1
+ Ck	Hk2
+ Ol	Cm
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cm	Hm3
+
+
+
+
+
+
+[ dihedrals ]
+ CS2	CS1	CD1	SD	
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1	
+ CD4	CD3	SD	HTe
+
+; between monomers
+ CS4	CS3	SS	-CD4	

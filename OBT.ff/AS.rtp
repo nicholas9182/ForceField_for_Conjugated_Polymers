@@ -1,0 +1,326 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+
+
+[ AS ]
+; Monomer with Bromine terminals and fully glycolates side chains
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.101	1
+ CS2 	CBB	 0.585 	2
+ CS3	CBB	-0.536	3
+ CS4	CE	-0.246	4
+ SS	ST	-0.037	5
+ OS	OT	-0.542	6
+ HS	HT	 0.217 	3
+ SnS    SnT	 1.114 	7
+ Cx1	CSn	-0.800	8
+ Hx1	HSn	 0.177 	8
+ Hx2	HSn	 0.177 	8
+ Hx3	HSn	 0.177 	8
+ Cx2	CSn	-0.800	9
+ Hx4	HSn	 0.177 	9
+ Hx5	HSn	 0.177 	9
+ Hx6	HSn	 0.177 	9
+ Cx3	CSn	-0.800	10
+ Hx7	HSn	 0.177 	10
+ Hx8	HSn	 0.177 	10
+ Hx9	HSn	 0.177 	10
+; Total charge of -0.31 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.101	11
+ CD2	CBB	 0.585 	12
+ CD3	CBB	-0.536	13
+ CD4	CE	-0.246	14
+ SD	ST      -0.037	15
+ OD	OT	-0.542 	16
+ HD	HT	 0.217 	13
+ SnD    SnT	 1.114 	17
+ Cy1	CSn	-0.800	18
+ Hy1	HSn	 0.177 	18
+ Hy2	HSn	 0.177 	18
+ Hy3	HSn	 0.177 	18
+ Cy2	CSn	-0.800	19
+ Hy4	HSn	 0.177 	19
+ Hy5	HSn	 0.177 	19
+ Hy6	HSn	 0.177 	19
+ Cy3	CSn	-0.800	20
+ Hy7	HSn	 0.177 	20
+ Hy8	HSn	 0.177 	20
+ Hy9	HSn	 0.177 	20
+; Total charge of -0.31 
+
+; Left sidechain 
+ C0	CL!	 0.387 	21
+ H01	HL	 0.009 	21
+ H02	HL	 0.009 	21
+ C1	CL	-0.242 	22
+ H11	HL	 0.075	22
+ H12	HL	 0.075	22
+ C2	CL	-0.145	23
+ H21	HL	 0.072 	23
+ H22	HL	 0.072 	23
+ C3	CL	-0.064 	24
+ H31	HL	 0.035	24
+ H32	HL	 0.035	24
+ C4 	CL	-0.010 	25
+ H41	HL	 0.036	25
+ H42	HL	 0.036	25
+ C5	CL	-0.193 	26
+ H51	HL	 0.068	26
+ H52	HL	 0.068	26
+ C6	CL	-0.102 	27
+ H61	HL	 0.034	27
+ H62	HL	 0.034	27
+ C7	CL	 0.185 	28
+ H71	HL	-0.023	28
+ H72	HL	-0.023	28
+ C8 	CL	-0.147 	29
+ H81	HL	 0.032	29
+ H82	HL	 0.032	29
+ C9	CL	-0.104	30
+ H91 	HL	 0.024 	30
+ H92	HL	 0.024 	30
+ Cv	CL	 0.167	31
+ Hv1 	HL	-0.016	31
+ Hv2	HL	-0.016	31
+ Cp	CL	-0.179	32
+ Hp1 	HL	 0.041	32
+ Hp2	HL	 0.041	32
+ Cq	CL	 0.173	33
+ Hq1 	HL	-0.017	33
+ Hq2	HL	-0.017	33
+ Ct	CL	-0.383	34
+ Ht1 	HL	 0.090	34
+ Ht2	HL	 0.090	34
+ Ht3	HL	 0.090	34
+; Total charge of +0.31 
+ 
+
+; Right sidechain 
+ Caa	CL!	 0.387 	35
+ Ha1	HL	 0.009 	35
+ Ha2	HL	 0.009 	35
+ Cb	CL	-0.242 	36
+ Hb1	HL	 0.075 	36
+ Hb2	HL	 0.075 	36
+ Cc	CL	-0.145	37
+ Hc1	HL	 0.072	37
+ Hc2	HL	 0.072	37
+ Cd	CL	-0.064 	38
+ Hd1	HL	 0.035	38
+ Hd2	HL	 0.035	38
+ Ce 	CL	-0.010 	39
+ He1	HL	 0.036	39
+ He2	HL	 0.036	39
+ Cf	CL	-0.193 	40
+ Hf1	HL	 0.068	40
+ Hf2	HL	 0.068	40
+ Cg	CL	-0.102 	41
+ Hg1	HL	 0.034	41
+ Hg2	HL	 0.034	41
+ Ch	CL	 0.185 	42
+ Hh1	HL	-0.023 	42
+ Hh2	HL	-0.023 	42
+ Ci 	CL	-0.147 	43
+ Hi1	HL	 0.032	43
+ Hi2	HL	 0.032	43
+ Cj	CL	-0.104	44
+ Hj1 	HL	 0.024 	44
+ Hj2	HL	 0.024 	44
+ Ck	CL	 0.167	45
+ Hk1 	HL	-0.016	45
+ Hk2	HL	-0.016	45
+ Cl	CL	-0.179	46
+ Hl1 	HL	 0.041	46
+ Hl2	HL	 0.041	46
+ Cm	CL	 0.173	47
+ Hm1 	HL	-0.017	47
+ Hm2	HL	-0.017	47
+ Cn	CL	-0.383	48
+ Hn1 	HL	 0.090	48
+ Hn2	HL	 0.090	48
+ Hn3	HL	 0.090	48
+; total charge of +0.31
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+ SnS	CS4
+ SnS	Cx1
+ Cx1	Hx1
+ Cx1	Hx2
+ Cx1	Hx3
+ SnS	Cx2
+ Cx2	Hx4
+ Cx2	Hx5
+ Cx2	Hx6
+ SnS	Cx3	
+ Cx3	Hx7
+ Cx3	Hx8
+ Cx3	Hx9
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ SnD	CD4
+ SnD	Cy1
+ Cy1	Hy1
+ Cy1	Hy2
+ Cy1	Hy3
+ SnD	Cy2
+ Cy2	Hy4
+ Cy2	Hy5
+ Cy2	Hy6
+ SnD	Cy3	
+ Cy3	Hy7
+ Cy3	Hy8
+ Cy3	Hy9
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	C2
+ C1	H11
+ C1	H12
+ C2	C3
+ C2	H21
+ C2	H22
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	C5
+ C4	H41
+ C4	H42
+ C5	C6
+ C5	H51
+ C5	H52
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	C8
+ C7	H71
+ C7	H72
+ C8	C9
+ C8	H81
+ C8	H82
+ C9	Cv
+ C9	H91
+ C9	H92
+ Cv	Cp 
+ Cv	Hv1
+ Cv	Hv2
+ Cp	Cq
+ Cp	Hp1
+ Cp	Hp2
+ Cq	Ct
+ Cq	Hq1
+ Cq	Hq2
+ Ct	Ht1
+ Ct	Ht2
+ Ct	Ht3
+
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Cc
+ Cb	Hb1
+ Cb	Hb2
+ Cc	Cd
+ Cc	Hc1
+ Cc	Hc2
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Cf
+ Ce	He1
+ Ce	He2
+ Cf	Cg
+ Cf	Hf1
+ Cf	Hf2
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Ci
+ Ch	Hh1
+ Ch	Hh2
+ Ci	Cj
+ Ci	Hi1
+ Ci	Hi2
+ Cj	Ck
+ Cj	Hj1
+ Cj	Hj2
+ Ck	Cl
+ Ck	Hk1
+ Ck	Hk2
+ Cl	Cm
+ Cl	Hl1
+ Cl	Hl2
+ Cm	Cn
+ Cm	Hm1
+ Cm	Hm2
+ Cn	Hn1
+ Cn	Hn2
+ Cn	Hn3
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+ CS4	SS	CS3	SnS
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+ CD4	SD	CD3	SnD
+
+

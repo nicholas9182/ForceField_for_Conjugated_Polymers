@@ -1,0 +1,268 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms if 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove propers over the same bond as an improper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          3          2        0         3      0     1
+
+
+
+[ GS ]
+; Monomer with Bromine terminals and fully glycolates side chains
+
+[ atoms ]
+; Left thiophene unit (Sinister)
+; name type charge chargegroup
+ CS1	CAA	-0.082	1
+ CS2 	CBB	 0.631 	2
+ CS3	CBB	-0.535	3
+ CS4	CE	-0.217	4
+ SS	ST	-0.111	5
+ OS	OT	-0.563	6
+ HS	HT	 0.203 	3
+; Total charge of -0.31 
+
+; Right thiophene unit (Dextrose) 
+ CD1	CAA	-0.082	9
+ CD2	CBB	 0.631 	10
+ CD3	CBB	-0.535	11
+ CD4	CE	-0.217	12
+ SD	ST      -0.111	13
+ OD	OT	-0.563 	14
+ HD	HT	 0.203 	11
+; Total charge of -0.31 
+
+; Left sidechain 
+ C0	CG!	 0.196 	17
+ H01	HG	 0.049 	17
+ H02	HG	 0.049 	17
+ C1	CG	 0.515 	18
+ H11	HG	-0.018	18
+ H12	HG	-0.018	18
+ O2	OG	-0.797	19
+ C3	CG	 0.357 	20
+ H31	HG	-0.015	20
+ H32	HG	-0.015	20
+ C4 	CG	 0.575 	21
+ H41	HG	-0.046	21
+ H42	HG	-0.046	21
+ O5	OG	-0.784	22
+ C6	CG	 0.34  	23
+ H61	HG	-0.015	23
+ H62	HG	-0.015	23
+ C7	CG	 0.371 	24
+ H71	HG	 0.005 	24
+ H72	HG	 0.005 	24
+ O8 	OG	-0.548	25
+ C9	CG	-0.017	26
+ H91 	HG	 0.077 	26
+ H92	HG	 0.077 	26
+ H93	HG	 0.077 	26
+; Total charge of +0.31 
+ 
+
+; Right sidechain 
+ Caa	CG!	 0.196 	27
+ Ha1	HG	 0.049 	27
+ Ha2	HG	 0.049 	27
+ Cb	CG	 0.515 	28
+ Hb1	HG	-0.018	28
+ Hb2	HG	-0.018	28
+ Oc	OG	-0.797	29
+ Cd	CG	 0.357 	30
+ Hd1	HG	-0.015	30
+ Hd2	HG	-0.015	30
+ Ce 	CG	 0.575 	31
+ He1	HG	-0.046	31
+ He2	HG	-0.046	31
+ Of	OG	-0.784	32
+ Cg	CG	 0.34  	33
+ Hg1	HG	-0.015	33
+ Hg2	HG	-0.015	33
+ Ch	CG	 0.371 	34
+ Hh1	HG	 0.005 	34
+ Hh2	HG	 0.005 	34
+ Oi 	OG	-0.548	35
+ Cj	CG	-0.017	36
+ Hj1 	HG	 0.077 	36
+ Hj2	HG	 0.077 	36
+ Hj3	HG	 0.077 	36
+; total charge of +0.31
+
+; Left Terminal
+ SnS    SnT	 1.141 	7
+ Cx1	CSn	-0.784	8
+ Hx1	HSn	 0.173 	8
+ Hx2	HSn	 0.173 	8
+ Hx3	HSn	 0.173 	8
+ Cx2	CSn	-0.775	8
+ Hx4	HSn	 0.163 	8
+ Hx5	HSn	 0.163 	8
+ Hx6	HSn	 0.163 	8
+ Cx3	CSn	-0.854	8
+ Hx7	HSn	 0.193 	8
+ Hx8	HSn	 0.193 	8
+ Hx9	HSn	 0.193 	8
+
+; Right Terminal
+ SnD    SnT	 1.141 	15
+ Cy1	CSn	-0.784	16
+ Hy1	HSn	 0.173 	16
+ Hy2	HSn	 0.173 	16
+ Hy3	HSn	 0.173 	16
+ Cy2	CSn	-0.775	16
+ Hy4	HSn	 0.163 	16
+ Hy5	HSn	 0.163 	16
+ Hy6	HSn	 0.163 	16
+ Cy3	CSn	-0.854	16
+ Hy7	HSn	 0.193 	16
+ Hy8	HSn	 0.193 	16
+ Hy9	HSn	 0.193 	16
+
+
+
+
+[ bonds ]
+; Left Thiophene
+ CS1	CS2
+ CS2	CS3
+ CS3	CS4
+ CS4	SS
+ SS	CS1
+ CS2	OS
+ CS3	HS
+ SnS	CS4
+
+; Right Thiophene
+ CD1	CD2
+ CD2	CD3
+ CD3	CD4
+ CD4	SD
+ SD	CD1
+ CD2	OD
+ CD3	HD
+ SnD	CD4
+
+
+; Bonds to sidechains
+ OS	C0
+ OD	Caa
+
+; thiophene-thiophene
+ CS1	CD1
+ OS	SD
+ OD	SS
+
+; Left Sidechain
+ C0	C1
+ C0	H01
+ C0	H02
+ C1	O2
+ C1	H11
+ C1	H12
+ O2	C3
+ C3	C4
+ C3 	H31
+ C3	H32
+ C4	O5
+ C4	H41
+ C4	H42
+ O5	C6
+ C6	C7
+ C6	H61
+ C6	H62
+ C7	O8
+ C7	H71
+ C7	H72
+ O8	C9
+ C9	H91
+ C9	H92
+ C9	H93
+   
+; Right Sidechain
+ Caa	Cb
+ Caa	Ha1
+ Caa	Ha2
+ Cb	Oc
+ Cb	Hb1
+ Cb	Hb2
+ Oc	Cd
+ Cd	Ce
+ Cd	Hd1
+ Cd	Hd2
+ Ce	Of
+ Ce	He1
+ Ce	He2
+ Of	Cg
+ Cg	Ch
+ Cg	Hg1
+ Cg	Hg2
+ Ch	Oi
+ Ch	Hh1
+ Ch	Hh2
+ Oi	Cj
+ Cj	Hj1
+ Cj	Hj2
+ Cj	Hj3
+
+; Right Terminal
+ SnS	Cx1
+ Cx1	Hx1
+ Cx1	Hx2
+ Cx1	Hx3
+ SnS	Cx2
+ Cx2	Hx4
+ Cx2	Hx5
+ Cx2	Hx6
+ SnS	Cx3	
+ Cx3	Hx7
+ Cx3	Hx8
+ Cx3	Hx9
+
+; Left Terminal
+ SnD	Cy1
+ Cy1	Hy1
+ Cy1	Hy2
+ Cy1	Hy3
+ SnD	Cy2
+ Cy2	Hy4
+ Cy2	Hy5
+ Cy2	Hy6
+ SnD	Cy3	
+ Cy3	Hy7
+ Cy3	Hy8
+ Cy3	Hy9
+
+
+
+[ Impropers ]
+; Left thiophene
+ CS1	SS	CS4	CS3
+ CS2	CS1	SS	CS4
+ CS3	CS2	CS1	SS
+ CS4	CS3	CS2	CS1
+ SS	CS4	CS3	CS2
+ 
+ CS3	CS2	CS4	HS	
+ CS2	CS3	CS1	OS
+ CS1	SS	CS2	CD1
+ CS4	SS	CS3	SnS
+
+; Right thiophene
+ CD1	SD	CD4	CD3
+ CD2	CD1	SD	CD4
+ CD3	CD2	CD1	SD
+ CD4	CD3	CD2	CD1
+ SD	CD4	CD3	CD2
+
+ CD3	CD2	CD4	HD
+ CD2	CD3	CD1	OD
+ CD1	SD	CD2	CS1
+ CD4	SD	CD3	SnD
+
+
