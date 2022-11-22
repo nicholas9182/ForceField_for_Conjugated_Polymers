@@ -1301,143 +1301,89 @@ CD2	OD
 [ atoms ]
 ; NDI core
 ; name type charge chargegroup
- Cya	CN	+0.240	1
- Hya	HN	+0.084	2
- Cyb	CN	-0.069	2
- Hyb	HN	+0.084	2
- Cyc	CN	-0.160	3
- Cyd	CN	+0.595	4
- Oyd	ON	-0.514	4
- Nye	NN	-0.339	5
- Cyf	CN	+0.538	6
- Oyf	ON	-0.494	6
- Cyg	CN	-0.298	7
- Cyh	CN	+0.241	8
- Cyi	CN	-0.066	9
- Hyi	HN	+0.086	9
- Cyj	CN	-0.158	10
- Cyk	CN	+0.596	11
- Oyk	ON	-0.513	11
- Nyl	NN	-0.338	12
- Cym	CN	+0.539	13
- Oym	ON	-0.494	13
- Cyn	CN	-0.298	14
- Cyo	CN	+0.075	15
- Cyp	CN	+0.075	16
+ Cya	CN	+0.241	1
+ Hya	HN	+0.085	2
+ Cyb	CN	-0.068	2
+ Hyb	HN	+0.085	2
+ Cyc	CN	-0.159	3
+ Cyd	CN	+0.596	4
+ Oyd	ON	-0.513	4
+ Nye	NN	-0.338	5
+ Cyf	CN	+0.539	6
+ Oyf	ON	-0.493	6
+ Cyg	CN	-0.296	7
+ Cyh	CN	+0.243	8
+ Hyh	HN	+0.088	9
+ Cyi	CN	-0.064	9
+ Hyi	HN	+0.088	9
+ Cyj	CN	-0.156	10
+ Cyk	CN	+0.598	11
+ Oyk	ON	-0.511	11
+ Nyl	NN	-0.336	12
+ Cym	CN	+0.541	13
+ Oym	ON	-0.492	13
+ Cyn	CN	-0.296	14
+ Cyo	CN	+0.077	15
+ Cyp	CN	+0.077	16
 
 ; Top sidechain 			
- Caa	CG!	-0.256	13
- Haa	HG	+0.100	13
- Hab	HG	+0.100	13
- Cab	CG	+0.023	14
- Hac	HG	+0.100	14
- Had	HG	+0.100	14
- Oac	OG	-0.393	15
- Cad	CG	+0.015	16
- Hae	HG	+0.100	16
- Haf	HG	+0.100	16
- Cae	CG	+0.019	17
- Hag	HG	+0.100	17
- Hah	HG	+0.100	17
- Oaf	OG	-0.393	18
- Cag	CG	+0.019	19
- Hai	HG	+0.100	19
- Haj	HG	+0.100	19
- Cah	CG	+0.012	20
- Hak	HG	+0.100	20
- Hal	HG	+0.100	20
- Oai	OG	-0.383	21
- Caj	CG	+0.019	21
- Ham 	HG	+0.100	21
- Han	HG	+0.100	21
- Cak	CG	+0.012	22
- Hao	HG	+0.100	22
- Hap	HG	+0.100	22
- Oal	OG	-0.383	21
- Cam	CG	+0.019	21
- Haq 	HG	+0.100	21
- Har	HG	+0.100	21
- Can	CG	+0.012	22
- Has	HG	+0.100	22
- Hat	HG	+0.100	22
- Oao	OG	-0.383	23
- Cap	CG	+0.019	24
- Hau	HG	+0.100	24
- Hav	HG	+0.100	24
- Caq	CG	+0.012	25
- Haw	HG	+0.100	25
- Hax	HG	+0.100	25
- Oar	OG	-0.373	26
- Cas	CG	+0.019	27
- Hay	HG	+0.100	27
- Haz 	HG	+0.100	27
- Cat	CG	+0.012	28
- Ha1	HG	+0.100	28
- Ha2	HG	+0.100	28
- Oau	OG	-0.373	29
- Cav	CG	-0.039	30
- Ha3	HG	+0.100	30
- Ha4	HG	+0.100	30
- Ha5	HG	+0.100	30
+ Caa	CG!	-0.254	13
+ Haa	HG	+0.102	13
+ Hab	HG	+0.102	13
+ Cab	CG	+0.025	14
+ Hac	HG	+0.102	14
+ Had	HG	+0.102	14
+ Oac	OG	-0.391	15
+ Cad	CG	+0.017	16
+ Hae	HG	+0.102	16
+ Haf	HG	+0.102	16
+ Cae	CG	+0.021	17
+ Hag	HG	+0.102	17
+ Hah	HG	+0.102	17
+ Oaf	OG	-0.391	18
+ Cag	CG	+0.021	19
+ Hai	HG	+0.102	19
+ Haj	HG	+0.102	19
+ Cah	CG	+0.014	20
+ Hak	HG	+0.102	20
+ Hal	HG	+0.102	20
+ Oai	OG	-0.381	21
+ Caj	CG	+0.021	21
+ Ham 	HG	+0.102	21
+ Han	HG	+0.102	21
+ Hao	HG	+0.102	22
 				
 ; Right sidechain 			
- Cba	CG!	-0.256	13
- Hba	HG	+0.100	13
- Hbb	HG	+0.100	13
- Cbb	CG	+0.023	14
- Hbc	HG	+0.100	14
- Hbd	HG	+0.100	14
- Obc	OG	-0.393	15
- Cbd	CG	+0.015	16
- Hbe	HG	+0.100	16
- Hbf	HG	+0.100	16
- Cbe	CG	+0.019	17
- Hbg	HG	+0.100	17
- Hbh	HG	+0.100	17
- Obf	OG	-0.393	18
- Cbg	CG	+0.019	19
- Hbi	HG	+0.100	19
- Hbj	HG	+0.100	19
- Cbh	CG	+0.012	20
- Hbk	HG	+0.100	20
- Hbl	HG	+0.100	20
- Obi	OG	-0.383	21
- Cbj	CG	+0.019	21
- Hbm 	HG	+0.100	21
- Hbn	HG	+0.100	21
- Cbk	CG	+0.012	22
- Hbo	HG	+0.100	22
- Hbp	HG	+0.100	22
- Obl	OG	-0.383	21
- Cbm	CG	+0.019	21
- Hbq 	HG	+0.100	21
- Hbr	HG	+0.100	21
- Cbn	CG	+0.012	22
- Hbs	HG	+0.100	22
- Hbt	HG	+0.100	22
- Obo	OG	-0.383	23
- Cbp	CG	+0.019	24
- Hbu	HG	+0.100	24
- Hbv	HG	+0.100	24
- Cbq	CG	+0.012	25
- Hbw	HG	+0.100	25
- Hbx	HG	+0.100	25
- Obr	OG	-0.373	26
- Cbs	CG	+0.019	27
- Hby	HG	+0.100	27
- Hbz 	HG	+0.100	27
- Cbt	CG	+0.012	28
- Hb1	HG	+0.100	28
- Hb2	HG	+0.100	28
- Obu	OG	-0.373	29
- Cbv	CG	-0.039	30
- Hb3	HG	+0.100	30
- Hb4	HG	+0.100	30
- Hb5	HG	+0.100	30
+ Cba	CG!	-0.254	13
+ Hba	HG	+0.102	13
+ Hbb	HG	+0.102	13
+ Cbb	CG	+0.025	14
+ Hbc	HG	+0.102	14
+ Hbd	HG	+0.102	14
+ Obc	OG	-0.391	15
+ Cbd	CG	+0.017	16
+ Hbe	HG	+0.102	16
+ Hbf	HG	+0.102	16
+ Cbe	CG	+0.021	17
+ Hbg	HG	+0.102	17
+ Hbh	HG	+0.102	17
+ Obf	OG	-0.391	18
+ Cbg	CG	+0.021	19
+ Hbi	HG	+0.102	19
+ Hbj	HG	+0.102	19
+ Cbh	CG	+0.014	20
+ Hbk	HG	+0.102	20
+ Hbl	HG	+0.102	20
+ Obi	OG	-0.381	21
+ Cbj	CG	+0.021	21
+ Hbm 	HG	+0.102	21
+ Hbn	HG	+0.102	21
+ Hbo	HG	+0.102	22
 
 [ bonds ]
 ; NDI core
  Cya 	Cyb
+ Cya 	Hya
  Cyb	Hyb
  Cyb	Cyc
  Cyc	Cyd
@@ -1448,6 +1394,7 @@ CD2	OD
  Cyf	Cyg
  Cyg	Cyh
  Cyh	Cyi
+ Cyh	Hyh
  Cyi	Hyi
  Cyi	Cyj
  Cyj	Cyk
@@ -1488,35 +1435,7 @@ CD2	OD
  Oai	Caj
  Caj	Han
  Caj	Ham
- Caj	Cak
- Cak	Hap
- Cak	Hao
- Cak	Oal
- Oal	Cam
- Cam	Haq
- Cam	Har
- Cam	Can
- Can	Hat
- Can	Has
- Can	Oao
- Oao	Cap
- Cap	Hau
- Cap	Hav
- Cap	Caq
- Caq	Hax
- Caq	Haw
- Caq	Oar
- Oar	Cas
- Cas	Hay
- Cas	Haz
- Cas	Cat
- Cat	Ha1
- Cat	Ha2
- Cat	Oau
- Oau	Cav
- Cav	Ha3
- Cav	Ha4
- Cav	Ha5
+ Caj	Hao
 
 ; Bottom Sidechain
  Nye	Cba
@@ -1543,45 +1462,7 @@ CD2	OD
  Obi	Cbj
  Cbj	Hbn
  Cbj	Hbm
- Cbj	Cbk
- Cbk	Hbp
- Cbk	Hbo
- Cbk	Obl
- Obl	Cbm
- Cbm	Hbq
- Cbm	Hbr
- Cbm	Cbn
- Cbn	Hbt
- Cbn	Hbs
- Cbn	Obo
- Obo	Cbp
- Cbp	Hbu
- Cbp	Hbv
- Cbp	Cbq
- Cbq	Hbx
- Cbq	Hbw
- Cbq	Obr
- Obr	Cbs
- Cbs	Hby
- Cbs	Hbz
- Cbs	Cbt
- Cbt	Hb1
- Cbt	Hb2
- Cbt	Obu
- Obu	Cbv
- Cbv	Hb3
- Cbv	Hb4
- Cbv	Hb5
-
-; NDI-thiophene			
- Cya	+CS4		
-
-[ dihedrals ]
- Cyb	Cya	+CS4	+SS 
-
-[ exclusions ]
- Oym	+SS
- Oym	+CS3
+ Cbj	Hbo
  
 [ Impropers ]			
 ; right ring
@@ -1592,7 +1473,8 @@ CD2	OD
  Cyo	Cyn	Cya	Cyb
  Cyn	Cya	Cyb	Cyc
  Cyb	Cya	Cyc	Hyb
- Cya	Cyn	Cyb	+CS4
+ Cya	Cyb	Cyn	Hya
+
 
 ; left ring
  Cyp	Cyo	Cyj	Cyi
@@ -1601,7 +1483,8 @@ CD2	OD
  Cyi	Cyh	Cyg	Cyp
  Cyh	Cyg	Cyp	Cyo
  Cyi	Cyh	Cyj	Hyi
- Cyh	Cyi	Cyg	-CD4
+ Cyh	Cyi	Cyg	Hyh
+
 
 ; top ring
  Cyo	Cyj	Cyk	Nyl
