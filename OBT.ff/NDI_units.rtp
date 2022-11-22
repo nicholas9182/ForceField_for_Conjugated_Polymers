@@ -969,42 +969,6 @@ CD2	OD
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [ I5 ]
 
 [ atoms ]
@@ -1327,4 +1291,221 @@ CD2	OD
  Cyd	Nye	Cyc	Oyd
  Cyf	Cyg	Nye	Oyf
 
-						
+					
+
+
+
+
+[ I6 ]
+
+[ atoms ]
+; NDI core
+; name type charge chargegroup
+ Cya	CN	+0.241	1
+ Hya	HN	+0.085	2
+ Cyb	CN	-0.068	2
+ Hyb	HN	+0.085	2
+ Cyc	CN	-0.159	3
+ Cyd	CN	+0.596	4
+ Oyd	ON	-0.513	4
+ Nye	NN	-0.338	5
+ Cyf	CN	+0.539	6
+ Oyf	ON	-0.493	6
+ Cyg	CN	-0.296	7
+ Cyh	CN	+0.243	8
+ Hyh	HN	+0.088	9
+ Cyi	CN	-0.064	9
+ Hyi	HN	+0.088	9
+ Cyj	CN	-0.156	10
+ Cyk	CN	+0.598	11
+ Oyk	ON	-0.511	11
+ Nyl	NN	-0.336	12
+ Cym	CN	+0.541	13
+ Oym	ON	-0.492	13
+ Cyn	CN	-0.296	14
+ Cyo	CN	+0.077	15
+ Cyp	CN	+0.077	16
+
+; Top sidechain 			
+ Caa	CG!	-0.254	13
+ Haa	HG	+0.102	13
+ Hab	HG	+0.102	13
+ Cab	CG	+0.025	14
+ Hac	HG	+0.102	14
+ Had	HG	+0.102	14
+ Oac	OG	-0.391	15
+ Cad	CG	+0.017	16
+ Hae	HG	+0.102	16
+ Haf	HG	+0.102	16
+ Cae	CG	+0.021	17
+ Hag	HG	+0.102	17
+ Hah	HG	+0.102	17
+ Oaf	OG	-0.391	18
+ Cag	CG	+0.021	19
+ Hai	HG	+0.102	19
+ Haj	HG	+0.102	19
+ Cah	CG	+0.014	20
+ Hak	HG	+0.102	20
+ Hal	HG	+0.102	20
+ Oai	OG	-0.381	21
+ Caj	CG	+0.021	21
+ Ham 	HG	+0.102	21
+ Han	HG	+0.102	21
+ Hao	HG	+0.102	22
+				
+; Right sidechain 			
+ Cba	CG!	-0.254	13
+ Hba	HG	+0.102	13
+ Hbb	HG	+0.102	13
+ Cbb	CG	+0.025	14
+ Hbc	HG	+0.102	14
+ Hbd	HG	+0.102	14
+ Obc	OG	-0.391	15
+ Cbd	CG	+0.017	16
+ Hbe	HG	+0.102	16
+ Hbf	HG	+0.102	16
+ Cbe	CG	+0.021	17
+ Hbg	HG	+0.102	17
+ Hbh	HG	+0.102	17
+ Obf	OG	-0.391	18
+ Cbg	CG	+0.021	19
+ Hbi	HG	+0.102	19
+ Hbj	HG	+0.102	19
+ Cbh	CG	+0.014	20
+ Hbk	HG	+0.102	20
+ Hbl	HG	+0.102	20
+ Obi	OG	-0.381	21
+ Cbj	CG	+0.021	21
+ Hbm 	HG	+0.102	21
+ Hbn	HG	+0.102	21
+ Hbo	HG	+0.102	22
+
+[ bonds ]
+; NDI core
+ Cya 	Cyb
+ Cya 	Hya
+ Cyb	Hyb
+ Cyb	Cyc
+ Cyc	Cyd
+ Cyd	Oyd
+ Cyd	Nye
+ Nye	Cyf
+ Cyf	Oyf
+ Cyf	Cyg
+ Cyg	Cyh
+ Cyh	Cyi
+ Cyh	Hyh
+ Cyi	Hyi
+ Cyi	Cyj
+ Cyj	Cyk
+ Cyk	Oyk
+ Cyk	Nyl
+ Nyl	Cym
+ Cym	Oym
+ Cym	Cyn
+ Cyn	Cyo
+ Cyn	Cya
+ Cyo	Cyp
+ Cyo	Cyj
+ Cyp	Cyc
+ Cyp	Cyg
+
+; Top side chain
+ Nyl	Caa
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Had
+ Cab	Oac
+ Oac	Cad
+ Cad	Hae
+ Cad	Haf
+ Cad	Cae
+ Cae	Hag
+ Cae	Hah
+ Cae	Oaf
+ Oaf	Cag
+ Cag	Hai
+ Cag	Haj
+ Cag	Cah
+ Cah	Hak
+ Cah	Hal
+ Cah	Oai
+ Oai	Caj
+ Caj	Han
+ Caj	Ham
+ Caj	Hao
+
+; Bottom Sidechain
+ Nye	Cba
+ Cba	Hba
+ Cba	Hbb
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbd
+ Cbb	Obc
+ Obc	Cbd
+ Cbd	Hbe
+ Cbd	Hbf
+ Cbd	Cbe
+ Cbe	Hbg
+ Cbe	Hbh
+ Cbe	Obf
+ Obf	Cbg
+ Cbg	Hbi
+ Cbg	Hbj
+ Cbg	Cbh
+ Cbh	Hbk
+ Cbh	Hbl
+ Cbh	Obi
+ Obi	Cbj
+ Cbj	Hbn
+ Cbj	Hbm
+ Cbj	Hbo
+ 
+[ Impropers ]			
+; right ring
+ Cya	Cyb	Cyc	Cyp
+ Cyb	Cyc	Cyp	Cyo
+ Cyc	Cyp	Cyo	Cyn
+ Cyp	Cyo	Cyn	Cya
+ Cyo	Cyn	Cya	Cyb
+ Cyn	Cya	Cyb	Cyc
+ Cyb	Cya	Cyc	Hyb
+ Cya	Cyb	Cyn	Hya
+
+
+; left ring
+ Cyp	Cyo	Cyj	Cyi
+ Cyo	Cyj	Cyi	Cyh
+ Cyj	Cyi	Cyh	Cyg
+ Cyi	Cyh	Cyg	Cyp
+ Cyh	Cyg	Cyp	Cyo
+ Cyi	Cyh	Cyj	Hyi
+ Cyh	Cyi	Cyg	Hyh
+
+
+; top ring
+ Cyo	Cyj	Cyk	Nyl
+ Cyj	Cyk	Nyl	Cym
+ Cyk	Nyl	Cym	Cyn
+ Nyl	Cym	Cyn	Cyo
+ Cyk	Nyl	Cyj	Oyk
+ Cym	Cyn	Nyl	Oym
+
+; bottom ring
+ Cyp	Cyc	Cyd	Nye
+ Cyc	Cyd	Nye	Cyf
+ Cyd	Nye	Cyf	Cyg
+ Nye	Cyf	Cyg	Cyp
+ Cyd	Nye	Cyc	Oyd
+ Cyf	Cyg	Nye	Oyf
+
+
+
+
+
+
+
+	
