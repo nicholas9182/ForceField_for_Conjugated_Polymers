@@ -1,0 +1,7 @@
+TITLE     chelation energy in water
+REMARK    THIS IS A SIMULATION BOX
+CRYST1   59.855   59.855   59.855  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  LI   LI  7083      23.780  12.840  32.720  1.00  0.00            
+TER
+ENDMDL
