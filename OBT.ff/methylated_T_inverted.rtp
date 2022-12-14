@@ -789,13 +789,9 @@ CD3	HD
 ; oxybithiophene - bithiophene spacer
  CD4	CT1
 
-; between monomers
-  CT4	+CS4
-
 [ dihedrals ]
  CS2	CS1	CD1	SD	
  CD3	CD4	CT1	ST1
- ST1    CT4     +CS4    +CS3
 
 
 [ Impropers ]
