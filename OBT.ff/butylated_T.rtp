@@ -642,3 +642,4 @@ CD3	HD
 
 ; between monomers
  CT4	ST1	CT3	+CS4	
+ CS4	CS3	SS	-CT4
