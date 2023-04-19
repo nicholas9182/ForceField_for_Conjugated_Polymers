@@ -4,12 +4,6 @@
  
 ## MONOMERS AND SMALL MOLECULES ##
 
-GI = glycolated sidechains, first unit \
-GM = glycolated sidechains, middle unit \
-GE = glycolated sidechains, end unit \
-AI = alkylated sidechains, first unit \
-AM = alkylated sidechains, middle unit \
-AE = alkylated sidechains, end unit \
 HG = hydrogen-terminated monomer with glycol side chains \
 HA = hydrogen-terminated monomer with alkyl side chains \
 GS = tin-terminated monomer (Sn Me3 terminated) with glycol sidechains \
@@ -24,10 +18,18 @@ PC = Perchlorate \
 AN = Acetonitrile \
 CF = Chloroform \
 PF = Hexa fluoro phosphate \
-TA = TBA
+TA = TBA \
+GT = Triethylene oxybithiophene unit capped with thiophenes each end \
+GG = Four thiophenes with two triethylene glycol side chains on the same unit
 
 ## OXYBITHIOPHENE UNITS ## 
 
+GI = glycolated sidechains, first unit \
+GM = glycolated sidechains, middle unit \
+GE = glycolated sidechains, end unit \
+AI = alkylated sidechains, first unit \
+AM = alkylated sidechains, middle unit \
+AE = alkylated sidechains, end unit \
 MI = Glycolated with methyl spacer, first unit \
 MM = Glycolated with methyl spacer, middle unit \
 ME = Glycolated with methyl spacer, end unit \

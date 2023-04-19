@@ -433,6 +433,7 @@
  CR	CBU	CR	SR	2	0	391.47000       ;   Taken from drews params for PFO
  CE	SR	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO
  CR	SR	CR	HR	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	CR	SR	HR	2	0	391.47000       ;   Taken from drews params for PFO
 
 ; Backbone thienothiophene
  CRR    SRR     CRR     CRR     2       0       391.47000       ;   Taken from drews params for PFO
@@ -639,12 +640,18 @@
  NN	CL!	CL	CL	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
  NN	CG!	CG	OG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
 
-; DPP
- CN!	CN	CR	CBU	3	23.5782		7.8727		-32.1603	-5.2763		0.1821		7.2819 ; QCC optimised
+; thiophene spacer
  CR	CR	CR	SR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
  CR	CR	CRR	SRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
- SR	CR	CV	CV	3	23.436		-4.841		-33.840		10.659		4.353		-6.152 ; QCC optimised 
  SR	CR	CRR	CRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
+ CR	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
+ CE	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
+ CR	CR	CR	CR	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
+ CR	CR	CR	CE	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
+
+; DPP
+ CN!	CN	CR	CBU	3	23.5782		7.8727		-32.1603	-5.2763		0.1821		7.2819 ; QCC optimised
+ SR	CR	CV	CV	3	23.436		-4.841		-33.840		10.659		4.353		-6.152 ; QCC optimised 
  CRR	NRR	CL!	HL	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
 
 ; Vinyl
