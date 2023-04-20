@@ -94,6 +94,8 @@
  CSn	SnT	1	0.21420	230120.0	; opls CA to I, bond length from gaussian
  CSn	HSn	1	0.10900	284512.0	; opls CT to HC 
  OT	ST	1	0.28600 0.000000	; non-bond put in to make scans work
+ OT	SR	1	0.28600 0.000000        ; non-bond put in to make scans work
+ CAA	CR	1	0.14000	392459.2	; opls CA to CA
 
 ; glycol sidechain
  CG!	CG	1	0.15290 224262.4	; from Drew P , CT to CT
@@ -186,6 +188,7 @@
 ;  i    j    k  func    theta0      ktheta
 ; thiophene ring
  CE	ST	CAA	1	 91.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
+ CAA	ST	CAA	1	 91.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
  ST	CAA	CBB	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CE	CBB	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  CAA	CBB	CBB	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
@@ -198,8 +201,10 @@
  HT	CBB	CE	1	123.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CAA	CAA	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST	CE	CE	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
- OT	CBB	CBB	1       127.5   870     ;   QCC optimised, see 0007
- CAA	CBB	OT	1       119     850     ;   QCC optimised, see 0007
+ OT	CBB	CBB	1       127.5   870     ;   QCC optimised
+ CAA	CBB	OT	1       119     850     ;   QCC optimised
+
+; organic ends
  CBB	CE	BT	1	117.42	627.600	;   OPLS - CA CA Br , angle from QCC
  ST	CE	BT	1	130.19	627.600	;   OPLS - CA CA Br , angle from QCC
  CBB	CE	SnT	1	121.84	627.600	;   OPLS - CA CA I , angle from QCC
@@ -216,6 +221,11 @@
  ST	OT	CL!	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
  ST	OT	CG!	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
  ST	OT	CBB	1	0.0000  0.00000 ;   here for non-bond between sulfur and oxygen
+ CBB	OT	SR	1	0.0000 	0.00000 ;   here for non-bond between sulfur and oxygen
+ CR	SR	OT	1 	0.0000	0.00000 ;   here for non-bond between sulfur and oxygen
+ SR	OT	CG!	1  	0.0000	0.00000 ;   here for non-bond between sulfur and oxygen
+ SR	OT	CBB	1	0.0000	0.00000 ;   here for non-bond between sulfur and oxygen
+ CBB	OT	SR	1	0.0000	0.00000 ;   here for non-bond between sulfur and oxygen
 
 ; glycol sidechain
  OT	CG!	CG	1	109.500	418.400	; from Drew P 
@@ -272,7 +282,9 @@
  CR	CL!	HL	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  SR	CR	CR	1       112.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602 
  CR     CR      CE	1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CR     CR      CAA	1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  SR     CR      CE      1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ SR     CR      CAA     1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  CR     CE      CBB     1       129.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  ST     CE      CR      1       119.00  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  HR	CR	CBU	1	124.00  292.88  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
@@ -281,6 +293,8 @@
  CR	CBU	CR	1	112.50  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  CR	CL!	CL	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
  CR	CR	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to O)
+ ST	CAA	CR	1	119.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
+ CBB	CAA	CR	1	129.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
 
 ; backbone thienothiophene spacer
  CRR 	CRR	CRR	1	112.50  502.08  ;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
@@ -405,17 +419,21 @@
 ; thiophene
  ST	CAA	CBB	CBB	2	0	391.47000	;   Taken from drews params for PFO 
  CAA	CBB	CBB	CE	2	0	391.47000	;   Taken from drews params for PFO
+ CAA	CBB	CBB	CAA	2	0	391.47000	;   Taken from drews params for PFO
  CBB	CBB	CE	ST	2	0	391.47000	;   Taken from drews params for PFO
  CBB	CE	ST	CAA	2	0	391.47000	;   Taken from drews params for PFO
+ CBB	CAA	ST	CAA	2	0	391.47000	;   Taken from drews params for PFO
  CE	ST	CAA	CBB	2	0	391.47000	;   Taken from drews params for PFO
  CBB	CBB	CE	HT	2	0	391.47000	;   Taken from drews params for PFO
  CE	CBB	ST	HT	2	0	391.47000	;   Taken from drews params for PFO
  CBB	CBB	CAA	OT	2	0	391.47000	;   Taken from drews params for PFO
  CAA	ST	CBB	CAA	2	0	391.47000	;   Taken from drews params for PFO
  CE	ST	CBB	CE	2	0	391.47000	;   Taken from drews params for PFO
+ CR	CR	SR	CAA	2	0	391.47000	;   Taken from drews params for PFO
  CE	ST	CBB	BT	2	0	391.47000	;   Taken from drews params for PFO
  CE	ST	CBB	SnT	2	0	391.47000	;   Taken from drews params for PFO
  CE	ST	CBB	HT	2	0	391.47000	;   Taken from drews params for PFO
+ CAA	ST	CBB	CR	2	0	391.47000	;   Taken from drews params for PFO
 
 ; Backbone thiophene spacer
  CR	SR	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO
@@ -424,6 +442,7 @@
  CR	CR	CR	HR	2	0	391.47000       ;   Taken from drews params for PFO
  CR     CR      CR      SR      2       0       391.47000       ;   Taken from drews params for PFO
  CR	SR	CR	CE	2       0       391.47000       ;   Taken from drews params for PFO
+ CR	SR	CR	CAA	2       0       391.47000       ;   Taken from drews params for PFO
  CR	ST	CBB	CE	2	0	391.47000       ;   Taken from drews params for PFO
  CR	SR	CBU	CR	2	0	391.47000       ;   Taken from drews params for PFO
  CR	CBU	CR	CR	2	0	391.47000       ;   Taken from drews params for PFO 
@@ -607,15 +626,19 @@
 
  ; Oxygen to sulfur
  CBB    CBB     OT       ST      3       0.000		0.000		0.000		0.000		0.000		0.000
+ CBB    CBB     OT       SR      3       0.000		0.000		0.000		0.000		0.000		0.000
  CBB    OT      ST       CAA     3       0.000		0.000		0.000		0.000		0.000		0.000
  CAA    CBB     OT       ST      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CL!      HL      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CG!      HG      3       0.000		0.000		0.000		0.000		0.000		0.000
+ SR     OT      CG!      HG      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CL!      CL      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CL!      CG      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CL!      CL      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CG!      CG      3       0.000		0.000		0.000		0.000		0.000		0.000
+ SR     OT      CG!      CG      3       0.000		0.000		0.000		0.000		0.000		0.000
  ST     OT      CG!      CL      3       0.000		0.000		0.000		0.000		0.000		0.000
+ CR     SR      OT       CBB     3       0.000          0.000           0.000           0.000           0.000           0.000
 
 ; backbone thiophene spacer
  CBB    CE      CR      SR      3       18.435		3.967		-26.934		1.571		12.485		-1.616	; QCC optimised
@@ -648,6 +671,7 @@
  CE	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
  CR	CR	CR	CR	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
  CR	CR	CR	CE	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
+ SR	CR	CAA	CBB	3	0		0		0		0		0		0	; ionas parameters
 
 ; DPP
  CN!	CN	CR	CBU	3	23.5782		7.8727		-32.1603	-5.2763		0.1821		7.2819 ; QCC optimised

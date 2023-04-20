@@ -3,7 +3,7 @@
 #include "OBT.ff/forcefield.itp"
 
 ; Include geometry parameters
-#include "GT.itp"
+#include "GG.itp"
 
 [ system ]
 ; Name
@@ -11,5 +11,5 @@ glycolated polymer in water
 
 [ molecules ]
 ; Compound        #mols
-GT 		1
+GG 		1
 
