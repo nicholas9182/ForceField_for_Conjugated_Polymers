@@ -1,0 +1,10 @@
+cff-version: 1.0.0
+message: "If you use this forcefield, please cite it as below."
+authors:
+  - family-names: Siemons
+    given-names: Nicholas
+    orcid: https://orcid.org/0000-0002-0755-3981
+title: "Forcefield for modelling Mixed Transport Polymers"
+version: 1.0.0
+doi: 10.5281/zenodo.8011644
+date-released: 2023-06-06
