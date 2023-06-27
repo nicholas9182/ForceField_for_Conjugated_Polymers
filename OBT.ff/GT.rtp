@@ -18,6 +18,16 @@
 ; four thiophenes with triethylene glycol head-to-head in the middle
 
 [ atoms ]
+; bithiophene backbone spacer
+ CT5	CR	+0.052	33
+ CT6	CR	-0.222	34
+ CT7 	CR	-0.219	35
+ CT8	CR	+0.032	36
+ ST2	SR	+0.080	37
+ HT6	HR	+0.134	34
+ HT7	HR	+0.143	35
+
+
 ; Left thiophene unit (Sinister)
 ; name type charge chargegroup
  CS1	CAA	-0.004	1
@@ -103,15 +113,6 @@
  ST1	SR	+0.080	37
  HT2	HR	+0.134	34
  HT3	HR	+0.143	35
-
-; bithiophene backbone spacer
- CT5	CR	+0.052	33
- CT6	CR	-0.222	34
- CT7 	CR	-0.219	35
- CT8	CR	+0.032	36
- ST2	SR	+0.080	37
- HT6	HR	+0.134	34
- HT7	HR	+0.143	35
 
 ; end atoms 
  HT4	HR	0	36
