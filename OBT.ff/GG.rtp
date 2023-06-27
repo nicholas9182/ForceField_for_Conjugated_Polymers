@@ -141,7 +141,7 @@ CS3	OSa
 
 ; thiophene-thiophene
  OSa	ST1
- SS0	ST2
+ OS0	ST2
  CT4	CS4
  CS1	CT5
  CT8	CTa
