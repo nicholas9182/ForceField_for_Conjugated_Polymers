@@ -246,7 +246,7 @@ CS3	OSa
  CS3	CS2	CS4	OSa	
  CS2	CS3	CS1	OS0
  CS1	SS	CS2	CT5
-
+ CS4	CS3	SS	CT4
 
 ; right bare thiophene
  CT7	CT8	ST2	CT5
