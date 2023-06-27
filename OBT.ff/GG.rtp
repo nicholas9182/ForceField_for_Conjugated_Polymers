@@ -17,23 +17,23 @@
 [ atoms ]
 ; left bare thiophene
 ; name type charge chargegroup
- CT1	CR	+0.075	1
- CT2 	CR	-0.185	2
- CT3	CR	-0.152	3
- CT4	CR	+0.189	4
- ST1	SR	-0.044	5
- HT2	HR	+0.137	6
- HT3	HR	+0.155	3 
+ CT1	CR	+0.053	1
+ CT2 	CR	-0.207	2
+ CT3	CR	-0.174	3
+ CT4	CR	+0.167	4
+ ST1	SR	-0.066	5
+ HT2	HR	+0.115	6
+ HT3	HR	+0.133	3 
 
 
 ; middle thiophene with two sidechains
- CS1	CAA	-0.092	7
- CS2	CBB	+0.239	8
- CS3	CBB	+0.239	9
- CS4	CAA	-0.092	10
- SS	ST      -0.083	11
- OS0	OT	-0.323 	12
- OSa	OT	-0.323	9
+ CS1	CAA	-0.114	7
+ CS2	CBB	+0.217	8
+ CS3	CBB	+0.217	9
+ CS4	CAA	-0.114	10
+ SS	ST      -0.105	11
+ OS0	OT	-0.345 	12
+ OSa	OT	-0.345	9
 
 
 ; Left sidechain 
@@ -93,26 +93,26 @@
 
 
 ; right bare thiophene
- CT5	CR	+0.189	33
- CT6	CR	-0.152	34
- CT7 	CR	-0.185	35
- CT8	CR	+0.075	36
- ST2	SR	-0.044	37
- HT6	HR	+0.155	34
- HT7	HR	+0.137	35
+ CT5	CR	+0.167	33
+ CT6	CR	-0.174	34
+ CT7 	CR	-0.207	35
+ CT8	CR	+0.053	36
+ ST2	SR	-0.066	37
+ HT6	HR	+0.133	34
+ HT7	HR	+0.115	35
 
 ; right right bare thiophene to make four total
- CTa	CR	+0.075	33
- CTb	CR	-0.185	34
- CTc	CR	-0.152	35
- CTd	CR	+0.189	36
- STa	SR	-0.044	37
- HTb	HR	+0.137	34
- HTc	HR	+0.155	35
+ CTa	CR	+0.053	33
+ CTb	CR	-0.207	34
+ CTc	CR	-0.174	35
+ CTd	CR	+0.167	36
+ STa	SR	-0.066	37
+ HTb	HR	+0.115	34
+ HTc	HR	+0.133	35
 
 ; end atoms 
- HTd	HR	+0.000	36
- HT1	HR	+0.000	36
+ HTd	HR	+0.069	36
+ HT1	HR	+0.069	36
  
 [ bonds ]
 ; Left bare Thiophene
