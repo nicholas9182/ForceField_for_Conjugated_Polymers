@@ -160,7 +160,8 @@ I1 = glycolated bithiophene first unit \
 I2 = glycolated bithiophene middle unit \
 I3 = glycolated bithiophene end unit \
 I4 = NDI alkylated unit \
-I5 = NDI glycolated unit 
+I5 = NDI glycolated unit \
+I6 = NDI with triethylene glycolated monomer 
 
 ## DPP AND VINYL POLYMER UNITS ## 
 

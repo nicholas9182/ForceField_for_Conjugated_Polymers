@@ -467,6 +467,7 @@
  CRR    SRR     CRR     HRR     2       0       391.47000       ;   Taken from drews params for PFO
  SRR    CRR     CRR     SRR     2       0       391.47000       ;   Taken from drews params for PFO
  CE	SRR	CRR	CRR	2	0	391.47000       ;   Taken from drews params for PFO
+ CR	ST	CBB	CAA	2	0	391.47000       ;   Taken from drews params for PFO
 
 ; Small Molecules for crown ether crystals
  CA	CA	CA	CA	2	0	391.47000	;   Taken from drews params for PFO
@@ -671,7 +672,7 @@
  CE	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
  CR	CR	CR	CR	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
  CR	CR	CR	CE	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
- SR	CR	CAA	CBB	3	0		0		0		0		0		0	; ionas parameters
+ SR	CR	CAA	CBB	3	10.20204	3.076204	-18.6157	-0.93348	5.608023	0.281	; ionas parameters
 
 ; DPP
  CN!	CN	CR	CBU	3	23.5782		7.8727		-32.1603	-5.2763		0.1821		7.2819 ; QCC optimised
