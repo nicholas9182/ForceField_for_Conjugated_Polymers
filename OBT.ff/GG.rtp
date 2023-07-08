@@ -220,7 +220,7 @@ CS3	OSa
 [ dihedrals ]
  ST1	CT4	CS4	CS3
  CS2	CS1	CT5	ST2
- ST2	CT8	CTa	CTb
+ ST2	CT8	CTa	STa
 
 [ Impropers ]
 ; left bare thiophene
