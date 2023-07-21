@@ -1,6 +1,28 @@
+;
+;	File 'topol.top' was generated
+;	By user: nicholassiemons (501)
+;	On host: Nicholass-MacBook-Pro.local
+;	At date: Fri Jul 21 12:23:23 2023
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                :-) GROMACS - gmx pdb2gmx, 2023.1-Homebrew (-:
+;	
+;	Executable:   /usr/local/bin/../Cellar/gromacs/2023.1/bin/gmx
+;	Data prefix:  /usr/local/bin/../Cellar/gromacs/2023.1
+;	Working dir:  /Users/nicholassiemons/Dropbox/PhD/ForceField_for_Conjugated_Polymers
+;	Command line:
+;	  gmx pdb2gmx -f pdb_files/GT.pdb -v
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./OBT.ff/forcefield.itp"
+
 [ moleculetype ]
 ; Name            nrexcl
-GT               3
+Other               3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
@@ -545,3 +567,15 @@ GT               3
    74    73    75    78     2 
    75    74    76    79     2 
 
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+[ system ]
+; Name
+glycolated polymer
+
+[ molecules ]
+; Compound        #mols
+Other               1
