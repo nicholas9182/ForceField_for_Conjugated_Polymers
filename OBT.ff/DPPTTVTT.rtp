@@ -516,7 +516,7 @@ Hfu           HL   +0.022	1
  SD	CD4	CV2	CV1
  SR	CR4	+CD1	+CD2
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -1107,7 +1107,7 @@ Hfu           HL   +0.022	1
  SD	CD4	CV2	CV1
  SR	CR4	+CD1	+CD2
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -1690,7 +1690,7 @@ Hfu           HL   +0.022	1
  SS	CS4	CV1	CV2
  SD	CD4	CV2	CV1
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8

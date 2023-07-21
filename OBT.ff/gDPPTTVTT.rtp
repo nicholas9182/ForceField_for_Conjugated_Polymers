@@ -408,7 +408,7 @@ Hdo           HG     +0.094      4
  SD	CD4	CV2	CV1
  SR	CR4	+CD1	+CD2
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -881,7 +881,7 @@ Hdo           HG     +0.094     4
  SD	CD4	CV2	CV1
  SR	CR4	+CD1	+CD2
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -1348,7 +1348,7 @@ Hdo           HG    +0.094      4
  SS	CS4	CV1	CV2
  SD	CD4	CV2	CV1
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8

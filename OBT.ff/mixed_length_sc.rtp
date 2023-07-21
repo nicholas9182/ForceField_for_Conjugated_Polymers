@@ -103,7 +103,7 @@
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -216,7 +216,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -331,7 +331,7 @@ CD3	HD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -626,7 +626,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -916,7 +916,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -1205,7 +1205,7 @@ CD3	HD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -1357,7 +1357,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -1507,7 +1507,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -1655,7 +1655,7 @@ CD3	HD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -1917,7 +1917,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -2181,7 +2181,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -2444,7 +2444,7 @@ CD3	HD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -2624,7 +2624,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -2807,7 +2807,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -2987,7 +2987,7 @@ CD3	HD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -3225,7 +3225,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -3461,7 +3461,7 @@ CD3	HD
  CD3	CD4	+CS4	+SS
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -3696,7 +3696,7 @@ CD3	HD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4

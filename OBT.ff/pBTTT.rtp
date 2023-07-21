@@ -271,7 +271,7 @@ CD2	HD
  CD3	CD4	CT1	ST1
  ST2    CT6     +CS4    +CS3
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -593,7 +593,7 @@ CD2	HD
  CD3	CD4	CT1	ST1
  ST2    CT6     +CS4    +CS3 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -904,7 +904,7 @@ CD2	HD
  CS2	CS1	CD1	SD	
  CD3	CD4	CT1	ST1
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4

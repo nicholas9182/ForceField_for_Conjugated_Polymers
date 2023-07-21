@@ -367,7 +367,7 @@ Hdo           HG    +0.095      4
  Cx7	Cx6	CR1	CR2
  SR	CR4	+CS4	+CS3
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -784,7 +784,7 @@ Hdo           HG    +0.095      4
  Cx7	Cx6	CR1	CR2
  SR	CR4	+CS4	+CS3
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -1199,7 +1199,7 @@ Hdo           HG    +0.095      4
  CL2	CL1	Cx2	Cx3
  Cx7	Cx6	CR1	CR2
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
