@@ -269,7 +269,7 @@
  Cx7	Cx6	CR1	CR2
  SR	CR4	CRa	CRb
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -618,7 +618,7 @@
  Cx7	Cx6	CR1	CR2
  SR	CR4	CRa	CRb
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8
@@ -990,7 +990,7 @@
  Cx7	Cx6	CR1	CR2
  SR	CR4	CRa	CRb
 
-[ Impropers ]
+[ impropers ]
 ; DPP unit
  Nx1	Cx2	Cx3	Cx7
  Cx2	Cx3	Cx7	Cx8

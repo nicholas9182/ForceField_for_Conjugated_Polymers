@@ -180,7 +180,7 @@ CD2	OD
  SD	CD4	+Cyh	+Cyi
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -378,7 +378,7 @@ CD2	OD
  SD	CD4	+Cyh	+Cyi
 
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -572,7 +572,7 @@ CD2	OD
 [ dihedrals ]
  CS2	CS1	CD1	SD	
 
-[ Impropers ]
+[ impropers ]
 ; Left thiophene
  CS1	SS	CS4	CS3
  CS2	CS1	SS	CS4
@@ -927,7 +927,7 @@ CD2	OD
  Oym	+SS
  Oym	+CS3
  
-[ Impropers ]			
+[ impropers ]			
 ; right ring
  Cya	Cyb	Cyc	Cyp
  Cyb	Cyc	Cyp	Cyo
@@ -1255,7 +1255,7 @@ CD2	OD
  Oym	+SS
  Oym	+CS3
  
-[ Impropers ]			
+[ impropers ]			
 ; right ring
  Cya	Cyb	Cyc	Cyp
  Cyb	Cyc	Cyp	Cyo
@@ -1464,7 +1464,7 @@ CD2	OD
  Cbj	Hbm
  Cbj	Hbo
  
-[ Impropers ]			
+[ impropers ]			
 ; right ring
  Cya	Cyb	Cyc	Cyp
  Cyb	Cyc	Cyp	Cyo
