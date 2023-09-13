@@ -159,9 +159,10 @@ IB = Thienophene backbone spacer and heptyl end, middle unit
 I1 = glycolated bithiophene first unit \
 I2 = glycolated bithiophene middle unit \
 I3 = glycolated bithiophene end unit \
-I4 = NDI alkylated unit \
-I5 = NDI glycolated unit \
-I6 = NDI with triethylene glycolated monomer 
+I4 = NDI alkylated unit middle unit \
+I5 = NDI glycolated unit middle unit \
+I6 = NDI with triethylene glycolated monomer \
+I7 = NDI alkylated unit monomer with one side chain 
 
 ## DPP AND VINYL POLYMER UNITS ## 
 
