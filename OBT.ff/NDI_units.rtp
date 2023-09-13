@@ -1506,6 +1506,244 @@ CD2	OD
 
 
 
+[ I7 ]
+
+[ atoms ]
+; NDI core
+; name type charge chargegroup
+ Cya	CN	+0.238	1
+ Hya	HN	+0.084	1
+ Cyb	CN	-0.071	2
+ Hyb	HN	+0.082	2
+ Cyc	CN	-0.162	3
+ Cyd	CN	+0.593	4
+ Oyd	ON	-0.516	4
+ Nye	NN	-0.341	5
+ Cyf	CN	+0.536	6
+ Oyf	ON	-0.496	6
+ Cyg	CN	-0.300	7
+ Cyh	CN	+0.239	8
+ Hyh	HN	+0.084	1
+ Cyi	CN	-0.068	9
+ Hyi	HN	+0.084	9
+ Cyj	CN	-0.160	10
+ Cyk	CN	+0.594	11
+ Oyk	ON	-0.515	11
+ Nyl	NN	-0.340	12
+ Cym	CN	+0.537	13
+ Oym	ON	-0.496	13
+ Cyn	CN	-0.300	14
+ Cyo	CN	+0.073	15
+ Cyp	CN	+0.073	16
+
+; Top sidechain main branch			
+ Caa	CL!	+0.256	17	
+ Haa	HL	-0.013	17
+ Hab	HL	-0.013	17
+ Cab	CL	+0.116	18
+ Hac	HL	-0.015	18
+ Cac	CL	-0.116	19
+ Had	HL	+0.001	19
+ Hae	HL	+0.001	19
+ Cad	CL	+0.116	20
+ Haf	HL	-0.024	20
+ Hag	HL	-0.024	20
+ Cae	CL	+0.055	21
+ Hah	HL	-0.024	21
+ Hai	HL	-0.024	21
+ Caf	CL	-0.042	22
+ Haj	HL	-0.004	22
+ Hak	HL	-0.004	22
+ Cag	CL	+0.099	23
+ Hal	HL	-0.032	23
+ Ham	HL	-0.032	23
+ Cai	CL	+0.080	24
+ Han	HL	-0.031	24
+ Hao	HL	-0.031	24
+ Caj	CL	+0.000	25
+ Hap	HL	-0.020	25
+ Haq	HL	-0.020	25
+ Cak	CL	+0.028	26
+ Har	HL	-0.018	26
+ Has	HL	-0.018	26
+ Cal	CL	+0.226	27
+ Hat	HL	-0.057	27
+ Hau	HL	-0.057	27
+ Cam	CL	-0.154	28
+ Hav	HL	+0.022	28
+ Haw	HL	+0.022	28	
+ Hax	HL      +0.022	28
+
+; Top sidechain second branch	
+ Cba	CL	+0.045	29
+ Hba	HL	+0.015	29
+ Hbb	HL	+0.015	29
+ Cbb	CL	+0.002	30
+ Hbc	HL	-0.020	30
+ Hbd	HL	-0.020	30
+ Cbc	CL	+0.055	31
+ Hbe	HL	-0.013	31
+ Hbf	HL	-0.013	31
+ Cbd	CL	+0.088	32
+ Hbg	HL	-0.031	32
+ Hbh	HL	-0.031	32
+ Cbe	CL	-0.071	33
+ Hbi	HL	-0.002	33
+ Hbj	HL	-0.002	33
+ Cbf	CL	+0.071	34
+ Hbk	HL	-0.022	34
+ Hbl	HL	-0.022	34
+ Cbg	CL	+0.175	35
+ Hbm	HL	-0.040	35
+ Hbn	HL	-0.040	35
+ Cbi	CL	-0.158	36
+ Hbo	HL	+0.025	36
+ Hbp	HL	+0.025	36
+ Hbq	HL	+0.025	36
+				
+; Right sidechain main branch		
+ Cca	CL!	+0.257	17	
+ Hca	HL	-0.012	17
+ Hcb	HL	-0.012	17
+ Hcc	HL	-0.012	17
+
+
+[ bonds ]
+; NDI core
+ Cya 	Cyb
+ Cya 	Hya
+ Cyb	Hyb
+ Cyb	Cyc
+ Cyc	Cyd
+ Cyd	Oyd
+ Cyd	Nye
+ Nye	Cyf
+ Cyf	Oyf
+ Cyf	Cyg
+ Cyg	Cyh
+ Cyh	Cyi
+ Cyh	Hyh
+ Cyi	Hyi
+ Cyi	Cyj
+ Cyj	Cyk
+ Cyk	Oyk
+ Cyk	Nyl
+ Nyl	Cym
+ Cym	Oym
+ Cym	Cyn
+ Cyn	Cyo
+ Cyn	Cya
+ Cyo	Cyp
+ Cyo	Cyj
+ Cyp	Cyc
+ Cyp	Cyg
+
+; Top sidechain main branch			
+ Nyl	Caa
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Cac
+ Cac	Had
+ Cac	Hae
+ Cac	Cad
+ Cad	Haf
+ Cad	Hag
+ Cad	Cae
+ Cae	Hah
+ Cae	Hai
+ Cae	Caf
+ Caf	Haj
+ Caf	Hak
+ Caf	Cag
+ Cag	Hal
+ Cag	Ham
+ Cag	Cai
+ Cai	Han
+ Cai	Hao
+ Cai	Caj
+ Caj	Hap
+ Caj	Haq
+ Caj	Cak
+ Cak	Har
+ Cak	Has
+ Cak	Cal
+ Cal	Hat
+ Cal	Hau
+ Cal	Cam
+ Cam	Hav
+ Cam	Haw
+ Cam	Hax
+
+; Top sidechain second branch	
+ Cab	Cba
+ Cba	Hba
+ Cba	Hbb
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbd
+ Cbb	Cbc
+ Cbc	Hbe
+ Cbc	Hbf
+ Cbc	Cbd
+ Cbd	Hbg
+ Cbd	Hbh
+ Cbd	Cbe
+ Cbe	Hbi
+ Cbe	Hbj
+ Cbe	Cbf
+ Cbf	Hbk
+ Cbf	Hbl
+ Cbf	Cbg
+ Cbg	Hbm
+ Cbg	Hbn
+ Cbg	Cbi
+ Cbi	Hbo
+ Cbi	Hbp
+ Cbi	Hbq
+				
+; Right sidechain main branch		
+ Nye	Cca
+ Cca	Hca
+ Cca	Hcb
+ Cca	Hcc
+
+[ impropers ]			
+; right ring
+ Cya	Cyb	Cyc	Cyp
+ Cyb	Cyc	Cyp	Cyo
+ Cyc	Cyp	Cyo	Cyn
+ Cyp	Cyo	Cyn	Cya
+ Cyo	Cyn	Cya	Cyb
+ Cyn	Cya	Cyb	Cyc
+ Cyb	Cya	Cyc	Hyb
+ Cya	Cyn	Cyb	Hya
+
+; left ring
+ Cyp	Cyo	Cyj	Cyi
+ Cyo	Cyj	Cyi	Cyh
+ Cyj	Cyi	Cyh	Cyg
+ Cyi	Cyh	Cyg	Cyp
+ Cyh	Cyg	Cyp	Cyo
+ Cyi	Cyh	Cyj	Hyi
+ Cyh	Cyi	Cyg	Hyh
+
+; top ring
+ Cyo	Cyj	Cyk	Nyl
+ Cyj	Cyk	Nyl	Cym
+ Cyk	Nyl	Cym	Cyn
+ Nyl	Cym	Cyn	Cyo
+ Cyk	Nyl	Cyj	Oyk
+ Cym	Cyn	Nyl	Oym
+
+; bottom ring
+ Cyp	Cyc	Cyd	Nye
+ Cyc	Cyd	Nye	Cyf
+ Cyd	Nye	Cyf	Cyg
+ Nye	Cyf	Cyg	Cyp
+ Cyd	Nye	Cyc	Oyd
+ Cyf	Cyg	Nye	Oyf
 
 
 	
