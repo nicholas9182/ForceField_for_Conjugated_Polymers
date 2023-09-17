@@ -91,6 +91,7 @@ XI = glycolated sidechains with thienothiophene backbone spacer and propyl sc sp
 XM = glycolated sidechains with thienothiophene backbone spacer and propyl sc spacer, middle unit \
 YI = glycolated sidechains with thiophene backbone spacer and butyl sc spacer, first unit \
 YM = glycolated sidechains with thiophene backbone spacer and butyl sc spacer, middle unit \
+YE = glycolated sidechains with thiophene backbone spacer and butyl sc spacer, end unit \
 ZI = glycolated sidechains with thienothiophene backbone spacer and butyl sc spacer, first unit \
 ZM = glycolated sidechains with thienothiophene backbone spacer and butyl sc spacer, middle unit \
 LI = glycolated sidechains with thiophene backbone spacer and pentyl sc spacer, first unit \
