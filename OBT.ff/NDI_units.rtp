@@ -952,16 +952,22 @@ CD2	OD
  Cyj	Cyk	Nyl	Cym
  Cyk	Nyl	Cym	Cyn
  Nyl	Cym	Cyn	Cyo
+ Cym	Cyn	Cyo	Cyj
+ Cyn	Cyo	Cyj	Cyk
  Cyk	Nyl	Cyj	Oyk
  Cym	Cyn	Nyl	Oym
-
+ Nyl	Cyk	Cym	Caa
+ 
 ; bottom ring
  Cyp	Cyc	Cyd	Nye
  Cyc	Cyd	Nye	Cyf
  Cyd	Nye	Cyf	Cyg
  Nye	Cyf	Cyg	Cyp
+ Cyf	Cyg	Cyp	Cyc
+ Cyg	Cyp	Cyc	Cyd
  Cyd	Nye	Cyc	Oyd
  Cyf	Cyg	Nye	Oyf
+ Nye	Cyf	Cyd	Cca
 
 
 
@@ -1254,7 +1260,7 @@ CD2	OD
 [ exclusions ]
  Oym	+SS
  Oym	+CS3
- 
+
 [ impropers ]			
 ; right ring
  Cya	Cyb	Cyc	Cyp
@@ -1280,20 +1286,24 @@ CD2	OD
  Cyj	Cyk	Nyl	Cym
  Cyk	Nyl	Cym	Cyn
  Nyl	Cym	Cyn	Cyo
+ Cym	Cyn	Cyo	Cyj
+ Cyn	Cyo	Cyj	Cyk
  Cyk	Nyl	Cyj	Oyk
  Cym	Cyn	Nyl	Oym
-
+ Nyl	Cyk	Cym	Caa
+ 
 ; bottom ring
  Cyp	Cyc	Cyd	Nye
  Cyc	Cyd	Nye	Cyf
  Cyd	Nye	Cyf	Cyg
  Nye	Cyf	Cyg	Cyp
+ Cyf	Cyg	Cyp	Cyc
+ Cyg	Cyp	Cyc	Cyd
  Cyd	Nye	Cyc	Oyd
  Cyf	Cyg	Nye	Oyf
+ Nye	Cyf	Cyd	Cba
 
-					
-
-
+ 
 
 
 [ I6 ]
@@ -1485,24 +1495,27 @@ CD2	OD
  Cyi	Cyh	Cyj	Hyi
  Cyh	Cyi	Cyg	Hyh
 
-
 ; top ring
  Cyo	Cyj	Cyk	Nyl
  Cyj	Cyk	Nyl	Cym
  Cyk	Nyl	Cym	Cyn
  Nyl	Cym	Cyn	Cyo
+ Cym	Cyn	Cyo	Cyj
+ Cyn	Cyo	Cyj	Cyk
  Cyk	Nyl	Cyj	Oyk
  Cym	Cyn	Nyl	Oym
-
+ Nyl	Cyk	Cym	Caa
+ 
 ; bottom ring
  Cyp	Cyc	Cyd	Nye
  Cyc	Cyd	Nye	Cyf
  Cyd	Nye	Cyf	Cyg
  Nye	Cyf	Cyg	Cyp
+ Cyf	Cyg	Cyp	Cyc
+ Cyg	Cyp	Cyc	Cyd
  Cyd	Nye	Cyc	Oyd
  Cyf	Cyg	Nye	Oyf
-
-
+ Nye	Cyf	Cyd	Cba
 
 
 
@@ -1734,16 +1747,25 @@ CD2	OD
  Cyj	Cyk	Nyl	Cym
  Cyk	Nyl	Cym	Cyn
  Nyl	Cym	Cyn	Cyo
+ Cym	Cyn	Cyo	Cyj
+ Cyn	Cyo	Cyj	Cyk
  Cyk	Nyl	Cyj	Oyk
  Cym	Cyn	Nyl	Oym
-
+ Nyl	Cyk	Cym	Caa
+ 
 ; bottom ring
  Cyp	Cyc	Cyd	Nye
  Cyc	Cyd	Nye	Cyf
  Cyd	Nye	Cyf	Cyg
  Nye	Cyf	Cyg	Cyp
+ Cyf	Cyg	Cyp	Cyc
+ Cyg	Cyp	Cyc	Cyd
  Cyd	Nye	Cyc	Oyd
  Cyf	Cyg	Nye	Oyf
+ Nye	Cyf	Cyd	Cca
 
 
-	
+
+
+
+

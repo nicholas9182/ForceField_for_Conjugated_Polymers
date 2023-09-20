@@ -1,0 +1,8 @@
+#include "OBT.ff/forcefield.itp"
+#include "NDI_g90_block_5.itp"
+
+[ system ]
+N905
+
+[ molecules ]
+N905	1
