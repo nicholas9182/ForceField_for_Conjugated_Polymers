@@ -499,6 +499,8 @@
  CN	CN	CN	CE	2	0	391.47000       ;   Taken from drews params for PFO
  CN	ST	CBB	CE	2	0	391.47000       ;   Taken from drews params for PFO
  CE	ST	CBU	CN	2	0	391.47000       ;   Taken from drews params for PFO
+ CN     SR      CBU     CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CN     CN      CN      CR      2       0       391.47000       ;   Taken from drews params for PFO
 
 ; DPP - Thiophene
  CN	NN	CN	CR	2	0	391.47000	;   Taken from drews params for PFO	
@@ -656,6 +658,8 @@
 
 ; NDI - Thiophene
  CN	CN	CE	ST	3	 7.379 		-3.664 		-24.769   	2.383   	4.335  		-5.369	 ; QCC optimised
+ CN	CN	CR	SR	3	1.0983  	0.8956 		-13.266		5.4315		-0.4761		-6.0815  ; QCC optimised
+ CN     CR      CBU     CR      3        0              0               0               0               0               0.000    ; Bhatta J Phys Chem
 
 ; NDI - Sidechain
  CN	NN	CG!	HG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
