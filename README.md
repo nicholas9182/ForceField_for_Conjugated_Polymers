@@ -162,8 +162,11 @@ I2 = glycolated bithiophene middle unit \
 I3 = glycolated bithiophene end unit \
 I4 = NDI alkylated unit middle unit \
 I5 = NDI glycolated unit middle unit \
-I6 = NDI with triethylene glycolated monomer \
-I7 = NDI alkylated unit monomer with one side chain 
+I6 = NDI with triethylene glycolated monomer 
+
+## NDI SINGLE UNITS ##
+I7  = NDI alkylated unit monomer with one side chain 
+ND1 = T-aNDI-T with C12C8 sidechains
 
 ## DPP AND VINYL POLYMER UNITS ## 
 

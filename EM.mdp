@@ -14,7 +14,7 @@ nstcomm                  = 100
 comm-grps                = 
 
 ; ENERGY MINIMIZATION OPTIONS
-emtol                    = 10.0
+emtol                    = 0.1
 emstep                   = 0.01
 niter                    = 20
 fcstep                   = 0
@@ -22,7 +22,7 @@ nstcgsteep               = 1000
 nbfgscorr                = 10
 
 ; OUTPUT CONTROL OPTIONS
-nstxout                  = 10000
+nstxout                  = 10
 nstvout                  = 0
 nstfout                  = 0
 nstlog                   = 1000

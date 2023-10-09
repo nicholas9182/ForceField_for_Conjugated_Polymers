@@ -3,7 +3,7 @@ set ignore_case, off
 set connect_mode, 0
 set retain_order, 1
 
-load I7.pdb
+load ND1.pdb
 
 select sidechain, (name C0+C1+O2+C3+C4+O5+C6+C7+O8+C9+Caa+Cb+Oc+Cd+Ce+Of+Cg+Ch+Oi+Cj+C2+C5+C8+Cv+Cp+Cq+Ct+Cc+Cf+Ci+Ck+Cl+Cm+Cn+Oo+Cr+Cs+On+Co+Ou+Cw+Cx+Oy+Cz)
 select polymer, (name C0+C1+O2+C3+C4+O5+C6+C7+O8+C9+Caa+Cb+Oc+Cd+Ce+Of+Cg+Ch+Oi+Cj+CS1+CS2+CS3+CS4+CD1+CD2+CD3+CD4+SS+SD+OS+OD+C2+C5+C8+Cv+Cp+Cq+Ct+Cc+Cf+Ci+Ck+Cl+Cm+Cn+Oo+Cr+Cs+On+Co+Ou+Cw+Cx+Oy+Cz)
