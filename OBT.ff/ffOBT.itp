@@ -592,7 +592,6 @@
  OT	CL!	CL	CG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
  OT	CL!	CG	HG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; from Drew
  
-
 ; thiophene - thiophene
  CBB    CAA     CAA     ST	3        4.472		-8.089		-11.827		-3.357		1.898		6.234	; QCC optimised
  CBB	CE	CE	ST	3	 18.3088	0.4149		-32.9781	0.3039		16.0851		0.60784	; QCC optimised
@@ -661,6 +660,7 @@
  CN	CN	CR	SR	3	1.0983  	0.8956 		-13.266		5.4315		-0.4761		-6.0815  ; QCC optimised
  CN     CR      CBU     CR      3        0              0               0               0               0               0.000    ; Bhatta J Phys Chem
 
+
 ; NDI - Sidechain
  CN	NN	CG!	HG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
  CN	NN	CG!	CG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
@@ -673,6 +673,7 @@
  SR	CR	CR	SR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
  CR	CR	CRR	SRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
  SR	CR	CRR	CRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
+ SR	CR	CBU	CR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
  CR	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
  CE	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
  CR	CR	CR	CR	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
