@@ -167,6 +167,7 @@ I6 = NDI with triethylene glycolated monomer
 ## NDI SINGLE UNITS ##
 I7  = NDI alkylated unit monomer with one side chain 
 ND1 = T-aNDI-T with C12C8 sidechains
+ND2 = T-aNDI-T with C20 sidechains
 
 ## DPP AND VINYL POLYMER UNITS ## 
 
