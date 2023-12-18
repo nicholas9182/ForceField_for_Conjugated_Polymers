@@ -21,5 +21,5 @@ function run_em(){
 
 }
 
-run_em ND1 ND1
+run_em ND3 ND3
 
