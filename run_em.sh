@@ -14,12 +14,12 @@ function run_em(){
 	echo "$2	1" >> test.top
 	
 	gmx grompp -f EM.mdp -p test.top -o $1.tpr
-	gmx mdrun -s $1.tpr -deffnm $1
+	gmx mdrun -s $1.tpr -deffnm $1 -v
 	rm $1.trr $1.tpr $1.log $1.edr conf.gro mdout.mdp posre.itp
 	gmx editconf -f $1.gro -o $1.pdb
 	rm $1.gro
 
 }
 
-run_em ND3 ND3
+run_em pBTTT_20mer pBTTT
 
