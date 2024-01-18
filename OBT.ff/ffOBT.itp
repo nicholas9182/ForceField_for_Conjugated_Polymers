@@ -674,6 +674,7 @@
  CR	CR	CRR	SRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; QCC optimised
  SR	CR	CRR	CRR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
  SR	CR	CBU	CR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
+ SR	CR	CR	CR	3	14.112		-2.022		-29.219		1.234		7.762		-1.782 ; (same as thiophene-thiophene dihedral)
  CR	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
  CE	CR	SR	CR	3	528.5228	-459.4450	-82.5837	-105.8677	119.3695	0.000	; Bhatta J Phys Chem 
  CR	CR	CR	CR	3	528.5228	459.4450	-82.5837	-105.8677	119.3695	0.000   ; Bhatta J Phys Chem
