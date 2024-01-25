@@ -169,6 +169,8 @@ I7  = NDI alkylated unit monomer with one side chain
 ND1 = T-aNDI-T with C12C8 sidechains
 ND2 = T-aNDI-T with C20 sidechains
 ND3 = T-gNDI-T with g7 sidechains
+ND4 = T-gNDI-T with g7 sidechains polaron
+ND5 = T-gNDI-T with g7 sidechains bipolaron
 
 ## DPP AND VINYL POLYMER UNITS ## 
 

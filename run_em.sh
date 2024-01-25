@@ -21,5 +21,5 @@ function run_em(){
 
 }
 
-run_em pBTTT_20mer pBTTT
+run_em ND4 ND4
 

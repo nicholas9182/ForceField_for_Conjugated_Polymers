@@ -38,6 +38,9 @@
  NN	14.00670	0.000	A	0.325	0.711	; opls_251 , NC
  HN	1.00800		0.000	A	0.242   0.126   ; opls_146 , HA
 
+; NDI charged atom types
+ CP	12.01100	0.000	A	0.355	0.293	; opls_145 , CA
+
 ; Modified thiophene ring with UA for NDI 
  CBU	 13.01900	0.000	A	0.375	0.460	; opls_075 , CD
  
@@ -138,6 +141,11 @@
  CN	HN	1	0.10800 307105.6        ; opls CA to HA
  CN	NN	1	0.13350	410032.0	; opls C to N
  CN	ON	1	0.12290	476976.0	; opls C to O   
+
+; NDI charged units
+ CN	CP	1	0.14000 392459.2        ; opls CA to CA
+ CP	CE	1	0.14700 308360.2        ; opls CA to CA
+ CP	CR	1	0.14700 308360.2        ; opls CA to CA
 
 ; Modified thiophene ring with UA for NDI 
  CAA	CBU	1	0.14000	392459.2	; opls CA to CD
@@ -320,6 +328,11 @@
  CN	CN	HN	1	110.700 313.800 ; from Drew P
  ON	CN	NN	1	122.900	669.440	; opls O - C - N
 
+; NDI charged unit
+ CN	CN	CP	1	120.000	527.184	; opls CA - CA - CA
+ CN	CP	CN	1	120.000	527.184	; opls CA - CA - CA
+ CP	CN	HN	1	110.700 313.800 ; from Drew P
+
 ; Modified thiophene ring with UA for NDI 
  ST	CE	CBU	1	112.00	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
  CAA	CBB	CBU	1	112.50	502.08	;   Moreno J Phys Chem B 2010, 114, 4, 1591-1602
@@ -342,6 +355,11 @@
  CN	NN	CL!	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
  NN	CL!	CL	1	115.440	502.666	; Bhatta J Phys Chem - check with QCC (changed C to N)
  NN	CL!	HL	1	109.500 292.880 ; from Drew P
+
+; NDI charged units
+ CP	CR	CBU	1	120.000	527.184 ; opls CA - CA - CD
+ CP	CR	SR	1	120.000	527.184 ; opls CA - CA - CD
+ CN	CP	CR	1	120.000	527.184	; opls CA - CA - CD
 
 ; DPP unit
  CN	CN!	CN	1	120.000 527.184 ; opls CA - CA - CD
@@ -502,6 +520,16 @@
  CN     SR      CBU     CR      2       0       391.47000       ;   Taken from drews params for PFO
  CN     CN      CN      CR      2       0       391.47000       ;   Taken from drews params for PFO
 
+; Charged NDI
+ CP	CN	CN	CN	2	0	391.47000       ;   Taken from drews params for PFO
+ CP     CN      CN      CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CN     CP      CN      CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CN     CN      CP      CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CP	ST	CBU	CE	2	0	391.47000       ;   Taken from drews params for PFO
+ CP     SR      CBU     CR      2       0       391.47000       ;   Taken from drews params for PFO
+ CN	CP	CN	HN	2	0	391.47000       ;   Taken from drews params for PFO
+ CN	CP	CN	CN	2	0	391.47000       ;   Taken from drews params for PFO
+
 ; DPP - Thiophene
  CN	NN	CN	CR	2	0	391.47000	;   Taken from drews params for PFO	
  CN	CR	SR	CR	2	0	391.47000	;   Taken from drews params for PFO	
@@ -658,8 +686,12 @@
 ; NDI - Thiophene
  CN	CN	CE	ST	3	 7.379 		-3.664 		-24.769   	2.383   	4.335  		-5.369	 ; QCC optimised
  CN	CN	CR	SR	3	1.0983  	0.8956 		-13.266		5.4315		-0.4761		-6.0815  ; QCC optimised
- CN     CR      CBU     CR      3        0              0               0               0               0               0.000    ; Bhatta J Phys Chem
+ CN     CR      CBU     CR      3        0              0               0               0               0               0.000    ;
 
+; Charged NDI - Thiophene
+ CN	CP	CE	ST	3	0 0 0 0 0 0  ; QCC optimised
+ CN	CP	CR	SR	3	0 0 0 0 0 0  ; QCC optimised
+ CP     CR      CBU     CR      3        0              0               0               0               0               0.000    ;
 
 ; NDI - Sidechain
  CN	NN	CG!	HG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
