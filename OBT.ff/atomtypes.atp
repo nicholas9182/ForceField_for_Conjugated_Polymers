@@ -24,6 +24,7 @@
  SR	 32.06000	; Sulfur atom in thiophene spacer
  SRR	 32.06000	; Sulfur atom in bithiophene spacer
  CN	 12.01100	; Carbon atom in NDI and DPP unit
+ CP	 12.01100	; Carbon atom in NDI polaronic units 
  CN!	 12.01100	; Special Carbon in DPP
  ON	 15.99940       ; Oxygen in NDI and DPP unit
  NN      14.00670	; Nitrogen in NDI and DPP unit
