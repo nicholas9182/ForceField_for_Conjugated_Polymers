@@ -1,8 +1,8 @@
 #include "OBT.ff/forcefield.itp"
-#include "ND4.itp"
+#include "ND5.itp"
 
 [ system ]
-ND4
+ND5
 
 [ molecules ]
-ND4	1
+ND5	1

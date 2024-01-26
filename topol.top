@@ -1,150 +1,172 @@
+;
+;	File 'topol.top' was generated
+;	By user: nsiemons (502)
+;	On host: DN0a22c62a.SUNet
+;	At date: Thu Jan 25 16:05:53 2024
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2023.3 (-:
+;	
+;	Executable:   /Users/nsiemons/Drive/Code_projects/gromacs_2023_gpu/bin/gmx
+;	Data prefix:  /Users/nsiemons/Drive/Code_projects/gromacs_2023_gpu
+;	Working dir:  /Users/nsiemons/Drive/Code_projects/ForceField_for_Conjugated_Polymers
+;	Command line:
+;	  gmx pdb2gmx -f pdb_files/ND5.pdb
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./OBT.ff/forcefield.itp"
+
 [ moleculetype ]
 ; Name            nrexcl
-ND4               3
+Other               3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
-; residue   1 ND4 rtp ND4  q -1.0
-     1         CR      1    ND4    CR1      1     -0.003     12.011
-     2        CBU      1    ND4    CR2      2     -0.057     13.019
-     3         CR      1    ND4    CR3      3     -0.105     12.011
-     4         HR      1    ND4    HR3      3      0.088      1.008
-     5         CR      1    ND4    CR4      4     -0.003     12.011
-     6         SR      1    ND4    ST1      5     -0.139      32.06
-     7         CN      1    ND4    Cya      6      0.128     12.011
-     8         CN      1    ND4    Cyb      7     -0.099     12.011
-     9         HN      1    ND4    Hyb      7      0.054      1.008
-    10         CN      1    ND4    Cyc      8     -0.212     12.011
-    11         CN      1    ND4    Cyd      9      0.519     12.011
-    12         ON      1    ND4    Oyd      9     -0.553    15.9994
-    13         NN      1    ND4    Nye     10     -0.317    14.0067
-    14         CN      1    ND4    Cyf     11      0.532     12.011
-    15         ON      1    ND4    Oyf     11     -0.517    15.9994
-    16         CN      1    ND4    Cyg     12     -0.311     12.011
-    17         CN      1    ND4    Cyh     13      0.128     12.011
-    18         CN      1    ND4    Cyi     14     -0.099     12.011
-    19         HN      1    ND4    Hyi     14      0.054      1.008
-    20         CN      1    ND4    Cyj     15     -0.212     12.011
-    21         CN      1    ND4    Cyk     16      0.519     12.011
-    22         ON      1    ND4    Oyk     16     -0.553    15.9994
-    23         NN      1    ND4    Nyl     17     -0.317    14.0067
-    24         CN      1    ND4    Cym     18      0.532     12.011
-    25         ON      1    ND4    Oym     18     -0.517    15.9994
-    26         CN      1    ND4    Cyn     19     -0.311     12.011
-    27         CN      1    ND4    Cyo     20      0.067     12.011
-    28         CN      1    ND4    Cyp     21      0.067     12.011
-    29         CR      1    ND4    CR5     22     -0.003     12.011
-    30        CBU      1    ND4    CR6     23     -0.057     13.019
-    31         CR      1    ND4    CR7     24     -0.105     12.011
-    32         HR      1    ND4    HR7     24      0.088      1.008
-    33         CR      1    ND4    CR8     25     -0.003     12.011
-    34         SR      1    ND4    ST2     26     -0.139      32.06
-    35        CG!      1    ND4    Caa     27      0.042     12.011
-    36         HG      1    ND4    Haa     27     -0.003      1.008
-    37         HG      1    ND4    Hab     27     -0.003      1.008
-    38         CG      1    ND4    Cab     28      0.023     12.011
-    39         HG      1    ND4    Hac     28        0.1      1.008
-    40         HG      1    ND4    Had     28        0.1      1.008
-    41         OG      1    ND4    Oac     29     -0.393    15.9994
-    42         CG      1    ND4    Cad     30      0.015     12.011
-    43         HG      1    ND4    Hae     30        0.1      1.008
-    44         HG      1    ND4    Haf     30        0.1      1.008
-    45         CG      1    ND4    Cae     31      0.019     12.011
-    46         HG      1    ND4    Hag     31        0.1      1.008
-    47         HG      1    ND4    Hah     31        0.1      1.008
-    48         OG      1    ND4    Oaf     32     -0.393    15.9994
-    49         CG      1    ND4    Cag     33      0.019     12.011
-    50         HG      1    ND4    Hai     33        0.1      1.008
-    51         HG      1    ND4    Haj     33        0.1      1.008
-    52         CG      1    ND4    Cah     34      0.012     12.011
-    53         HG      1    ND4    Hak     34        0.1      1.008
-    54         HG      1    ND4    Hal     34        0.1      1.008
-    55         OG      1    ND4    Oai     35     -0.383    15.9994
-    56         CG      1    ND4    Caj     35      0.019     12.011
-    57         HG      1    ND4    Ham     35        0.1      1.008
-    58         HG      1    ND4    Han     35        0.1      1.008
-    59         CG      1    ND4    Cak     36      0.012     12.011
-    60         HG      1    ND4    Hao     36        0.1      1.008
-    61         HG      1    ND4    Hap     36        0.1      1.008
-    62         OG      1    ND4    Oal     37     -0.383    15.9994
-    63         CG      1    ND4    Cam     37      0.019     12.011
-    64         HG      1    ND4    Haq     37        0.1      1.008
-    65         HG      1    ND4    Har     37        0.1      1.008
-    66         CG      1    ND4    Can     38      0.012     12.011
-    67         HG      1    ND4    Has     38        0.1      1.008
-    68         HG      1    ND4    Hat     38        0.1      1.008
-    69         OG      1    ND4    Oao     39     -0.383    15.9994
-    70         CG      1    ND4    Cap     40      0.019     12.011
-    71         HG      1    ND4    Hau     40        0.1      1.008
-    72         HG      1    ND4    Hav     40        0.1      1.008
-    73         CG      1    ND4    Caq     41      0.012     12.011
-    74         HG      1    ND4    Haw     41        0.1      1.008
-    75         HG      1    ND4    Hax     41        0.1      1.008
-    76         OG      1    ND4    Oar     42     -0.373    15.9994
-    77         CG      1    ND4    Cas     43      0.019     12.011
-    78         HG      1    ND4    Hay     43        0.1      1.008
-    79         HG      1    ND4    Haz     43        0.1      1.008
-    80         CG      1    ND4    Cat     44      0.012     12.011
-    81         HG      1    ND4    Ha1     44        0.1      1.008
-    82         HG      1    ND4    Ha2     44        0.1      1.008
-    83         OG      1    ND4    Oau     45     -0.373    15.9994
-    84         CG      1    ND4    Cav     46     -0.039     12.011
-    85         HG      1    ND4    Ha3     46        0.1      1.008
-    86         HG      1    ND4    Ha4     46        0.1      1.008
-    87         HG      1    ND4    Ha5     46        0.1      1.008
-    88        CG!      1    ND4    Cba     47      0.042     12.011
-    89         HG      1    ND4    Hba     47     -0.003      1.008
-    90         HG      1    ND4    Hbb     47     -0.003      1.008
-    91         CG      1    ND4    Cbb     48      0.023     12.011
-    92         HG      1    ND4    Hbc     48        0.1      1.008
-    93         HG      1    ND4    Hbd     48        0.1      1.008
-    94         OG      1    ND4    Obc     49     -0.393    15.9994
-    95         CG      1    ND4    Cbd     50      0.015     12.011
-    96         HG      1    ND4    Hbe     50        0.1      1.008
-    97         HG      1    ND4    Hbf     50        0.1      1.008
-    98         CG      1    ND4    Cbe     51      0.019     12.011
-    99         HG      1    ND4    Hbg     51        0.1      1.008
-   100         HG      1    ND4    Hbh     51        0.1      1.008
-   101         OG      1    ND4    Obf     52     -0.393    15.9994
-   102         CG      1    ND4    Cbg     53      0.019     12.011
-   103         HG      1    ND4    Hbi     53        0.1      1.008
-   104         HG      1    ND4    Hbj     53        0.1      1.008
-   105         CG      1    ND4    Cbh     54      0.012     12.011
-   106         HG      1    ND4    Hbk     54        0.1      1.008
-   107         HG      1    ND4    Hbl     54        0.1      1.008
-   108         OG      1    ND4    Obi     55     -0.383    15.9994
-   109         CG      1    ND4    Cbj     55      0.019     12.011
-   110         HG      1    ND4    Hbm     55        0.1      1.008
-   111         HG      1    ND4    Hbn     55        0.1      1.008
-   112         CG      1    ND4    Cbk     56      0.012     12.011
-   113         HG      1    ND4    Hbo     56        0.1      1.008
-   114         HG      1    ND4    Hbp     56        0.1      1.008
-   115         OG      1    ND4    Obl     57     -0.383    15.9994
-   116         CG      1    ND4    Cbm     57      0.019     12.011
-   117         HG      1    ND4    Hbq     57        0.1      1.008
-   118         HG      1    ND4    Hbr     57        0.1      1.008
-   119         CG      1    ND4    Cbn     58      0.012     12.011
-   120         HG      1    ND4    Hbs     58        0.1      1.008
-   121         HG      1    ND4    Hbt     58        0.1      1.008
-   122         OG      1    ND4    Obo     59     -0.383    15.9994
-   123         CG      1    ND4    Cbp     60      0.019     12.011
-   124         HG      1    ND4    Hbu     60        0.1      1.008
-   125         HG      1    ND4    Hbv     60        0.1      1.008
-   126         CG      1    ND4    Cbq     61      0.012     12.011
-   127         HG      1    ND4    Hbw     61        0.1      1.008
-   128         HG      1    ND4    Hbx     61        0.1      1.008
-   129         OG      1    ND4    Obr     62     -0.373    15.9994
-   130         CG      1    ND4    Cbs     63      0.019     12.011
-   131         HG      1    ND4    Hby     63        0.1      1.008
-   132         HG      1    ND4    Hbz     63        0.1      1.008
-   133         CG      1    ND4    Cbt     64      0.012     12.011
-   134         HG      1    ND4    Hb1     64        0.1      1.008
-   135         HG      1    ND4    Hb2     64        0.1      1.008
-   136         OG      1    ND4    Obu     65     -0.373    15.9994
-   137         CG      1    ND4    Cbv     66     -0.039     12.011
-   138         HG      1    ND4    Hb3     66        0.1      1.008
-   139         HG      1    ND4    Hb4     66        0.1      1.008
-   140         HG      1    ND4    Hb5     66        0.1      1.008   ; qtot -1
+; residue   1 ND5 rtp ND5  q -2.0
+     1         CR      1    ND5    CR1      1      0.034     12.011
+     2        CBU      1    ND5    CR2      2      -0.08     13.019
+     3         CR      1    ND5    CR3      3     -0.113     12.011
+     4         HR      1    ND5    HR3      3      0.063      1.008
+     5         CR      1    ND5    CR4      4     -0.007     12.011
+     6         SR      1    ND5    ST1      5     -0.201      32.06
+     7         CP      1    ND5    Cya      6      0.074     12.011
+     8         CN      1    ND5    Cyb      7     -0.122     12.011
+     9         HN      1    ND5    Hyb      7      0.033      1.008
+    10         CN      1    ND5    Cyc      8     -0.274     12.011
+    11         CN      1    ND5    Cyd      9      0.475     12.011
+    12         ON      1    ND5    Oyd      9     -0.625    15.9994
+    13         NN      1    ND5    Nye     10     -0.308    14.0067
+    14         CN      1    ND5    Cyf     11      0.482     12.011
+    15         ON      1    ND5    Oyf     11     -0.581    15.9994
+    16         CN      1    ND5    Cyg     12     -0.343     12.011
+    17         CP      1    ND5    Cyh     13      0.074     12.011
+    18         CN      1    ND5    Cyi     14     -0.122     12.011
+    19         HN      1    ND5    Hyi     14      0.033      1.008
+    20         CN      1    ND5    Cyj     15     -0.274     12.011
+    21         CN      1    ND5    Cyk     16      0.475     12.011
+    22         ON      1    ND5    Oyk     16     -0.625    15.9994
+    23         NN      1    ND5    Nyl     17     -0.308    14.0067
+    24         CN      1    ND5    Cym     18      0.482     12.011
+    25         ON      1    ND5    Oym     18     -0.581    15.9994
+    26         CN      1    ND5    Cyn     19     -0.343     12.011
+    27         CN      1    ND5    Cyo     20      0.083     12.011
+    28         CN      1    ND5    Cyp     21      0.083     12.011
+    29         CR      1    ND5    CR5     22      0.034     12.011
+    30        CBU      1    ND5    CR6     23      -0.08     13.019
+    31         CR      1    ND5    CR7     24     -0.113     12.011
+    32         HR      1    ND5    HR7     24      0.063      1.008
+    33         CR      1    ND5    CR8     25     -0.007     12.011
+    34         SR      1    ND5    ST2     26     -0.201      32.06
+    35        CG!      1    ND5    Caa     27      0.132     12.011
+    36         HG      1    ND5    Haa     27     -0.057      1.008
+    37         HG      1    ND5    Hab     27     -0.057      1.008
+    38         CG      1    ND5    Cab     28      0.023     12.011
+    39         HG      1    ND5    Hac     28        0.1      1.008
+    40         HG      1    ND5    Had     28        0.1      1.008
+    41         OG      1    ND5    Oac     29     -0.393    15.9994
+    42         CG      1    ND5    Cad     30      0.015     12.011
+    43         HG      1    ND5    Hae     30        0.1      1.008
+    44         HG      1    ND5    Haf     30        0.1      1.008
+    45         CG      1    ND5    Cae     31      0.019     12.011
+    46         HG      1    ND5    Hag     31        0.1      1.008
+    47         HG      1    ND5    Hah     31        0.1      1.008
+    48         OG      1    ND5    Oaf     32     -0.393    15.9994
+    49         CG      1    ND5    Cag     33      0.019     12.011
+    50         HG      1    ND5    Hai     33        0.1      1.008
+    51         HG      1    ND5    Haj     33        0.1      1.008
+    52         CG      1    ND5    Cah     34      0.012     12.011
+    53         HG      1    ND5    Hak     34        0.1      1.008
+    54         HG      1    ND5    Hal     34        0.1      1.008
+    55         OG      1    ND5    Oai     35     -0.383    15.9994
+    56         CG      1    ND5    Caj     35      0.019     12.011
+    57         HG      1    ND5    Ham     35        0.1      1.008
+    58         HG      1    ND5    Han     35        0.1      1.008
+    59         CG      1    ND5    Cak     36      0.012     12.011
+    60         HG      1    ND5    Hao     36        0.1      1.008
+    61         HG      1    ND5    Hap     36        0.1      1.008
+    62         OG      1    ND5    Oal     37     -0.383    15.9994
+    63         CG      1    ND5    Cam     37      0.019     12.011
+    64         HG      1    ND5    Haq     37        0.1      1.008
+    65         HG      1    ND5    Har     37        0.1      1.008
+    66         CG      1    ND5    Can     38      0.012     12.011
+    67         HG      1    ND5    Has     38        0.1      1.008
+    68         HG      1    ND5    Hat     38        0.1      1.008
+    69         OG      1    ND5    Oao     39     -0.383    15.9994
+    70         CG      1    ND5    Cap     40      0.019     12.011
+    71         HG      1    ND5    Hau     40        0.1      1.008
+    72         HG      1    ND5    Hav     40        0.1      1.008
+    73         CG      1    ND5    Caq     41      0.012     12.011
+    74         HG      1    ND5    Haw     41        0.1      1.008
+    75         HG      1    ND5    Hax     41        0.1      1.008
+    76         OG      1    ND5    Oar     42     -0.373    15.9994
+    77         CG      1    ND5    Cas     43      0.019     12.011
+    78         HG      1    ND5    Hay     43        0.1      1.008
+    79         HG      1    ND5    Haz     43        0.1      1.008
+    80         CG      1    ND5    Cat     44      0.012     12.011
+    81         HG      1    ND5    Ha1     44        0.1      1.008
+    82         HG      1    ND5    Ha2     44        0.1      1.008
+    83         OG      1    ND5    Oau     45     -0.373    15.9994
+    84         CG      1    ND5    Cav     46     -0.039     12.011
+    85         HG      1    ND5    Ha3     46        0.1      1.008
+    86         HG      1    ND5    Ha4     46        0.1      1.008
+    87         HG      1    ND5    Ha5     46        0.1      1.008
+    88        CG!      1    ND5    Cba     47      0.132     12.011
+    89         HG      1    ND5    Hba     47     -0.057      1.008
+    90         HG      1    ND5    Hbb     47     -0.057      1.008
+    91         CG      1    ND5    Cbb     48      0.023     12.011
+    92         HG      1    ND5    Hbc     48        0.1      1.008
+    93         HG      1    ND5    Hbd     48        0.1      1.008
+    94         OG      1    ND5    Obc     49     -0.393    15.9994
+    95         CG      1    ND5    Cbd     50      0.015     12.011
+    96         HG      1    ND5    Hbe     50        0.1      1.008
+    97         HG      1    ND5    Hbf     50        0.1      1.008
+    98         CG      1    ND5    Cbe     51      0.019     12.011
+    99         HG      1    ND5    Hbg     51        0.1      1.008
+   100         HG      1    ND5    Hbh     51        0.1      1.008
+   101         OG      1    ND5    Obf     52     -0.393    15.9994
+   102         CG      1    ND5    Cbg     53      0.019     12.011
+   103         HG      1    ND5    Hbi     53        0.1      1.008
+   104         HG      1    ND5    Hbj     53        0.1      1.008
+   105         CG      1    ND5    Cbh     54      0.012     12.011
+   106         HG      1    ND5    Hbk     54        0.1      1.008
+   107         HG      1    ND5    Hbl     54        0.1      1.008
+   108         OG      1    ND5    Obi     55     -0.383    15.9994
+   109         CG      1    ND5    Cbj     55      0.019     12.011
+   110         HG      1    ND5    Hbm     55        0.1      1.008
+   111         HG      1    ND5    Hbn     55        0.1      1.008
+   112         CG      1    ND5    Cbk     56      0.012     12.011
+   113         HG      1    ND5    Hbo     56        0.1      1.008
+   114         HG      1    ND5    Hbp     56        0.1      1.008
+   115         OG      1    ND5    Obl     57     -0.383    15.9994
+   116         CG      1    ND5    Cbm     57      0.019     12.011
+   117         HG      1    ND5    Hbq     57        0.1      1.008
+   118         HG      1    ND5    Hbr     57        0.1      1.008
+   119         CG      1    ND5    Cbn     58      0.012     12.011
+   120         HG      1    ND5    Hbs     58        0.1      1.008
+   121         HG      1    ND5    Hbt     58        0.1      1.008
+   122         OG      1    ND5    Obo     59     -0.383    15.9994
+   123         CG      1    ND5    Cbp     60      0.019     12.011
+   124         HG      1    ND5    Hbu     60        0.1      1.008
+   125         HG      1    ND5    Hbv     60        0.1      1.008
+   126         CG      1    ND5    Cbq     61      0.012     12.011
+   127         HG      1    ND5    Hbw     61        0.1      1.008
+   128         HG      1    ND5    Hbx     61        0.1      1.008
+   129         OG      1    ND5    Obr     62     -0.373    15.9994
+   130         CG      1    ND5    Cbs     63      0.019     12.011
+   131         HG      1    ND5    Hby     63        0.1      1.008
+   132         HG      1    ND5    Hbz     63        0.1      1.008
+   133         CG      1    ND5    Cbt     64      0.012     12.011
+   134         HG      1    ND5    Hb1     64        0.1      1.008
+   135         HG      1    ND5    Hb2     64        0.1      1.008
+   136         OG      1    ND5    Obu     65     -0.373    15.9994
+   137         CG      1    ND5    Cbv     66     -0.039     12.011
+   138         HG      1    ND5    Hb3     66        0.1      1.008
+   139         HG      1    ND5    Hb4     66        0.1      1.008
+   140         HG      1    ND5    Hb5     66        0.1      1.008   ; qtot -2
 
 [ bonds ]
 ;  ai    aj funct            c0            c1            c2            c3
@@ -912,3 +934,15 @@ ND4               3
    30    31    33    34     2 
    31    30    33    32     2 
 
+; Include Position restraint file
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+[ system ]
+; Name
+ND5
+
+[ molecules ]
+; Compound        #mols
+Other               1

@@ -689,8 +689,7 @@
  CN     CR      CBU     CR      3        0              0               0               0               0               0.000    ;
 
 ; Charged NDI - Thiophene
- CN	CP	CE	ST	3	0 0 0 0 0 0  ; QCC optimised
- CN	CP	CR	SR	3	0 0 0 0 0 0  ; QCC optimised
+ CN	CP	CR	SR	3	5.362		4.487 		-22.990  	2.941   	2.035  		-2.511   ; QCC optimised
  CP     CR      CBU     CR      3        0              0               0               0               0               0.000    ;
 
 ; NDI - Sidechain
