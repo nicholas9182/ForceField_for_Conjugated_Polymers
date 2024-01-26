@@ -2936,6 +2936,439 @@
 
 
 
+[ ND8 ]
+
+[ atoms ]
+
+; Left thiophene unit 
+ CR1	CR	+0.003	1
+ CR2	CBU	-0.051	2
+ CR3	CR	-0.099	3
+ HR3	HR	+0.094	3
+ CR4	CR      +0.003	4
+ ST1	SR	-0.133	5
+
+; NDI core
+; name type charge chargegroup
+ Cya	CN	+0.134	1
+ Cyb	CN	-0.093	2
+ Hyb	HN	+0.060	2
+ Cyc	CN	-0.206	3
+ Cyd	CN	+0.525	4
+ Oyd	ON	-0.547	4
+ Nye	NN	-0.311	5
+ Cyf	CN	+0.538	6
+ Oyf	ON	-0.511	6
+ Cyg	CN	-0.305	7
+ Cyh	CN	+0.134	8
+ Cyi	CN	-0.093	9
+ Hyi	HN	+0.060	9
+ Cyj	CN	-0.206	10
+ Cyk	CN	+0.525	11
+ Oyk	ON	-0.547	11
+ Nyl	NN	-0.311	12
+ Cym	CN	+0.538	13
+ Oym	ON	-0.511	13
+ Cyn	CN	-0.305	14
+ Cyo	CN	+0.073	15
+ Cyp	CN	+0.073	16
+
+; Right thiophene unit 
+ CR5	CR	+0.003	1
+ CR6	CBU	-0.051	2
+ CR7	CR	-0.099	3
+ HR7	HR	+0.094	3
+ CR8	CR      +0.003	4
+ ST2	SR	-0.133	5
+
+
+; Top sidechain main branch			
+ Caa	CL!	+0.045	17	
+ Haa	HL	+0.001	17
+ Hab	HL	+0.001	17
+ Cab	CL	+0.179	18
+ Hac	HL	-0.027	18
+ Cac	CL	+0.014	19
+ Had	HL	-0.022	19
+ Hae	HL	-0.022	19
+ Cad	CL	+0.038	20
+ Haf	HL	-0.007	20
+ Hag	HL	-0.007	20
+ Cae	CL	+0.038	21
+ Hah	HL	-0.008	21
+ Hai	HL	-0.008	21
+ Caf	CL	-0.014	22
+ Haj	HL	-0.005	22
+ Hak	HL	-0.005	22
+ Cag	CL	+0.069	23
+ Hal	HL	-0.021	23
+ Ham	HL	-0.021	23
+ Cai	CL	+0.084	24
+ Han	HL	-0.024	24
+ Hao	HL	-0.024	24
+ Caj	CL	-0.027	25
+ Hap	HL	-0.006	25
+ Haq	HL	-0.006	25
+ Cak	CL	+0.031	26
+ Har	HL	-0.012	26
+ Has	HL	-0.012	26
+ Cal	CL	+0.190	27
+ Hat	HL	-0.040	27
+ Hau	HL	-0.040	27
+ Cam	CL	-0.192	28
+ Hav	HL	+0.040	28
+ Haw	HL	+0.040	28	
+ Hax	HL      +0.040	28
+
+; Top sidechain second branch	
+ Cba	CL	+0.094	29
+ Hba	HL	-0.024	29
+ Hbb	HL	-0.024	29
+ Cbb	CL	-0.072	30
+ Hbc	HL	-0.005	30
+ Hbd	HL	-0.005	30
+ Cbc	CL	+0.101	31
+ Hbe	HL	-0.017	31
+ Hbf	HL	-0.017	31
+ Cbd	CL	+0.050	32
+ Hbg	HL	-0.011	32
+ Hbh	HL	-0.011	32
+ Cbe	CL	-0.062	33
+ Hbi	HL	+0.001	33
+ Hbj	HL	+0.001	33
+ Cbf	CL	+0.073	34
+ Hbk	HL	-0.020	34
+ Hbl	HL	-0.020	34
+ Cbg	CL	+0.178	35
+ Hbm	HL	-0.037	35
+ Hbn	HL	-0.037	35
+ Cbi	CL	-0.196	36
+ Hbo	HL	+0.042	36
+ Hbp	HL	+0.042	36
+ Hbq	HL	+0.042	36
+				
+; Right sidechain main branch		
+ Cca	CL!	+0.045	17	
+ Hca	HL	+0.001	17
+ Hcb	HL	+0.001	17
+ Ccb	CL	+0.179	18
+ Hcc	HL	-0.027	18
+ Ccc	CL	+0.014	19
+ Hcd	HL	-0.022	19
+ Hce	HL	-0.022	19
+ Ccd	CL	+0.038	20
+ Hcf	HL	-0.007	20
+ Hcg	HL	-0.007	20
+ Cce	CL	+0.038	21
+ Hch	HL	-0.008	21
+ Hci	HL	-0.008	21
+ Ccf	CL	-0.014	22
+ Hcj	HL	-0.005	22
+ Hck	HL	-0.005	22
+ Ccg	CL	+0.069	23
+ Hcl	HL	-0.021	23
+ Hcm	HL	-0.021	23
+ Cci	CL	+0.084	24
+ Hcn	HL	-0.024	24
+ Hco	HL	-0.024	24
+ Ccj	CL	-0.027	25
+ Hcp	HL	-0.006	25
+ Hcq	HL	-0.006	25
+ Cck	CL	+0.031	26
+ Hcr	HL	-0.012	26
+ Hcs	HL	-0.012	26
+ Ccl	CL	+0.190	27
+ Hct	HL	-0.040	27
+ Hcu	HL	-0.040	27
+ Ccm	CL	-0.192	28
+ Hcv	HL	+0.040	28
+ Hcw	HL	+0.040	28	
+ Hcx	HL      +0.040	28
+
+; Right sidechain second branch		
+ Cda	CL	+0.094	29
+ Hda	HL	-0.024	29
+ Hdb	HL	-0.024	29
+ Cdb	CL	-0.072	30
+ Hdc	HL	-0.005	30
+ Hdd	HL	-0.005	30
+ Cdc	CL	+0.101	31
+ Hde	HL	-0.017	31
+ Hdf	HL	-0.017	31
+ Cdd	CL	+0.050	32
+ Hdg	HL	-0.011	32
+ Hdh	HL	-0.011	32
+ Cde	CL	-0.062	33
+ Hdi	HL	+0.001	33
+ Hdj	HL	+0.001	33
+ Cdf	CL	+0.073	34
+ Hdk	HL	-0.020	34
+ Hdl	HL	-0.020	34
+ Cdg	CL	+0.178	35
+ Hdm	HL	-0.037	35
+ Hdn	HL	-0.037	35
+ Cdi	CL	-0.196	36
+ Hdo	HL	+0.042	36
+ Hdp	HL	+0.042	36
+ Hdq	HL	+0.042	36
+
+
+
+[ bonds ]
+; NDI core
+ Cya 	Cyb
+ Cyb	Hyb
+ Cyb	Cyc
+ Cyc	Cyd
+ Cyd	Oyd
+ Cyd	Nye
+ Nye	Cyf
+ Cyf	Oyf
+ Cyf	Cyg
+ Cyg	Cyh
+ Cyh	Cyi
+ Cyi	Hyi
+ Cyi	Cyj
+ Cyj	Cyk
+ Cyk	Oyk
+ Cyk	Nyl
+ Nyl	Cym
+ Cym	Oym
+ Cym	Cyn
+ Cyn	Cyo
+ Cyn	Cya
+ Cyo	Cyp
+ Cyo	Cyj
+ Cyp	Cyc
+ Cyp	Cyg
+
+; Top sidechain main branch			
+ Nyl	Caa
+ Caa	Haa
+ Caa	Hab
+ Caa	Cab
+ Cab	Hac
+ Cab	Cac
+ Cac	Had
+ Cac	Hae
+ Cac	Cad
+ Cad	Haf
+ Cad	Hag
+ Cad	Cae
+ Cae	Hah
+ Cae	Hai
+ Cae	Caf
+ Caf	Haj
+ Caf	Hak
+ Caf	Cag
+ Cag	Hal
+ Cag	Ham
+ Cag	Cai
+ Cai	Han
+ Cai	Hao
+ Cai	Caj
+ Caj	Hap
+ Caj	Haq
+ Caj	Cak
+ Cak	Har
+ Cak	Has
+ Cak	Cal
+ Cal	Hat
+ Cal	Hau
+ Cal	Cam
+ Cam	Hav
+ Cam	Haw
+ Cam	Hax
+
+; Top sidechain second branch	
+ Cab	Cba
+ Cba	Hba
+ Cba	Hbb
+ Cba	Cbb
+ Cbb	Hbc
+ Cbb	Hbd
+ Cbb	Cbc
+ Cbc	Hbe
+ Cbc	Hbf
+ Cbc	Cbd
+ Cbd	Hbg
+ Cbd	Hbh
+ Cbd	Cbe
+ Cbe	Hbi
+ Cbe	Hbj
+ Cbe	Cbf
+ Cbf	Hbk
+ Cbf	Hbl
+ Cbf	Cbg
+ Cbg	Hbm
+ Cbg	Hbn
+ Cbg	Cbi
+ Cbi	Hbo
+ Cbi	Hbp
+ Cbi	Hbq
+				
+; Right sidechain main branch		
+ Nye	Cca
+ Cca	Hca
+ Cca	Hcb
+ Cca	Ccb
+ Ccb	Hcc
+ Ccb	Ccc
+ Ccc	Hcd
+ Ccc	Hce
+ Ccc	Ccd
+ Ccd	Hcf
+ Ccd	Hcg
+ Ccd	Cce
+ Cce	Hch
+ Cce	Hci
+ Cce	Ccf
+ Ccf	Hcj
+ Ccf	Hck
+ Ccf	Ccg
+ Ccg	Hcl
+ Ccg	Hcm
+ Ccg	Cci
+ Cci	Hcn
+ Cci	Hco
+ Cci	Ccj
+ Ccj	Hcp
+ Ccj	Hcq
+ Ccj	Cck
+ Cck	Hcr
+ Cck	Hcs
+ Cck	Ccl
+ Ccl	Hct
+ Ccl	Hcu
+ Ccl	Ccm
+ Ccm	Hcv
+ Ccm	Hcw
+ Ccm	Hcx
+
+; Right sidechain second branch		
+ Ccb	Cda
+ Cda	Hda
+ Cda	Hdb
+ Cda	Cdb
+ Cdb	Hdc
+ Cdb	Hdd
+ Cdb	Cdc
+ Cdc	Hde
+ Cdc	Hdf
+ Cdc	Cdd
+ Cdd	Hdg
+ Cdd	Hdh
+ Cdd	Cde
+ Cde	Hdi
+ Cde	Hdj
+ Cde	Cdf
+ Cdf	Hdk
+ Cdf	Hdl
+ Cdf	Cdg
+ Cdg	Hdm
+ Cdg	Hdn
+ Cdg	Cdi
+ Cdi	Hdo
+ Cdi	Hdp
+ Cdi	Hdq
+
+; NDI - right thiophene			
+ Cya	CR5		
+
+; NDI - right thiophene			
+ Cyh	CR1		
+
+; Left Thiophene			
+ CR1	CR2
+ CR2	CR3
+ CR3	CR4
+ CR3	HR3
+ CR4	ST1
+ ST1	CR1
+
+; Left Thiophene			
+ CR5	CR6
+ CR6	CR7
+ CR7	CR8
+ CR7	HR7
+ CR8	ST2
+ ST2	CR5
+
+
+[ dihedrals ]
+; NDI - thiophene
+ Cyb	Cya	CR5	ST2
+ Cyi	Cyh	CR1	ST1
+
+[ exclusions ]
+; NDI - thiophene
+ Oym	ST2
+ Oym	CR6
+ Oyf	CR2
+ Oyf	ST1
+ 
+[ impropers ]			
+; right ring
+ Cya	Cyb	Cyc	Cyp
+ Cyb	Cyc	Cyp	Cyo
+ Cyc	Cyp	Cyo	Cyn
+ Cyp	Cyo	Cyn	Cya
+ Cyo	Cyn	Cya	Cyb
+ Cyn	Cya	Cyb	Cyc
+ Cyb	Cya	Cyc	Hyb
+
+; left ring
+ Cyp	Cyo	Cyj	Cyi
+ Cyo	Cyj	Cyi	Cyh
+ Cyj	Cyi	Cyh	Cyg
+ Cyi	Cyh	Cyg	Cyp
+ Cyh	Cyg	Cyp	Cyo
+ Cyg	Cyp	Cyo	Cyj
+ Cyi	Cyh	Cyj	Hyi
+
+; top ring
+ Cyo	Cyj	Cyk	Nyl
+ Cyj	Cyk	Nyl	Cym
+ Cyk	Nyl	Cym	Cyn
+ Nyl	Cym	Cyn	Cyo
+ Cym	Cyn	Cyo	Cyj
+ Cyn	Cyo	Cyj	Cyk
+ Cyk	Nyl	Cyj	Oyk
+ Nyl	Cym	Cyk	Caa
+ Cym	Cyn	Nyl	Oym
+
+; bottom ring
+ Cyp	Cyc	Cyd	Nye
+ Cyc	Cyd	Nye	Cyf
+ Cyd	Nye	Cyf	Cyg
+ Nye	Cyf	Cyg	Cyp
+ Cyf	Cyg	Cyp	Cyc
+ Cyg	Cyp	Cyc	Cyd
+ Cyd	Nye	Cyc	Oyd
+ Nye	Cyd	Cyf	Cca
+ Cyf	Cyg	Nye	Oyf
+
+; NDI - right thiophene
+ Cya	Cyn	Cyb	CR5
+ CR5	CR6	ST2	Cya
+
+; NDI - left thiophene
+ Cyh	Cyg	Cyi	CR1
+ CR1	CR2	ST1	Cyh
+
+; right thiophene	
+ CR5	CR6	CR7	CR8
+ CR6	CR7	CR8	ST2
+ CR7	CR8	ST2	CR5
+ CR8	ST2	CR5	CR6
+ CR7	CR6	CR8	HR7
+
+; left thiophene	
+ CR1	CR2	CR3	CR4
+ CR2	CR3	CR4	ST1
+ CR3	CR4	ST1	CR1
+ CR4	ST1	CR1	CR2
+ CR3	CR2	CR4	HR3
 
 
 
