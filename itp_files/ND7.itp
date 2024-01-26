@@ -1,28 +1,6 @@
-;
-;	File 'topol.top' was generated
-;	By user: nsiemons (502)
-;	On host: DN0a22c62a.SUNet
-;	At date: Fri Jan 26 09:17:20 2024
-;
-;	This is a standalone topology file
-;
-;	Created by:
-;	                    :-) GROMACS - gmx pdb2gmx, 2023.3 (-:
-;	
-;	Executable:   /Users/nsiemons/Drive/Code_projects/gromacs_2023_gpu/bin/gmx
-;	Data prefix:  /Users/nsiemons/Drive/Code_projects/gromacs_2023_gpu
-;	Working dir:  /Users/nsiemons/Drive/Code_projects/ForceField_for_Conjugated_Polymers
-;	Command line:
-;	  gmx pdb2gmx -f pdb_files/ND7.pdb
-;	Force field was read from current directory or a relative path - path added.
-;
-
-; Include forcefield parameters
-#include "./OBT.ff/forcefield.itp"
-
 [ moleculetype ]
 ; Name            nrexcl
-Other               3
+ND7               3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
@@ -1040,15 +1018,3 @@ Other               3
    30    31    33    34     2 
    31    30    33    32     2 
 
-; Include Position restraint file
-#ifdef POSRES
-#include "posre.itp"
-#endif
-
-[ system ]
-; Name
-ND7
-
-[ molecules ]
-; Compound        #mols
-Other               1
