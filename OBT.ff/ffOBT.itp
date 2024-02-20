@@ -272,6 +272,7 @@
  CG	CL	HL	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
  CL	CG	HG	1	110.700	313.800	; from Drew opls_139 - opls_139 - opls_140
  CL	CG	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
+ CG	CL	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
  CL	CL	CG	1	112.700	488.273	; from Drew opls_139 - opls_139 - opls_139
  
 ; thiophene-glycol sidechain
@@ -653,6 +654,7 @@
  CL	CL	CL	CG	3	2.9288		-1.4644		0.209		-1.6736		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_139 
  HL	CL	CG	OG	3	 0.979		2.937		0.000		-3.916		-0.000 		0.000	; from Drew
  OG	CG	CL	CL	3	-1.151		1.151		0.000		-0.000		0.000		0.000	; from Drew
+ OG	CG	CL	CL!	3	-1.151		1.151		0.000		-0.000		0.000		0.000	; from Drew
  CG	CL	CL	HL	3	0.6276		1.88280		0.000		-2.5104		0.000		0.000	; opls_139 - opls_139 - opls_139 - opls_140
 
  ; Oxygen to sulfur
@@ -697,7 +699,7 @@
  CN	NN	CG!	CG	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
  CN	NN	CL!	HL	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
  CN	NN	CL!	CL	3	1.715		2.845		1.046		-5.607		-0.000		0.000	; from Drew
- NN	CL!	CL	CL	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
+ NN	CL!	CL	CG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
  NN	CG!	CG	OG	3	-1.151		1.151		0.000		-0.000		-0.000		0.000	; Bhatta J Phys Chem
 
 ; thiophene spacer
