@@ -1,7 +1,7 @@
 source ~/.zshrc
 function run_em(){
 
-	echo "1" | gmx pdb2gmx -f pdb_files/${1}.pdb
+	echo "1" | gmx pdb2gmx -f pdb_files/${2}.pdb
 	top_itp topol.top ${1} ${2}
 	
 	echo "#include \"OBT.ff/forcefield.itp\"" > test.top
@@ -21,5 +21,5 @@ function run_em(){
 
 }
 
-run_em ND9 ND9
+run_em NDA NDA
 
