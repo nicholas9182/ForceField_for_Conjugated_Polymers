@@ -176,6 +176,7 @@ ND7 = T-gNDI-T with C20 sidechains bipolaron
 ND8 = T-gNDI-T with C12C8 sidechains polaron
 ND9 = T-gNDI-T with C12C8 sidechains bipolaron
 NDA = T-gNDI-T with g4g4 sidechains 
+NDB = T-gNDI-T with g3g3 sidechains 
 
 ## DPP AND VINYL POLYMER UNITS ## 
 

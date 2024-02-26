@@ -21,5 +21,5 @@ function run_em(){
 
 }
 
-run_em NDA NDA
+run_em NDB NDB
 
