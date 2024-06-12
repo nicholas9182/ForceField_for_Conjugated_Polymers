@@ -21,5 +21,5 @@ function run_em(){
 
 }
 
-run_em NDB NDB
+run_em CBM CBM
 
