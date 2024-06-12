@@ -216,3 +216,13 @@ T6 = gpbTTT end unit \
 T7 = teg pgT2-TT first unit \
 T8 = teg pgT2-TT middle unit \
 T9 = teg pgT2-TT end unit \
+
+## BBL monomer units ##
+
+CBM = cis perinone BBL monomer analogue
+TBM = trans perinone BBL monomer analogue
+
+
+
+
+

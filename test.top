@@ -1,8 +1,8 @@
 #include "OBT.ff/forcefield.itp"
-#include "NDB.itp"
+#include "CBM.itp"
 
 [ system ]
-NDB
+CBM
 
 [ molecules ]
-NDB	1
+CBM	1

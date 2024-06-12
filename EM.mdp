@@ -14,7 +14,7 @@ nstcomm                  = 100
 comm-grps                = 
 
 ; ENERGY MINIMIZATION OPTIONS
-emtol                    = 0.001
+emtol                    = 0.00001
 emstep                   = 0.01
 niter                    = 20
 fcstep                   = 0

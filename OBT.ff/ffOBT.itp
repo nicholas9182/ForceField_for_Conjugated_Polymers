@@ -78,6 +78,14 @@
  SBT    32.06000        0.000   A       0.355   1.046   ; opls_633 , S
  HBT	1.00800		0.000	A	0.125	0.250	; 
 
+; imidazole units on BBL
+ NAB	14.00670	0.000	A	0.325	0.711	; opls_557 , NA
+ CRB	12.01100	0.000	A	0.355	0.292	; opls_558 , CR
+ NBB	14.00670	0.000	A	0.325	0.711	; opls_559 , NB
+ CVB	12.01100	0.000	A	0.355	0.292	; opls_560 , CV
+ CWB	12.01100	0.000	A	0.355	0.292	; opls_561 , CW
+
+
 [ bondtypes ]
 ;  i    j func        b0          kb
 ; thiophene
@@ -191,6 +199,17 @@
  CBT	CBT	1	0.14000	392459.2	; Same as pgT2
  CBT	SBT	1	0.17600	209200.0	; same as pgT2
  CBT	HBT	1	0.10800	307105.6	; same as pgT2
+
+; BBL 
+ CRB	NAB	1	0.13430	399153.6	; CR - NA oplsaa
+ CWB	NAB	1	0.13810	357313.6	; CW - NA oplsaa
+ CRB	NBB	1	0.13350	408358.4	; CR - NB oplsaa
+ CVB	NBB	1	0.13940	343088.0	; CV - NB oplsaa
+ CWB	CN	1	0.13670	456892.8	; CW - CA oplsaa
+ NAB	CN	1	0.13810 357313.6	; NA - CA oplsaa
+ CWB	CVB	1	0.13700	435136.0	; CW - CV oplsaa
+ CN	CVB	1	0.13670	456892.8	; CA - CW oplsaa
+ CN	CRB	1	0.13670	456892.8	; CA - CW oplsaa
 
 [ angletypes ]
 ;  i    j    k  func    theta0      ktheta
@@ -433,6 +452,29 @@
  CR     CBT     SBT     1       112.00  502.08  ; Same as CRR parameters
  CAA    CBT     SBT     1       112.00  502.08  ; Same as CRR parameters
 
+; BBL
+ CWB	CN	HN	1	110.700 313.800 ; from Drew P 
+ CVB	CN	HN	1	110.700 313.800 ; from Drew P 
+ CWB	CN	CN	1	120.000	527.184	; opls CA - CA - CA
+ CVB	CN	CN	1	120.000	527.184	; opls CA - CA - CA
+ CWB	CVB	CN	1	120.000	527.184	; opls CA - CA - CA
+ NBB	CVB	CN	1	121.600 585.760 ; opls CT - CW - NA
+ CVB	CWB	CN	1	120.000	527.184	; opls CA - CA - CA
+ NAB	CN	CN	1	120.000	527.184	; opls CA - CA - CA
+ NAB	CWB	CN	1	121.600	585.760	; opls CT - CW - NA
+ NBB	CVB	CWB	1	111.000	585.760	; CW - CV - NB
+ NAB	CWB	CVB	1	111.000	585.760	; CW - CV - NB
+ ON	CN	NAB	1	122.900	669.440	; opls O - C - N
+ CWB	NAB	CN	1	125.800	585.760	; CW - NA - CT
+ CRB	NAB	CWB	1	109.800	585.760	; CW - NA - CR
+ CRB	NAB	CN	1	109.800 585.760 ; CW - NA - CR
+ CRB	NBB	CVB	1	110.000	585.760 ; CR - NB - CV
+ NBB	CRB	NAB	1	120.000	585.760	; NA - CR - NB
+ NAB	CRB	CN	1	120.000	527.184	; opls CA - CA - CA
+ NBB	CRB	CN	1	120.000	527.184	; opls CA - CA - CA
+ CRB	CN	CN	1	120.000	527.184	; opls CA - CA - CA
+ 
+
 [ dihedraltypes ]
 ; Improper dihedrals
 ; thiophene
@@ -579,6 +621,35 @@
  CAA    CBB     ST      CBT     2       0       391.47000       ; same as CRR parameters   
  CR	SBT	CBT	CBT	2	0	391.47000 	; same as CRR parameters 
  CAA	SBT	CBT	CBT	2	0	391.47000 	; same as CRR parameters 
+
+; BBL
+ CN	CN	CWB	HN	2	0	391.47000 
+ CN	CVB	CWB	CN	2	0	391.47000 
+ CN	CVB	CN	HN	2	0	391.47000 
+ CVB	CN	CN	CN	2	0	391.47000 
+ CVB	CWB	CN	CN	2	0	391.47000 
+ CWB	CN	CN	CN	2	0	391.47000
+ CWB	CVB	CN	CN	2	0	391.47000
+ CN	CN	NAB	ON	2	0	391.47000
+ NAB	CRB	NBB	CVB	2	0	391.47000
+ NAB	CN	CN	CN	2	0	391.47000
+ NAB	CRB	CN	CN	2	0	391.47000 
+ NBB	CRB	NAB	CWB	2	0	391.47000 
+ NBB	CVB	CWB	NAB	2	0	391.47000 
+ CRB	NAB	CWB	CVB	2	0	391.47000 
+ CRB	NBB	CVB	CWB	2	0	391.47000 
+ CRB	NAB	CN	CN	2	0	391.47000 
+ CRB	CN	CN	CN	2	0	391.47000 
+ CN	CRB	NAB	CN	2	0	391.47000
+ CN	CWB	CN	HN	2	0	391.47000
+ CN	NAB	CN	ON	2	0	391.47000
+ NAB	CN	CRB	CWB	2	0	391.47000
+ CWB	CVB	NAB	CN	2	0	391.47000
+ CVB	CN	CWB	NBB	2	0	391.47000
+ CRB	NBB	NAB	CN	2	0	391.47000
+ CN	NBB	CRB	NAB	2	0	391.47000
+ CVB	CWB	NBB	CN	2	0	391.47000
+ NAB	CRB	CWB	CN	2	0	391.47000
 
 ; Ryckaert-Bellemans Dihedrals
 ; X    j    k    X func      C0       C1       C2       C3       C4       C5

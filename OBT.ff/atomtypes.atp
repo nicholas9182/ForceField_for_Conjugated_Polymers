@@ -43,6 +43,11 @@
  CBT	12.01100	; Carbon in pBTTT thienothiophene
  SBT	 32.06000	; Sulfur in pBTTT thienothiophene
  HBT	  1.00800 	; Hydrogen in pBTTT thienothiophene
+ NAB	14.00670	; nitrogen 1 on imidazole units
+ CRB	12.01100	; carbon 2 on imidazole units
+ NBB	14.00670	; nitrogen 3 on imidazole units
+ CVB	12.01100	; carbon 4 on imidazole units
+ CWB	12.01100	; carbon 5 on imidazole units
 
  ; For perclorate 
  PCC	35.45300	; Chlorate ion in perchlorate
