@@ -21,5 +21,5 @@ function run_em(){
 
 }
 
-run_em CBM CBM
+run_em TBM TBM
 

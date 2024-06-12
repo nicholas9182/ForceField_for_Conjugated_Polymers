@@ -210,3 +210,199 @@
  C6	C5	C1	H6
  
 
+[ TBM ]
+
+[ atoms ]
+; cis core
+ Cx	CN	-0.050	1
+ Hx	HN	+0.120	1
+ Cb	CN	-0.038	1
+ Hb	HN	+0.106	1
+ Cc	CN	-0.091	1
+ Cd	CN	+0.617	1
+ Od	ON	-0.482	1
+ Ne	NAB	-0.272	1
+; benzoid group
+ Cf	CWB	+0.079	1
+ Cg	CN	-0.159	1
+ Hg	HN	+0.152	1
+ Ch	CN	-0.131	1
+ Ci	CN	-0.111	1
+ Cj	CN	-0.223	1
+ Hj	HN	+0.147	1
+ Ck	CVB	+0.357	1
+; cis core
+ Nk	NBB	-0.589	1
+ Cy	CRB	+0.451	1
+ Cm	CN	-0.183	1
+ Cn	CN	-0.050	1
+ Hn	HN	+0.120	1
+ Co	CN	-0.038	1
+ Ho	HN	+0.106	1
+ Cp	CN	-0.091	1
+ Cq	CRB	+0.451	1
+ Nr	NBB	-0.589	1
+ Ns	NAB	-0.272	1
+ Ct	CN	+0.617	1
+ Ot	ON	-0.482	1
+ Cu	CN	-0.183	1
+ Cv	CN	+0.074	1
+ Cw	CN	+0.074	1
+;left terminal
+ C1	CWB	+0.079	1
+ C2	CVB	+0.357	1
+ C3	CN	-0.223	1
+ H3	HN	+0.147	1
+ C4	CN	-0.111	1
+ H4	HN	+0.113	1
+ C5	CN	-0.131	1
+ H5	HN	+0.113	1
+ C6	CN	-0.159	1
+ H6	HN	+0.152	1
+; right terminal
+ H7	HN	+0.113	1
+ H8	HN	+0.113	1
+
+
+[ bonds ]
+;cis core
+ Cx	Hx
+ Cx	Cu
+ Cx	Cb
+ Cb	Hb
+ Cb	Cc
+ Cc	Cy
+ Cc	Cw
+ Cd	Od
+ Cd	Ne
+ Ne	Cy
+ Nk	Cy
+ Cd	Cm
+ Cm	Cn
+ Cm	Cw
+ Cn	Hn	
+ Cn	Co
+ Co	Ho
+ Co	Cp
+ Cp	Cq
+ Cp	Cv
+ Cq	Nr
+ Cq	Ns
+ Ns	Ct
+ Ct	Ot
+ Ct	Cu
+ Cu	Cv
+ Cv	Cw
+;cis core to benzoid unit 
+ Ne	Cf
+ Ck	Nk
+;benzoid unit
+ Cf	Cg
+ Cg	Hg	
+ Cg	Ch
+ Ch	Ci
+ Ci	Cj
+ Cj	Hj
+ Cj	Ck
+ Ck	Cf
+;cis core to benzoid terminal
+ Nr	C2
+ Ns	C1
+; benzoid terminal
+ C1	C2
+ C2	C3
+ C3	H3
+ C3	C4
+ C4	H4
+ C4	C5
+ C5	H5
+ C5	C6
+ C6	H6
+ C6	C1
+; hydrogen terminals
+ Ch	H7
+ Ci	H8
+
+
+
+[ impropers ]
+ ; top cis core ring
+ Cx	Cb	Cc	Cw
+ Cb	Cc	Cw	Cv
+ Cc	Cw	Cv	Cu
+ Cw	Cv	Cu	Cx
+ Cv	Cu	Cx	Cb
+ Cu	Cx	Cb	Cc
+ Cx	Cb	Cu	Hx
+ Cb	Cc	Cx	Hb
+ ; bottom cis core ring
+ Cv	Cw	Cm	Cn
+ Cw	Cm	Cn	Co
+ Cm	Cn	Co	Cp
+ Cn	Co	Cp	Cv
+ Co	Cp	Cv	Cw
+ Cp	Cv	Cw	Cm
+ Co	Cp	Cn	Ho
+ Cn	Cm	Co	Hn
+ ; left cis core ring
+ Ct	Cu	Cv	Cp
+ Cu	Cv	Cp	Cq
+ Cv	Cp	Cq	Ns
+ Cp	Cq	Ns	Ct
+ Cq	Ns	Ct	Cu
+ Ns	Ct	Cu	Cv
+ Ct	Cu	Ns	Ot
+ ; right cis core ring
+ Cc	Cy	Ne	Cd
+ Cy	Ne	Cd	Cm
+ Ne	Cd	Cm	Cw
+ Cd	Cm	Cw	Cc
+ Cm	Cw	Cc	Cy
+ Cw	Cc	Cy	Ne
+ Cd	Ne	Cm	Od
+ ; right imadazole ring
+ Ne	Cf	Ck	Nk
+ Cf	Ck	Nk	Cy
+ Ck	Nk	Cy	Ne
+ Nk	Cy	Ne	Cf
+ Cy	Ne	Cf	Ck
+ Cy	Nk	Ne	Cc
+ Ne	Cd	Cy	Cf
+ Cf	Ck	Ne	Cg
+ Ck	Cj	Cf	Nk
+; left imidazole ring
+ Ns	Cq	Nr	C2
+ Cq	Nr	C2	C1
+ Nr	C2	C1	Ns
+ C2	C1	Ns	Cq
+ C1	Ns	Cq	Nr
+ Cq	Nr	Ns	Cp
+ Ns	Cq	C1	Ct
+ C1	C2	Ns	C6
+ C2	C1	Nr	C3
+
+
+ ; right benzoid group
+ Cf	Cg	Ch	Ci
+ Cg	Ch	Ci	Cj
+ Ch	Ci	Cj	Ck
+ Ci	Cj	Ck	Cf
+ Cj	Ck	Cf	Cg
+ Ck	Cf	Cg	Ch
+ Cg	Cf	Ch	Hg
+ Cj	Ck	Ci	Hj
+ Ch	Cg	Ci	H7
+ Ci	Ch	Cj	H8
+ ; left benzoid group
+ C1	C2	C3	C4
+ C2	C3	C4	C5
+ C3	C4	C5	C6
+ C4	C5	C6	C1
+ C5	C6	C1	C2
+ C6	C1	C2	C3
+ C3	C2	C4	H3
+ C4	C3	C5	H4
+ C5	C4	C6	H5
+ C6	C5	C1	H6
+ 
+
